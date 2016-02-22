@@ -1,10 +1,11 @@
 import imb4
 import json
 import DataManager
+import Stockholm_Green_Area_Factor as SGAF
 
 class TcpClient:
-    def __init__(self, localhost, dbname, user, pwd):
-        self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_SOCKET_PORT, False, 'CSTB', 1)
+    def __init__(self, localhost, dbname, user, pwd, prt):
+        self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_TLS_PORT, True, 'CSTB', 1)
         self._connection.on_disconnect = self.handle_disconnect
 
         self._event = self._connection.subscribe('data event',
@@ -20,7 +21,7 @@ class TcpClient:
 
         self._pdm = DataManager.PostresDataManager()
         # testing connection
-        self._pdm.connect(localhost, dbname, user, pwd)
+        self._pdm.connect(localhost, dbname, user, pwd, prt)
         if self._pdm.isConnected:
             print "Postgres is connected"
         else:
@@ -68,9 +69,20 @@ class TcpClient:
                 retunrDict["status"] = "failed"
             self.write_data(json.dumps(retunrDict))
 
-        elif parsed_json['name'] == 'getData':
-            print('get Data', event_entry.event_name, command)
+        elif parsed_json['method'] == 'getData':
+            # parse module ID
+            returnDict = {"method": "getData", "type": "response", "userId" : parsed_json["userId"],
+                          "caseId": parsed_json["caseId"], "variantID" : parsed_json["variantID"],
+                          "moduleId": parsed_json["moduleID"]}
 
+            if parsed_json['moduleID'] == 'Stockholm_Green_Area_Factor':
+                aModule_SGAF = SGAF.Module_SGAF(self._pdm, parsed_json["caseId"], parsed_json["variantID"])
+                returnDict["data"] = aModule_SGAF.getData()
+                returnDict["status"] = "succes"
+            else:
+                returnDict["status"] = "failed"
+
+            self.write_data(json.dumps(returnDict))
 
         else:
             print('## received string', event_entry.event_name, command)

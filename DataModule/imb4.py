@@ -26,7 +26,7 @@ SOCK_SELECT_TIMEOUT = 1  # seconds
 INVALID_EVENT_ID = 0xFFFFFFFF
 
 DEFAULT_REMOTE_SOCKET_PORT = 4004
-DEFAULT_REMOTE_TLS_PORT = 4443
+DEFAULT_REMOTE_TLS_PORT = 443
 
 MSG_WAITALL = 8
 # socket.MSG_WAITALL, seems not available in windows python socket lib but is supported on windows above xp

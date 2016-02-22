@@ -1,7 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="" />
+    <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Scripts/python35.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/testSGAF.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/Python-ast.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/Python.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/abstract.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/accu.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/asdl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/ast.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/bitset.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/bltinmodule.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/boolobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/bytearrayobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/bytes_methods.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/bytesobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/cellobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/ceval.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/classobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/code.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/codecs.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/compile.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/complexobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/datetime.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/descrobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/dictobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/dtoa.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/dynamic_annotations.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/enumobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/errcode.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/eval.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/fileobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/fileutils.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/floatobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/frameobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/funcobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/genobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/graminit.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/grammar.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/import.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/intrcheck.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/iterobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/listobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/longintrepr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/longobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/marshal.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/memoryobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/metagrammar.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/methodobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/modsupport.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/moduleobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/namespaceobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/node.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/object.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/objimpl.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/odictobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/opcode.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/osdefs.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/parsetok.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/patchlevel.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pgen.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pgenheaders.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/py_curses.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyarena.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyatomic.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pycapsule.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyconfig.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyctype.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pydebug.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyerrors.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyexpat.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyfpe.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pygetopt.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyhash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pylifecycle.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pymacconfig.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pymacro.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pymath.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pymem.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pyport.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pystate.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pystrcmp.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pystrhex.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pystrtod.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pythonrun.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pythread.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/pytime.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/rangeobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/setobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/sliceobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/structmember.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/structseq.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/symtable.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/sysmodule.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/token.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/traceback.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/tupleobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/typeslots.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/ucnhash.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/unicodeobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/warnings.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Include/weakrefobject.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/__future__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/_bootlocale.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/_collections_abc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/_dummy_thread.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/_weakrefset.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/abc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/base64.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/bisect.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/codecs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/collections/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/collections/__main__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/collections/abc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/copy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/copyreg.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/distutils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/distutils/distutils.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/aliases.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/ascii.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/base64_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/big5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/big5hkscs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/bz2_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/charmap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp037.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1006.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1026.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1125.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1140.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1250.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1251.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1252.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1253.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1254.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1255.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1256.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1257.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp1258.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp273.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp424.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp437.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp500.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp65001.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp720.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp737.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp775.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp850.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp852.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp855.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp856.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp857.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp858.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp860.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp861.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp862.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp863.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp864.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp865.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp866.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp869.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp874.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp875.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp932.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp949.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/cp950.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/euc_jis_2004.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/euc_jisx0213.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/euc_jp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/euc_kr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/gb18030.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/gb2312.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/gbk.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/hex_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/hp_roman8.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/hz.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/idna.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp_2004.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp_3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_jp_ext.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso2022_kr.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_10.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_11.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_13.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_14.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_15.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_16.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_6.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_7.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_8.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/iso8859_9.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/johab.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/koi8_r.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/koi8_t.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/koi8_u.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/kz1048.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/latin_1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_arabic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_centeuro.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_croatian.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_cyrillic.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_farsi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_greek.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_iceland.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_latin2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_roman.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_romanian.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mac_turkish.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/mbcs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/palmos.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/ptcp154.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/punycode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/quopri_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/raw_unicode_escape.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/rot_13.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/shift_jis.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/shift_jis_2004.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/shift_jisx0213.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/tis_620.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/undefined.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/unicode_escape.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/unicode_internal.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_16.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_16_be.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_16_le.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_32.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_32_be.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_32_le.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_7.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_8.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/utf_8_sig.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/uu_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/encodings/zlib_codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/fnmatch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/functools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/genericpath.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/hashlib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/heapq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/hmac.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/imp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/_bootstrap.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/_bootstrap_external.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/abc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/machinery.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/importlib/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/io.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/keyword.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/linecache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/locale.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/no-global-site-packages.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/ntpath.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/operator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/orig-prefix.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/os.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/posixpath.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/random.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/re.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/reprlib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/rlcompleter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/shutil.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/site.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/sre_compile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/sre_constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/sre_parse.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/stat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/struct.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/tarfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/tempfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/token.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/tokenize.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/types.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/warnings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/venv/Lib/weakref.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DataModule.iml" afterPath="$PROJECT_DIR$/.idea/DataModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/imb4.py" afterPath="$PROJECT_DIR$/DataModule/imb4.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/tcpclient.py" afterPath="$PROJECT_DIR$/DataModule/tcpclient.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testDB.py" afterPath="$PROJECT_DIR$/TestModule/testDB.py" />
+    </list>
     <ignored path="DataModule.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -14,10 +307,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1453456846394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1456134076894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testclient__1_.coverage" NAME="testclient (1) Coverage Results" MODIFIED="1453466967608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1453474711797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1456158497223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testclient__1_.coverage" NAME="testclient (1) Coverage Results" MODIFIED="1456144434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1455719967659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1453302618608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -29,16 +323,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/__main__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,7 +339,7 @@
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+              <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -63,11 +347,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testclient.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8835419">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -79,8 +375,92 @@
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15582192">
+              <caret line="184" column="39" selection-start-line="184" selection-start-column="39" selection-end-line="184" selection-end-column="39" />
+              <folding>
+                <marker date="1456158762027" expanded="true" signature="390:706" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="573:704" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="872:1472" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="1040:1448" placeholder="SELECT paren... *" />
+                <marker date="1456158762027" expanded="true" signature="1089:1211" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="1244:1363" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="1670:2175" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="1838:2149" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="2411:2901" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="2563:2875" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="3121:3421" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="3121:3422" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="3281:3401" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="3599:3695" placeholder="SELECT COUNT... " />
+                <marker date="1456158762027" expanded="true" signature="3870:4114" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="3870:4115" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="4025:4090" placeholder="SELECT attr_... gen_genericcityobject" />
+                <marker date="1456158762027" expanded="true" signature="4025:4094" placeholder="SELECT attr_... gen_genericcityobject" />
+                <marker date="1456158762027" expanded="true" signature="4283:4310" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="4283:4522" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="4283:4523" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="4438:4502" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="4673:5107" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="4825:5087" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="5347:5514" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="5347:5536" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="5723:5826" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="5995:6057" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="5995:6284" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="5995:6285" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="6127:6264" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="6437:6444" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1456158762027" expanded="true" signature="6437:6866" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="6589:6846" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="7066:7662" placeholder="SELECT SUM(g... " />
+                <marker date="1456158762027" expanded="true" signature="7230:7642" placeholder="SELECT paren... *" />
+                <marker date="1456158762027" expanded="true" signature="7277:7397" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="7432:7553" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="7838:8182" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="8013:8162" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="8340:8792" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="8507:8772" placeholder="SELECT paren... *" />
+                <marker date="1456158762027" expanded="true" signature="8556:8685" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="8943:9545" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="9111:9525" placeholder="SELECT paren... *" />
+                <marker date="1456158762027" expanded="true" signature="9160:9280" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="9317:9440" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1456158762027" expanded="true" signature="9716:9974" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="9868:9954" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1456158762027" expanded="true" signature="10130:10592" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1456158762027" expanded="true" signature="10282:10572" placeholder="SELECT attr_... veg_plantcover" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2410" column="0" selection-start-line="2410" selection-start-column="0" selection-end-line="2410" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testSGAF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,21 +469,8 @@
         <entry file="file://$PROJECT_DIR$/TestModule/testDB.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="64" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="64" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imb4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1126" column="38" selection-start-line="1126" selection-start-column="30" selection-end-line="1126" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -117,6 +484,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -125,13 +495,15 @@
         <option value="$PROJECT_DIR$/DataModule/getDataServer.py" />
         <option value="$PROJECT_DIR$/DataModule/testDB.py" />
         <option value="$PROJECT_DIR$/DataModule/testclient.py" />
-        <option value="$PROJECT_DIR$/TestModule/testDB.py" />
         <option value="$PROJECT_DIR$/DataModule/MessageSerializer.py" />
-        <option value="$PROJECT_DIR$/DataModule/imb4.py" />
         <option value="$PROJECT_DIR$/TestModule/testclient.py" />
-        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
-        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
         <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
+        <option value="$PROJECT_DIR$/TestModule/testDB.py" />
+        <option value="$PROJECT_DIR$/TestModule/testSGAF.py" />
+        <option value="$PROJECT_DIR$/DataModule/imb4.py" />
+        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
+        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
+        <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
       </list>
     </option>
   </component>
@@ -171,7 +543,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,7 +592,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,25 +602,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.testDataModuleAPI">
-    <configuration default="false" name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataModule" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DataModule" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataModule/__main__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.testSGAF">
     <configuration default="false" name="testclient" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -317,6 +671,24 @@
       <module name="DataModule" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testSGAF" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestModule" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataModule" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestModule/testSGAF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -515,19 +887,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.__main__" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testclient" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testDB" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testclient (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
+      <item index="0" class="java.lang.String" itemvalue="Python.testclient" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testDB" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testclient (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testSGAF" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testSGAF" />
         <item index="1" class="java.lang.String" itemvalue="Python.testclient (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.testclient" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testDB" />
-        <item index="4" class="java.lang.String" itemvalue="Python.__main__" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testDB" />
       </list>
     </recent_temporary>
   </component>
@@ -545,28 +917,48 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925024" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925024" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925024" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925024" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39925024" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -581,6 +973,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/TestModule/testclient.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -588,47 +992,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1126" column="38" selection-start-line="1126" selection-start-column="30" selection-end-line="1126" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,10 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,10 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,21 +1070,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/psycopg2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,10 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,10 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,10 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="921" column="56" selection-start-line="921" selection-start-column="56" selection-end-line="921" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,10 +1246,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="915" column="56" selection-start-line="915" selection-start-column="56" selection-end-line="915" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,21 +1309,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/psycopg2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024745269">
-          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1126" column="38" selection-start-line="1126" selection-start-column="30" selection-end-line="1126" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1453466830571" expanded="true" signature="47778:47961" placeholder="..." />
-          </folding>
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,38 +1327,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-923872462/psycopg2/_psycopg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40756914">
+          <caret line="771" column="8" selection-start-line="771" selection-start-column="8" selection-end-line="771" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm50/system/python_stubs/-923872462/_socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <caret line="406" column="8" selection-start-line="406" selection-start-column="8" selection-end-line="406" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33278957">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0471607">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <caret line="2410" column="0" selection-start-line="2410" selection-start-column="0" selection-end-line="2410" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+    <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,17 +1385,95 @@
     <entry file="file://$PROJECT_DIR$/TestModule/testDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="64" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8835419">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15582192">
+          <caret line="184" column="39" selection-start-line="184" selection-start-column="39" selection-end-line="184" selection-end-column="39" />
+          <folding>
+            <marker date="1456158762027" expanded="true" signature="390:706" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="573:704" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="872:1472" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="1040:1448" placeholder="SELECT paren... *" />
+            <marker date="1456158762027" expanded="true" signature="1089:1211" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="1244:1363" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="1670:2175" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="1838:2149" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="2411:2901" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="2563:2875" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="3121:3421" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="3121:3422" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="3281:3401" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="3599:3695" placeholder="SELECT COUNT... " />
+            <marker date="1456158762027" expanded="true" signature="3870:4114" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="3870:4115" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="4025:4090" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1456158762027" expanded="true" signature="4025:4094" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1456158762027" expanded="true" signature="4283:4310" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="4283:4522" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="4283:4523" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="4438:4502" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="4673:5107" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="4825:5087" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="5347:5514" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="5347:5536" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="5723:5826" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="5995:6057" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="5995:6284" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="5995:6285" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="6127:6264" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="6437:6444" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1456158762027" expanded="true" signature="6437:6866" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="6589:6846" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="7066:7662" placeholder="SELECT SUM(g... " />
+            <marker date="1456158762027" expanded="true" signature="7230:7642" placeholder="SELECT paren... *" />
+            <marker date="1456158762027" expanded="true" signature="7277:7397" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="7432:7553" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="7838:8182" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="8013:8162" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="8340:8792" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="8507:8772" placeholder="SELECT paren... *" />
+            <marker date="1456158762027" expanded="true" signature="8556:8685" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="8943:9545" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="9111:9525" placeholder="SELECT paren... *" />
+            <marker date="1456158762027" expanded="true" signature="9160:9280" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="9317:9440" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1456158762027" expanded="true" signature="9716:9974" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="9868:9954" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1456158762027" expanded="true" signature="10130:10592" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1456158762027" expanded="true" signature="10282:10572" placeholder="SELECT attr_... veg_plantcover" />
           </folding>
         </state>
       </provider>
