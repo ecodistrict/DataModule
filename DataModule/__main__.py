@@ -12,9 +12,9 @@ def main(args=None):
 
     # Do argument parsing here (eg. with argparse) and anything else
     # you want your project to do.
-    aTcpclient = tcpclient.TcpClient()
+    testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
 
-    aTcpclient.write_data("test trout")
+    #aTcpclient.write_data("test trout")
 
     raw_input('waiting on imb commands; press return to quit.. ')
 

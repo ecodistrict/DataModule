@@ -42,8 +42,6 @@ class PostresDataManager:
                 data = cur.fetchone()
                 if data[0] is not None:
                     ret = cast(data[0])
-                else:
-                    ret = None
             except:
                 pass
             cur.close()

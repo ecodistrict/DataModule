@@ -35,52 +35,79 @@ class TcpClient:
 
     def handle_string_event(self, event_entry, command):
         parsed_json = json.loads(command)
-        if parsed_json['method'] == 'createCase':
-            retunrDict = {"method" : "createCase", "type" : "response", "userId" : parsed_json["userId"], "caseId" : parsed_json["caseId"]}
-            if self._pdm.createSchema(parsed_json['caseId']):
-                retunrDict["status"] = "success"
+        method = parsed_json.get('method', 'null')
+        case_id = parsed_json.get('caseId', 'null')
+        user_id = parsed_json.get('userId', 'null')
+        variant_id = parsed_json.get('variantId', 'null')
+        schema_id = case_id + "_" + variant_id
+        calculation_id = parsed_json.get('calculationId', 'null')
+        module_id = parsed_json.get('moduleId', 'null')
+
+
+
+        if method == 'createCase':
+            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
+            if case_id == 'null':
+                returnDict["status"] = "failed - no case id"
+            elif self._pdm.createSchema(case_id):
+                returnDict["status"] = "success"
             else:
-                retunrDict["status"] = "failed"
-            self.write_data(json.dumps(retunrDict))
+                returnDict["status"] = "failed - can't create schemas"
+            self.write_data(json.dumps(returnDict))
 
-        elif parsed_json['method'] == 'deleteCase':
-            retunrDict = {"method" : "deleteCase", "type" : "response", "userId" : parsed_json["userId"], "caseId" : parsed_json["caseId"]}
-            if self._pdm.deleteSchema(parsed_json['caseId']):
-                retunrDict["status"] = "success"
+        elif method == 'deleteCase':
+            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
+            if case_id != 'null':
+                returnDict["status"] = "failed - no case id"
+            elif self._pdm.deleteSchema(case_id):
+                returnDict["status"] = "success"
             else:
-                retunrDict["status"] = "failed"
-            self.write_data(json.dumps(retunrDict))
+                returnDict["status"] = "failed - can't delete schemas"
+            self.write_data(json.dumps(returnDict))
 
-        elif parsed_json['method'] == 'createVariant':
-            retunrDict = {"method" : "createVariant", "type" : "response", "userId" : parsed_json["userId"], "caseId" : parsed_json["caseId"], "variantID" : parsed_json["variantID"]}
-            schemaID = parsed_json["caseId"] + "_" + parsed_json["variantID"]
-            if self._pdm.createSchema(schemaID):
-                retunrDict["status"] = "succes"
-            else:
-                retunrDict["status"] = "failed"
-            self.write_data(json.dumps(retunrDict))
-
-        elif parsed_json['method'] == 'deleteVariant':
-            retunrDict = {"method" : "deleteVariant", "type" : "response", "userId" : parsed_json["userId"], "caseId" : parsed_json["caseId"], "variantID" : parsed_json["variantID"]}
-            schemaID = parsed_json["caseId"] + "_" + parsed_json["variantID"]
-            if self._pdm.deleteSchema(schemaID):
-                retunrDict["status"] = "succes"
-            else:
-                retunrDict["status"] = "failed"
-            self.write_data(json.dumps(retunrDict))
-
-        elif parsed_json['method'] == 'getData':
-            # parse module ID
-            returnDict = {"method": "getData", "type": "response", "userId" : parsed_json["userId"],
-                          "caseId": parsed_json["caseId"], "variantID" : parsed_json["variantID"],
-                          "moduleId": parsed_json["moduleID"]}
-
-            if parsed_json['moduleID'] == 'Stockholm_Green_Area_Factor':
-                aModule_SGAF = SGAF.Module_SGAF(self._pdm, parsed_json["caseId"], parsed_json["variantID"])
-                returnDict["data"] = aModule_SGAF.getData()
+        elif method == 'createVariant':
+            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
+            if case_id == 'null':
+                returnDict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                returnDict["status"] = "failed - no variant id"
+            elif self._pdm.createSchema(schema_id):
                 returnDict["status"] = "succes"
             else:
-                returnDict["status"] = "failed"
+                returnDict["status"] = "failed - can't create schema"
+            self.write_data(json.dumps(returnDict))
+
+        elif method == 'deleteVariant':
+            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
+            if case_id == 'null':
+                returnDict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                returnDict["status"] = "failed - no variant id"
+            elif self._pdm.deleteSchema(schema_id):
+                returnDict["status"] = "succes"
+            else:
+                returnDict["status"] = "failed - can't delete schema"
+            self.write_data(json.dumps(returnDict))
+
+        elif method == 'getData':
+            # parse module ID
+            returnDict = {"method": method, "type": "response", "userId" : user_id,
+                          "caseId": case_id, "variantId" : variant_id,
+                          "calculationId" : calculation_id, "moduleId": module_id}
+
+            if case_id == 'null':
+                returnDict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                returnDict["status"] = "failed - no variant id"
+            elif module_id == 'null':
+                returnDict["status"] = "failed - no module id"
+            else:
+                if module_id == 'Stockholm_Green_Area_Factor':
+                    aModule_SGAF = SGAF.Module_SGAF(self._pdm, schema_id)
+                    returnDict["data"] = aModule_SGAF.getData()
+                    returnDict["status"] = "succes"
+                else:
+                    returnDict["status"] = "failed - no module found"
 
             self.write_data(json.dumps(returnDict))
 

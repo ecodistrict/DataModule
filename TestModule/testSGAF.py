@@ -11,8 +11,9 @@ def main(args=None):
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "truite",
-                       "variantID": "test",
-                       "moduleID": "Stockholm_Green_Area_Factor"
+                       "variantId": "test",
+                       "moduleId": "Stockholm_Green_Area_Factor",
+                       "calculationId" : "3"
                         }
     jsonGetData = json.dumps(getDataMessage)
     print jsonGetData
