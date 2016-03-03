@@ -1,4 +1,3 @@
-import DataModule.Stockholm_Green_Area_Factor as SGAF
 import DataModule.tcpclient as tcpclient
 import json
 

@@ -48,7 +48,7 @@ class PostresDataManager:
         return ret
 
     def createSchema(self, schemaID):
-        request = ("""SELECT clone_schema('public','{}');""").format(schemaID)
+        request = ("""SELECT clone_schema('public','{}', TRUE);""").format(schemaID)
         return self._executeRequest(request)
 
     def deleteSchema(self, schemaID):
