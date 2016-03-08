@@ -29,7 +29,7 @@ def main(args=None):
                              "type": "request",
                              "userId": "cstb",
                              "caseId": "stockholm",
-                             "variantId" : "as_is"
+                             "variantId" : "asis"
                             }
     jsoncreateVariant1 = json.dumps(createVariant1Message)
     print jsoncreateVariant1

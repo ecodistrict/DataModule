@@ -2,6 +2,7 @@ import imb4
 import json
 import DataManager
 import Stockholm_Green_Area_Factor as SGAF
+import LCC_LCA
 
 class TcpClient:
     def __init__(self, localhost, dbname, user, pwd, prt):
@@ -105,6 +106,14 @@ class TcpClient:
                 if module_id == 'Stockholm_Green_Area_Factor':
                     aModule_SGAF = SGAF.Module_SGAF(self._pdm, schema_id)
                     returnDict["data"] = aModule_SGAF.getData()
+                    returnDict["status"] = "succes"
+                elif module_id == 'SP_LCA_v4.0':
+                    aModule_LCA = LCC_LCA.Module_LCC(self._pdm, schema_id)
+                    returnDict["data"] = aModule_LCA.getData()
+                    returnDict["status"] = "succes"
+                elif module_id == 'SP_LCC_v1.0':
+                    aModule_LCC = LCC_LCA.Module_LCC(self._pdm, schema_id)
+                    returnDict["data"] = aModule_LCC.getData()
                     returnDict["status"] = "succes"
                 else:
                     returnDict["status"] = "failed - no module found"

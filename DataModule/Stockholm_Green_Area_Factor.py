@@ -61,17 +61,17 @@ class Module_SGAF:
         return self._pdm.getDataValue(request, int)
 
     def _get_count_water_filtered_name(self, filtered_name):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_watersurface
+        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_waterbody
                       WHERE attr_gml_id IN (
-                        SELECT parentfk FROM {}.wtr_watersurface_gen_intattribute
+                        SELECT parentfk FROM {}.wtr_waterbody_gen_intattribute
                           WHERE attr_name='' AND gen_value=1
                   );""".format(self.schemaID, self.schemaID, filtered_name)
         return self._pdm.getDataValue(request, int)
 
     def _get_count_filtered_fountains(self, filtered_name):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_watersurface
+        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_waterbody
                       WHERE wtr_class='1230' AND attr_gml_id IN (
-                        SELECT parentfk FROM {}.wtr_watersurface_gen_intattribute
+                        SELECT parentfk FROM {}.wtr_waterbody_gen_intattribute
                           WHERE attr_name='{}' AND gen_value=1
                   );""".format(self.schemaID, self.schemaID, filtered_name)
         return self._pdm.getDataValue(request, int)
@@ -79,7 +79,7 @@ class Module_SGAF:
 
     def _get_generic_sum_attribute(self, filtered_class):
         request = """SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
-                    WHERE attr_name='area' AND parentfk IN (
+                    WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                       SELECT attr_gml_id FROM {}.gen_genericcityobject WHERE gen_class='{}'
                   );""".format(self.schemaID, self.schemaID, filtered_class)
         return self._pdm.getDataValue(request, float)
@@ -87,7 +87,7 @@ class Module_SGAF:
     def _get_balcony_terrace_growing(self):
         request ="""SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM ( {}.gen_genericcityobject_gen_intattribute
+                        SELECT parentfk FROM {}.gen_genericcityobject_gen_intattribute
                           WHERE attr_name='isBalconyTerraceForGrowing' AND gen_value=1
                   );""".format(self.schemaID, self.schemaID)
         return self._pdm.getDataValue(request, float)
@@ -101,14 +101,13 @@ class Module_SGAF:
                   );""".format(self.schemaID, self.schemaID)
         return self._pdm.getDataValue(request, float)
 
-    def _get_general_bushes(self):
-        request = """SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
-                    WHERE attr_name='area' AND parentfk IN (
-                      SELECT attr_gml_id FROM {}.veg_plantcover WHERE veg_class='1080'
-                  );""".format(self.schemaID, self.schemaID)
+    def _get_total_land_area(self):
+        request = """SELECT SUM(gen_value) total_land_area FROM {}.luse_landuse_gen_doubleattribute
+                      WHERE attr_name='area' AND  gen_value>0 AND parentfk IN (
+                        SELECT parentfk FROM {}.luse_landuse_gen_intattribute);""".format(self.schemaID, self.schemaID)
         return self._pdm.getDataValue(request, float)
 
-    def _get_total_land_area(self, filtered_name):
+    def _get_total_filterd_land_area(self, filtered_name):
         request = """SELECT SUM(gen_value) total_land_area FROM {}.luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND  gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM {}.luse_landuse_gen_intattribute
@@ -122,7 +121,7 @@ class Module_SGAF:
                           SELECT * FROM {}.luse_landuse_gen_intattribute
                             WHERE attr_name='{}' AND gen_value=1 UNION
                               SELECT * FROM {}.luse_landuse_gen_intattribute
-                                WHERE attr_name='isOpenHard' AND gen_value=1
+                                WHERE attr_name='{}' AND gen_value=1
                           ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
                     );""".format(self.schemaID, self.schemaID, filtered_anme_1, self.schemaID, filtered_name_2)
         return self._pdm.getDataValue(request, float)
@@ -180,6 +179,13 @@ class Module_SGAF:
                           WHERE attr_name='isOnRoof' AND gen_value=1 AND veg_averageheight > {} AND veg_averageheight < {}
                       );""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID, minHeight, maxHeight)
         return self._pdm.getDataValue(request, float)
+
+    def _get_general_bushes(self):
+        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+                    WHERE attr_name='area' AND parentfk IN (
+                      SELECT attr_gml_id FROM {}.veg_plantcover WHERE veg_class='1080'
+                  );""".format(self.schemaID, self.schemaID)
+        return 100.0 # self._pdm.getDataValue(request, float)  TRUITE \todo
 
     def _get_sum_vegetation_filtered(self, filtered_name):
         request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
@@ -257,27 +263,37 @@ class Module_SGAF:
         return self._pdm.getDataValue(request, float)
 
     def _get_green_water_surfaces(self):
-        request ="""SELECT SUM(gen_value) FROM {}.wtr_waterbody_gen_doubleattribute
+        request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.wtr_waterbody_gen_intattribute
+                        SELECT parentfk FROM {}.wtr_watersurface_gen_intattribute
                      );""".format(self.schemaID, self.schemaID)
         return self._pdm.getDataValue(request, float)
 
-    def _get_biologically_accessible_water(self):
+    def _get_biologically_accessible_water(self, filtered_name):
         request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
                           SELECT * FROM {}.wtr_watersurface_gen_intattribute
-                            WHERE attr_name='isExperiential' AND gen_value=1 UNION
+                            WHERE attr_name='{}' AND gen_value=1 UNION
                               SELECT * FROM {}.wtr_watersurface_gen_intattribute
                                 WHERE attr_name='isBiologicallyAccessible' AND gen_value=1
                         ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
-                    );""".format(self.schemaID, self.schemaID, self.schemaID)
+                    );""".format(self.schemaID, self.schemaID, filtered_name,  self.schemaID)
+        return self._pdm.getDataValue(request, float)
+
+    def _get_sum_water_surfaces_filtered(self, filtered_name):
+        request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
+                      WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
+                        SELECT parentfk FROM (
+                          SELECT * FROM {}.wtr_watersurface_gen_intattribute
+                            WHERE attr_name='{}' AND gen_value=1
+                        ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
+                  );""".format(self.schemaID, self.schemaID, filtered_name)
         return self._pdm.getDataValue(request, float)
 
 
     def getData(self):
-        self.responseData["Total land area"] = self._get_total_land_area('isCaseStudyDistrict')
+        self.responseData["Total land area"] = self._get_total_land_area()
 
         self.responseData["Unsupported ground greenery"] = self._get_unsupported_ground_greenery()
         self.responseData["Plant bed (>800 mm)"] = self._get_plant_bed_with_height(800, 100000)
@@ -286,20 +302,20 @@ class Module_SGAF:
         self.responseData["Green roof (>300 mm)"] = self._get_green_roof(300, 100000)
         self.responseData["Green roof (50 - 300 mm)"] = self._get_green_roof(50, 300)
         self.responseData["Greenery on walls"] = self._get_sum_vegetation_filtered('isOnWall')
-        self.responseData["Balcony boxes"] = self._get_generic_count_attribute('ECD_GENCO_BALCONY_BOX')
+        self.responseData["Balcony boxes"] = self._get_generic_sum_attribute('ECD_GENCO_BALCONY_BOX')
 
-        self.responseData['Diversity in the field layer'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_FIELD_LAYER')
-        self.responseData['Natural species selection'] = self._get_generic_sum_attribute('ECD_GENCO_NATURAL_SPECIES_SELECTION')
+        self.responseData['Diversity in the field layer'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_FIELD_LAYER')   # TRUITE \todo
+        self.responseData['Natural species selection'] = self._get_generic_sum_attribute('ECD_GENCO_NATURAL_SPECIES_SELECTION')  # TRUITE \todo
         self.responseData['Diversity on thin sedum roofs'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_THIN_SEDUM_ROOF')
         self.responseData['Integrated balcony boxes with climbing plants'] = self._get_generic_sum_attribute('ECD_GENCO_INTEGRATED_BALCONY_BOX_CLIMBING')
         self.responseData['Butterfly restaurants'] = self._get_generic_count_attribute('ECD_GENCO_BUTTERFLY_RESTAURANT')
-        self.responseData['General bushes'] = self._get_general_bushes()
+        self.responseData['General bushes'] = self._get_general_bushes()  # TRUITE \todo
         self.responseData['Berry bushes'] = self._get_sum_vegetation_join_name_filtered('isBerry')
         self.responseData['Large trees'] = self._get_count_tree_with_trunk_parameter(30, 100000)
         self.responseData['Medium large trees'] = self._get_count_tree_with_trunk_parameter(20, 30)
         self.responseData['Small trees'] = self._get_count_tree_with_trunk_parameter(16, 20)
         self.responseData['Oaks'] = self._get_count_oaks()
-        self.responseData['Fruit trees'] = self._get_count_vegetary_attribute('isFruit')
+        self.responseData['Fruit trees'] = self._get_count_vegetary_attribute('isBlooming')    # TRUITE \todo isFruit
         self.responseData['Fauna depots'] = self._get_generic_count_attribute('ECD_GENCO_FAUNA_DEPOT')
         self.responseData['Beetle feeders'] = self._get_generic_count_attribute('ECD_GENCO_BEETLE_FEEDER')
         self.responseData['Bird feeders'] = self._get_generic_count_attribute('ECD_GENCO_BIRD_FEEDER')
@@ -314,27 +330,27 @@ class Module_SGAF:
         self.responseData['Berry bushes with edible fruits'] = self._get_sum_bushes('isBerry')
         self.responseData['Trees experiential value'] = self._get_count_vegetary_attribute('isExperiential')
         self.responseData['Fruit trees and blooming trees'] = self._get_count_fruit_blooming_attribute()
-        self.responseData['Green surrounded'] = self._get_total_land_area('isGreenSurrounded')
+        self.responseData['Green surrounded'] = self._get_total_filterd_land_area('isGreenSurrounded')
         self.responseData['Bird feeders experiential value'] = self._get_bird_feeder_experential()
 
         self.responseData['Trees leafy shading'] = self._get_count_vegetary_attribute('isLeafyShading')
         self.responseData['Shade from leaf cover'] = self._get_sum_vegetation_join_name_filtered('isShadeFromLeaf')
         self.responseData['Evening out of temp'] = self._get_sum_vegetation_filtered('isEveningOutOfTemp')
 
-        self.responseData['Water surface permanent'] = self._get_count_water_filtered_name('isPermanent')
+        self.responseData['Water surface permanent'] = self._get_sum_water_surfaces_filtered('isPermanent')
         self.responseData['Open hard surfaces that allow water to get through'] = self._get_landuse_sum_doubled_filtered('isPermeable', 'isOpenHard')
         self.responseData['Gravel and sand'] = self._get_landuse_sum_doubled_filtered('isGravel', 'isSand')
         self.responseData['Concrete slabs with joints'] = self._get_concrete_slabs()
         self.responseData['Impermeable surfaces'] = self._get_impermeable_surfaces()
 
-        self.responseData['Biologically accessible permanent water'] = self._get_sum_water_body_filtered('isPermanent')
+        self.responseData['Biologically accessible permanent water'] = self._get_biologically_accessible_water('isPermanent')
         self.responseData['Dry areas with plants that temporarily fill with rain water'] = self._get_dry_areas()
         self.responseData['Delay of rainwater in ponds'] = self._get_sum_water_body_filtered('isRainwaterDelayedInPonds')
         self.responseData['Delay of rainwater in underground percolation systems'] = self._get_sum_water_body_filtered('isRainwaterDelayedInPercolationsystems')
         self.responseData['Runoff from impermeable surfaces to surfaces with plants'] = self._get_balcony_terrace_growing()
 
         self.responseData['Water surfaces'] = self._get_green_water_surfaces()
-        self.responseData['Biologically accessible water'] = self._get_biologically_accessible_water()
+        self.responseData['Biologically accessible water'] = self._get_biologically_accessible_water('isPermanent')  #should be is experimental TRUITE \todo
         self.responseData['Fountains circulations systems'] = self._get_count_filtered_fountains('isCirculationSystem')
 
         self.responseData['Water collection during dry periods'] = self._get_count_water_filtered_name('isCollectedDuringDryPeriods')

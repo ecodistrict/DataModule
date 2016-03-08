@@ -20,5 +20,15 @@ class Module_LCC:
         self._pdm = postresDataManager
         self.responseData = {}
 
+    def _getBuildingsData(self):
+        request ="""SELECT * FROM {}.bldg_building bldg
+	      JOIN {}.bldg_building_gen_intattribute bldg_int ON bldg_int.parentfk = bldg.attr_gml_id
+	      JOIN {}.bldg_building_gen_doubleattribute bldg_dble ON bldg_dble.parentfk = bldg.attr_gml_id
+	      JOIN {}.bldg_building_gen_stringattribute bldg_str ON bldg_str.parentfk = bldg.attr_gml_id
+	      """.format(self.schemaID, self.schemaID, self.schemaID, self.schemaID)
+        return self._pdm.getJsonifyValue(request)
+
     def getData(self):
+        self.responseData['Buildings'] = self._getBuildingsData()
+
         return self.responseData

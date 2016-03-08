@@ -21,7 +21,7 @@ class PostresDataManager:
         return self.isConnected
 
     def _executeRequest(self, request):
-        ret = False;
+        ret = False
         if self.isConnected:
             cur = self.conn.cursor()
             try:
@@ -34,7 +34,7 @@ class PostresDataManager:
         return ret
 
     def getDataValue(self, request, cast):
-        ret = -1;
+        ret = 0
         if self.isConnected:
             cur = self.conn.cursor()
             try:
@@ -46,6 +46,20 @@ class PostresDataManager:
                 pass
             cur.close()
         return ret
+
+    def getJsonifyValue(self, request):
+        if self.isConnected:
+            cur = self.conn.cursor()
+            try:
+                # add JSON conversion
+                json_request = ("""SELECT array_to_json(array_agg(row_to_json(RESULT))) FROM ({}) RESULT""").format(request)
+                cur.execute(json_request)
+                data = cur.fetchone()
+            except:
+                data = {}
+                pass
+            cur.close()
+        return data
 
     def createSchema(self, schemaID):
         request = ("""SELECT clone_schema('public','{}', TRUE);""").format(schemaID)

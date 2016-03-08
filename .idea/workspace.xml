@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/testLCC.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/LCC_LCA.py" afterPath="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" afterPath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/tcpclient.py" afterPath="$PROJECT_DIR$/DataModule/tcpclient.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" afterPath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testLCC.py" afterPath="$PROJECT_DIR$/TestModule/testLCC.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testSGAF.py" afterPath="$PROJECT_DIR$/TestModule/testSGAF.py" />
     </list>
     <ignored path="DataModule.iws" />
@@ -20,11 +23,12 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1456996051950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1456931703728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1457451786711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1457451030469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient__1_.coverage" NAME="testclient (1) Coverage Results" MODIFIED="1456144434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1457450094212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1456134076894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1455719967659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -36,24 +40,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__main__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataModule/__main__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-18.758621">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <marker date="1457448735287" expanded="true" signature="569:897" placeholder="SELECT * FRO... veg_plantcover" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,9 +56,21 @@
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imb4.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1145" column="0" selection-start-line="1145" selection-start-column="0" selection-end-line="1145" selection-end-column="0" />
+              <folding>
+                <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -74,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="86" />
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -82,12 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="0.40324962">
+              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+              <folding>
+                <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,99 +103,105 @@
       <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="336" column="36" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
+            <state vertical-scroll-proportion="71.68965">
+              <caret line="176" column="64" selection-start-line="176" selection-start-column="64" selection-end-line="176" selection-end-column="64" />
               <folding>
-                <marker date="1456326947963" expanded="true" signature="398:494" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1456326947963" expanded="true" signature="655:750" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1456326947963" expanded="true" signature="655:977" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1456326947963" expanded="true" signature="818:955" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="1134:1397" placeholder="SELECT COUNT... luse_landuse" />
-                <marker date="1456326947963" expanded="true" signature="1250:1375" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="1591:1758" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1456326947963" expanded="true" signature="1937:2052" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1456326947963" expanded="true" signature="2214:2498" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1456326947963" expanded="true" signature="2346:2478" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="2681:3265" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1456326947963" expanded="true" signature="2813:3241" placeholder="SELECT paren... parentfk" />
-                <marker date="1456326947963" expanded="true" signature="2862:3004" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="3011:3152" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="3457:3715" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1456326947963" expanded="true" signature="3577:3695" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="3906:4187" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1456326947963" expanded="true" signature="3906:4188" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1456326947963" expanded="true" signature="4047:4167" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="4377:4621" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="4532:4601" placeholder="SELECT attr_... gen_genericcityobject" />
-                <marker date="1456326947963" expanded="true" signature="4798:5144" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="4973:5124" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="5297:5736" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="5472:5629" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="5889:6128" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="6044:6108" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="6297:6596" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="6480:6594" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="6812:7410" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="6979:7388" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="7028:7139" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="7176:7299" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="7612:8057" placeholder="SELECT SUM(g... " />
-                <marker date="1456326947963" expanded="true" signature="7778:8033" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="7827:7946" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="8205:9022" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="8384:9000" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="8433:8547" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="8583:8706" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="8745:8881" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="9218:9818" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="9386:9794" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="9435:9557" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="9590:9709" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="10016:10521" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="10184:10495" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="10759:11249" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="10911:11223" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="11493:11799" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="11493:11800" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="11661:11779" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="12002:12431" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="12154:12411" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="12646:12653" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1456326947963" expanded="true" signature="12646:13075" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="12798:13055" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="13275:13871" placeholder="SELECT SUM(g... " />
-                <marker date="1456326947963" expanded="true" signature="13439:13851" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="13486:13606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="13641:13762" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="14037:14639" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="14205:14619" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="14254:14374" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="14411:14534" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="14810:15068" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="14962:15048" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="15232:15682" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="15232:15683" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="15384:15662" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1456326947963" expanded="true" signature="15919:16354" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="16086:16334" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="16135:16247" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="16527:16758" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="16678:16739" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="16702:16739" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="16925:17558" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-                <marker date="1456326947963" expanded="true" signature="17095:17536" placeholder="SELECT paren... *" />
-                <marker date="1456326947963" expanded="true" signature="17144:17271" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-                <marker date="1456326947963" expanded="true" signature="17308:17449" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="398:494" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1457451216456" expanded="true" signature="655:750" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1457451216456" expanded="true" signature="655:977" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1457451216456" expanded="true" signature="818:955" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="1134:1397" placeholder="SELECT COUNT... luse_landuse" />
+                <marker date="1457451216456" expanded="true" signature="1250:1375" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="1591:1758" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1457451216456" expanded="true" signature="1937:2052" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1457451216456" expanded="true" signature="2214:2498" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1457451216456" expanded="true" signature="2346:2478" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="2681:3265" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1457451216456" expanded="true" signature="2813:3241" placeholder="SELECT paren... parentfk" />
+                <marker date="1457451216456" expanded="true" signature="2862:3004" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="3011:3152" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="3457:3709" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1457451216456" expanded="true" signature="3574:3689" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="3900:4175" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1457451216456" expanded="true" signature="3900:4176" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1457451216456" expanded="true" signature="4038:4155" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="4365:4625" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="4536:4605" placeholder="SELECT attr_... gen_genericcityobject" />
+                <marker date="1457451216456" expanded="true" signature="4802:5146" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="4977:5126" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="5299:5738" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="5474:5631" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="5892:6129" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="6075:6128" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="6306:6605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="6489:6603" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="6821:7411" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="6988:7389" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="7037:7148" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="7185:7300" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="7613:8058" placeholder="SELECT SUM(g... " />
+                <marker date="1457451216456" expanded="true" signature="7779:8034" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="7828:7947" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="8206:9023" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="8385:9001" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="8434:8548" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="8584:8707" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="8746:8882" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="9219:9819" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="9387:9795" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="9436:9558" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="9591:9710" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="10017:10522" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="10185:10496" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="10760:11250" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="10912:11224" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="11470:11702" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="11618:11682" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="11901:12207" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="11901:12208" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="12069:12187" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="12410:12839" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="12562:12819" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="13054:13061" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1457451216456" expanded="true" signature="13054:13483" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="13206:13463" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="13683:14279" placeholder="SELECT SUM(g... " />
+                <marker date="1457451216456" expanded="true" signature="13847:14259" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="13894:14014" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="14049:14170" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="14445:15047" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="14613:15027" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="14662:14782" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="14819:14942" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="15218:15476" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="15370:15456" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="15640:16090" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="15640:16091" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="15792:16070" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1457451216456" expanded="true" signature="16327:16762" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="16494:16742" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="16543:16655" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="16935:17169" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="17089:17150" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="17110:17150" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="17351:17972" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="17521:17950" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="17570:17685" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="17722:17863" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+                <marker date="1457451216456" expanded="true" signature="18183:18222" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="18183:18624" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1457451216456" expanded="true" signature="18353:18604" placeholder="SELECT paren... *" />
+                <marker date="1457451216456" expanded="true" signature="18402:18517" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testLCC.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testLCC.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8493353">
-              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -195,12 +209,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testDB.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestModule/testDB.py">
+      <file leaf-file-name="testSGAF.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding />
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -226,16 +242,16 @@
         <option value="$PROJECT_DIR$/DataModule/testclient.py" />
         <option value="$PROJECT_DIR$/DataModule/MessageSerializer.py" />
         <option value="$PROJECT_DIR$/TestModule/testclient.py" />
-        <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
         <option value="$PROJECT_DIR$/TestModule/testDB.py" />
         <option value="$PROJECT_DIR$/DataModule/imb4.py" />
-        <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
-        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
-        <option value="$PROJECT_DIR$/TestModule/testSGAF.py" />
-        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
         <option value="$PROJECT_DIR$/DataModule/__main__.py" />
+        <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
+        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
+        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
+        <option value="$PROJECT_DIR$/TestModule/testSGAF.py" />
         <option value="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
         <option value="$PROJECT_DIR$/TestModule/testLCC.py" />
+        <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
       </list>
     </option>
   </component>
@@ -275,7 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,47 +300,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,24 +349,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="testDataModuleAPI" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestModule" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DataModule" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="testSGAF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -421,6 +381,24 @@
       <module name="DataModule" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataModule/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testLCC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TestModule" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DataModule" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestModule/testLCC.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -621,17 +599,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.testclient" />
       <item index="1" class="java.lang.String" itemvalue="Python.testclient (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testSGAF" />
-      <item index="4" class="java.lang.String" itemvalue="Python.__main__" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testSGAF" />
+      <item index="3" class="java.lang.String" itemvalue="Python.__main__" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testLCC" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.__main__" />
         <item index="1" class="java.lang.String" itemvalue="Python.testSGAF" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testclient (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testclient" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testLCC" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testclient (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testclient" />
       </list>
     </recent_temporary>
   </component>
@@ -654,11 +632,12 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3342912" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26918977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29744136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3045977" sideWeight="0.49583334" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32471263" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925024" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
@@ -666,10 +645,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33491912" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -687,9 +665,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -708,8 +686,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="54" />
+          <line>183</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/DataManager.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
+          <line>311</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/LCC_LCA.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -722,19 +715,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="58" />
+      <option name="time" value="153" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -754,9 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,7 +756,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,9 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,7 +798,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,7 +840,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -883,9 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,7 +882,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -926,9 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,7 +924,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -969,9 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,13 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47352496">
-          <caret line="814" column="0" selection-start-line="814" selection-start-column="0" selection-end-line="814" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2344931">
@@ -1060,25 +1030,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43148687">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testDB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.30584708">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="258" column="0" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1086,113 +1056,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1145" column="0" selection-start-line="1145" selection-start-column="0" selection-end-line="1145" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+    <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="336" column="36" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
           <folding>
-            <marker date="1456326947963" expanded="true" signature="398:494" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1456326947963" expanded="true" signature="655:750" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1456326947963" expanded="true" signature="655:977" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1456326947963" expanded="true" signature="818:955" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="1134:1397" placeholder="SELECT COUNT... luse_landuse" />
-            <marker date="1456326947963" expanded="true" signature="1250:1375" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="1591:1758" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1456326947963" expanded="true" signature="1937:2052" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1456326947963" expanded="true" signature="2214:2498" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1456326947963" expanded="true" signature="2346:2478" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="2681:3265" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1456326947963" expanded="true" signature="2813:3241" placeholder="SELECT paren... parentfk" />
-            <marker date="1456326947963" expanded="true" signature="2862:3004" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="3011:3152" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="3457:3715" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1456326947963" expanded="true" signature="3577:3695" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="3906:4187" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1456326947963" expanded="true" signature="3906:4188" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1456326947963" expanded="true" signature="4047:4167" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="4377:4621" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="4532:4601" placeholder="SELECT attr_... gen_genericcityobject" />
-            <marker date="1456326947963" expanded="true" signature="4798:5144" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="4973:5124" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="5297:5736" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="5472:5629" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="5889:6128" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="6044:6108" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="6297:6596" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="6480:6594" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="6812:7410" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="6979:7388" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="7028:7139" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="7176:7299" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="7612:8057" placeholder="SELECT SUM(g... " />
-            <marker date="1456326947963" expanded="true" signature="7778:8033" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="7827:7946" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="8205:9022" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="8384:9000" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="8433:8547" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="8583:8706" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="8745:8881" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="9218:9818" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="9386:9794" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="9435:9557" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="9590:9709" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="10016:10521" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="10184:10495" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="10759:11249" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="10911:11223" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="11493:11799" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="11493:11800" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="11661:11779" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="12002:12431" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="12154:12411" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="12646:12653" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1456326947963" expanded="true" signature="12646:13075" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="12798:13055" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="13275:13871" placeholder="SELECT SUM(g... " />
-            <marker date="1456326947963" expanded="true" signature="13439:13851" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="13486:13606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="13641:13762" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="14037:14639" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="14205:14619" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="14254:14374" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="14411:14534" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="14810:15068" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="14962:15048" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="15232:15682" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="15232:15683" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="15384:15662" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1456326947963" expanded="true" signature="15919:16354" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="16086:16334" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="16135:16247" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="16527:16758" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="16678:16739" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="16702:16739" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="16925:17558" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1456326947963" expanded="true" signature="17095:17536" placeholder="SELECT paren... *" />
-            <marker date="1456326947963" expanded="true" signature="17144:17271" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1456326947963" expanded="true" signature="17308:17449" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+    <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="86" />
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1202,27 +1092,134 @@
     <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
+    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="71.68965">
+          <caret line="176" column="64" selection-start-line="176" selection-start-column="64" selection-end-line="176" selection-end-column="64" />
+          <folding>
+            <marker date="1457451216456" expanded="true" signature="398:494" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1457451216456" expanded="true" signature="655:750" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1457451216456" expanded="true" signature="655:977" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1457451216456" expanded="true" signature="818:955" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="1134:1397" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1457451216456" expanded="true" signature="1250:1375" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="1591:1758" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1457451216456" expanded="true" signature="1937:2052" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1457451216456" expanded="true" signature="2214:2498" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1457451216456" expanded="true" signature="2346:2478" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="2681:3265" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1457451216456" expanded="true" signature="2813:3241" placeholder="SELECT paren... parentfk" />
+            <marker date="1457451216456" expanded="true" signature="2862:3004" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="3011:3152" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="3457:3709" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1457451216456" expanded="true" signature="3574:3689" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="3900:4175" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1457451216456" expanded="true" signature="3900:4176" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1457451216456" expanded="true" signature="4038:4155" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="4365:4625" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="4536:4605" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1457451216456" expanded="true" signature="4802:5146" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="4977:5126" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="5299:5738" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="5474:5631" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="5892:6129" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="6075:6128" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="6306:6605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="6489:6603" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="6821:7411" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="6988:7389" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="7037:7148" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="7185:7300" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="7613:8058" placeholder="SELECT SUM(g... " />
+            <marker date="1457451216456" expanded="true" signature="7779:8034" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="7828:7947" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="8206:9023" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="8385:9001" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="8434:8548" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="8584:8707" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="8746:8882" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="9219:9819" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="9387:9795" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="9436:9558" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="9591:9710" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="10017:10522" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="10185:10496" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="10760:11250" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="10912:11224" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="11470:11702" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="11618:11682" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="11901:12207" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="11901:12208" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="12069:12187" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="12410:12839" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="12562:12819" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="13054:13061" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1457451216456" expanded="true" signature="13054:13483" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="13206:13463" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="13683:14279" placeholder="SELECT SUM(g... " />
+            <marker date="1457451216456" expanded="true" signature="13847:14259" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="13894:14014" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="14049:14170" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="14445:15047" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="14613:15027" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="14662:14782" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="14819:14942" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="15218:15476" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="15370:15456" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="15640:16090" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="15640:16091" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="15792:16070" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1457451216456" expanded="true" signature="16327:16762" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="16494:16742" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="16543:16655" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="16935:17169" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="17089:17150" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="17110:17150" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="17351:17972" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="17521:17950" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="17570:17685" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="17722:17863" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1457451216456" expanded="true" signature="18183:18222" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="18183:18624" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1457451216456" expanded="true" signature="18353:18604" placeholder="SELECT paren... *" />
+            <marker date="1457451216456" expanded="true" signature="18402:18517" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
+    <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8493353">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        <state vertical-scroll-proportion="-18.758621">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1457448735287" expanded="true" signature="569:897" placeholder="SELECT * FRO... veg_plantcover" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40324962">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <marker date="1457360574581" expanded="true" signature="1482:1551" placeholder="SELECT array... missing_value" />
           </folding>
         </state>
       </provider>

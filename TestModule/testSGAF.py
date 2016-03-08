@@ -9,8 +9,8 @@ def main(args=None):
     getDataMessage = { "method": "getData",
                        "type": "request",
                        "userId": "cstb",
-                       "caseId": "truite",
-                       "variantId": "test",
+                       "caseId": "hovsjo",
+                       "variantId": "greenfactoralt2",
                        "moduleId": "Stockholm_Green_Area_Factor",
                        "calculationId" : "3"
                         }
