@@ -18,7 +18,7 @@ def main(args=None):
     jsoncreateCase = json.dumps(createCaseMessage)
     print jsoncreateCase
 
-    testClient = tcpclient.TcpClient("localhost", "ecodistrict", "flachet", "truitos")
+    testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
     testClient.handle_string_event('data event', jsoncreateCase)
 
 

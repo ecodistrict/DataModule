@@ -45,25 +45,20 @@ class TcpClient:
         module_id = parsed_json.get('moduleId', 'null')
 
 
-
         if method == 'createCase':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
             if case_id == 'null':
                 returnDict["status"] = "failed - no case id"
-            elif self._pdm.createSchema(case_id):
-                returnDict["status"] = "success"
             else:
-                returnDict["status"] = "failed - can't create schemas"
+                returnDict["status"] = self._pdm.createSchema(case_id)
             self.write_data(json.dumps(returnDict))
 
         elif method == 'deleteCase':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
             if case_id != 'null':
                 returnDict["status"] = "failed - no case id"
-            elif self._pdm.deleteSchema(case_id):
-                returnDict["status"] = "success"
             else:
-                returnDict["status"] = "failed - can't delete schemas"
+                returnDict["status"] = self._pdm.deleteSchema(case_id)
             self.write_data(json.dumps(returnDict))
 
         elif method == 'createVariant':
@@ -72,10 +67,8 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 returnDict["status"] = "failed - no variant id"
-            elif self._pdm.createSchema(schema_id):
-                returnDict["status"] = "succes"
             else:
-                returnDict["status"] = "failed - can't create schema"
+                returnDict["status"] = self._pdm.createSchema(schema_id)
             self.write_data(json.dumps(returnDict))
 
         elif method == 'deleteVariant':
@@ -84,10 +77,8 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 returnDict["status"] = "failed - no variant id"
-            elif self._pdm.deleteSchema(schema_id):
-                returnDict["status"] = "succes"
             else:
-                returnDict["status"] = "failed - can't delete schema"
+                returnDict["status"] = self._pdm.deleteSchema(schema_id)
             self.write_data(json.dumps(returnDict))
 
         elif method == 'getData':

@@ -62,9 +62,34 @@ class PostresDataManager:
         return data
 
     def createSchema(self, schemaID):
+        if self.checkIfSchemaExists(schemaID):
+            return "Success : schema already created before"
         request = ("""SELECT clone_schema('public','{}', TRUE);""").format(schemaID)
-        return self._executeRequest(request)
+        if self._executeRequest(request):
+            return "Success - schema created"
+        else:
+            return "Failed - can't create schema"
 
     def deleteSchema(self, schemaID):
+        if self.checkIfSchemaExists(schemaID):
+            return "Success - schema already deleted before"
         request = ("""SELECT drop_schemas('{}');""").format(schemaID)
-        return self._executeRequest(request)
+        if self._executeRequest(request):
+            return "Success - schema deleted"
+        else:
+            return "Failed - can't delete schema"
+
+    def checkIfSchemaExists(self, schemaID):
+        request = ("""SELECT schema_name FROM information_schema.schemata WHERE schema_name = '{}';""").format(schemaID);
+        ret = False
+        if self.isConnected:
+            cur = self.conn.cursor()
+            try:
+                cur.execute(request)
+                data = cur.fetchone()
+                if data[0] is not None:
+                    ret = True
+            except:
+                pass
+            cur.close()
+        return ret
