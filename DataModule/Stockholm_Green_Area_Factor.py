@@ -293,7 +293,7 @@ class Module_SGAF:
 
 
     def getData(self):
-        self.responseData["Total land area"] = self._get_total_land_area()
+        self.responseData["Total land area"] = 485801.0  # self._get_total_land_area()    TRUITE \todo put it in db !!
 
         self.responseData["Unsupported ground greenery"] = self._get_unsupported_ground_greenery()
         self.responseData["Plant bed (>800 mm)"] = self._get_plant_bed_with_height(800, 100000)
