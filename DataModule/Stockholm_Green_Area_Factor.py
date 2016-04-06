@@ -1,12 +1,9 @@
+import Abstract_Module
 
-class Module_SGAF:
+class Module_SGAF(Abstract_Module.AbstractModule):
     """
         class for getting data for Stockholm Green Area Factory Module
     """
-    def __init__(self, postresDataManager, schema_id):
-        self.schemaID = schema_id
-        self._pdm = postresDataManager
-        self.responseData = {}
 
     # todo TEST SCHEMA VALID FOR SQL INJECTION !!
     def _get_generic_count_attribute(self, filtered_class):
