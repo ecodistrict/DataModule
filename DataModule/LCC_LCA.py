@@ -18,7 +18,7 @@ class Module_LCC(Abstract_Module.AbstractModule):
     """
 
     def _getBuildingsData(self):
-        request = self.createSchemaRequest("SELECT attr_gml_id FROM bldg_building;")
+        request = self.createSchemaRequest("""SELECT attr_gml_id FROM bldg_building;""")
         bldg_id_list = self._pdm.getDataListValues(request)
         for a in bldg_id_list:
             request2 = """ """

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataModule/Abstract_Module.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/LCC_LCA.py" afterPath="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" afterPath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
@@ -21,14 +20,21 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1459755914425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1456134076894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1459949419525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1459949565677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1459327188281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1457456334790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1459955469356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient__1_.coverage" NAME="testclient (1) Coverage Results" MODIFIED="1456144434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -36,24 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="340">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="43" />
               <folding>
-                <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-                <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+                <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+                <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+            <state relative-caret-position="357">
+              <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -103,103 +109,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="50" />
-              <folding>
-                <marker date="1459949197111" expanded="true" signature="294:390" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1459949197111" expanded="true" signature="551:646" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1459949197111" expanded="true" signature="551:873" placeholder="SELECT COUNT... gen_genericcityobject" />
-                <marker date="1459949197111" expanded="true" signature="714:851" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="1030:1293" placeholder="SELECT COUNT... luse_landuse" />
-                <marker date="1459949197111" expanded="true" signature="1146:1271" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="1487:1654" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1459949197111" expanded="true" signature="1833:1948" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1459949197111" expanded="true" signature="2110:2394" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1459949197111" expanded="true" signature="2242:2374" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="2577:3161" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1459949197111" expanded="true" signature="2709:3137" placeholder="SELECT paren... parentfk" />
-                <marker date="1459949197111" expanded="true" signature="2758:2900" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="2907:3048" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="3353:3605" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1459949197111" expanded="true" signature="3470:3585" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="3796:4071" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1459949197111" expanded="true" signature="3796:4072" placeholder="SELECT COUNT... wtr_watersurface" />
-                <marker date="1459949197111" expanded="true" signature="3934:4051" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="4261:4521" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="4432:4501" placeholder="SELECT attr_... gen_genericcityobject" />
-                <marker date="1459949197111" expanded="true" signature="4698:5042" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="4873:5022" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="5195:5634" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="5370:5527" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="5788:6025" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="5971:6024" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="6202:6501" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="6385:6499" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="6717:7307" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="6884:7285" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="6933:7044" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="7081:7196" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="7509:7954" placeholder="SELECT SUM(g... " />
-                <marker date="1459949197111" expanded="true" signature="7675:7930" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="7724:7843" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="8102:8919" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="8281:8897" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="8330:8444" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="8480:8603" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="8642:8778" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="9115:9715" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="9283:9691" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="9332:9454" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="9487:9606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="9913:10418" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="10081:10392" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="10656:11146" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="10808:11120" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="11366:11598" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="11514:11578" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="11797:12103" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="11797:12104" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="11965:12083" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="12306:12735" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="12458:12715" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="12950:12957" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-                <marker date="1459949197111" expanded="true" signature="12950:13379" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="13102:13359" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="13579:14175" placeholder="SELECT SUM(g... " />
-                <marker date="1459949197111" expanded="true" signature="13743:14155" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="13790:13910" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="13945:14066" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="14341:14943" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="14509:14923" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="14558:14678" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="14715:14838" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="15114:15372" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="15266:15352" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="15536:15986" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="15536:15987" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="15688:15966" placeholder="SELECT attr_... veg_plantcover" />
-                <marker date="1459949197111" expanded="true" signature="16223:16658" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="16390:16638" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="16439:16551" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="16831:17065" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="16985:17046" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="17006:17046" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="17247:17868" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="17417:17846" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="17466:17581" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="17618:17759" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-                <marker date="1459949197111" expanded="true" signature="18079:18118" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="18079:18520" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-                <marker date="1459949197111" expanded="true" signature="18249:18500" placeholder="SELECT paren... *" />
-                <marker date="1459949197111" expanded="true" signature="18298:18413" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Abstract_Module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/Abstract_Module.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -217,6 +126,104 @@
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="344" column="0" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+              <folding>
+                <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1459955407276" expanded="true" signature="586:678" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1459955407276" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1459955407276" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+                <marker date="1459955407276" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1459955407276" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1459955407276" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1459955407276" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1459955407276" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+                <marker date="1459955407276" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1459955407276" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1459955407276" expanded="true" signature="3692:3962" placeholder="SELECT COUNT... wtr_watersurface" />
+                <marker date="1459955407276" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+                <marker date="1459955407276" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... " />
+                <marker date="1459955407276" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="7821:8605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="7997:8604" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="8046:8157" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="8193:8313" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="8352:8485" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="8761:9329" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="8926:9328" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="8975:9094" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="9127:9243" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="9501:9991" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="9666:9965" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="10181:10657" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="10330:10631" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="10842:11049" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="10987:11048" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="11216:11516" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="11216:11517" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="11381:11496" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="11716:12130" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="11865:12110" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="12297:12304" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1459955407276" expanded="true" signature="12297:12692" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="12446:12691" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="12838:13406" placeholder="SELECT SUM(g... " />
+                <marker date="1459955407276" expanded="true" signature="12999:13405" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="13046:13163" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="13198:13316" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="13548:14122" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="13713:14121" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="13762:13879" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="13916:14036" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="14269:14502" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="14418:14501" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="14657:15092" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="14657:15093" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="14806:15072" placeholder="SELECT attr_... veg_plantcover" />
+                <marker date="1459955407276" expanded="true" signature="15282:15711" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="15446:15691" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="15495:15604" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="15882:16088" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="16033:16087" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="16054:16087" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="16261:16873" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="16428:16851" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="16477:16589" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="16626:16764" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+                <marker date="1459955407276" expanded="true" signature="17066:17102" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="17066:17501" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+                <marker date="1459955407276" expanded="true" signature="17233:17481" placeholder="SELECT paren... *" />
+                <marker date="1459955407276" expanded="true" signature="17282:17394" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
               </folding>
             </state>
           </provider>
@@ -253,9 +260,9 @@
         <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
         <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
         <option value="$PROJECT_DIR$/DataModule/Abstrac_Module.py" />
-        <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
         <option value="$PROJECT_DIR$/DataModule/Abstract_Module.py" />
         <option value="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
+        <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
       </list>
     </option>
   </component>
@@ -354,7 +361,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.testLCC">
+  <component name="RunManager" selected="Python.testSGAF">
     <configuration default="false" name="testclient (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -662,10 +669,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testLCC" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__main__" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testSGAF" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testSGAF" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testLCC" />
+        <item index="2" class="java.lang.String" itemvalue="Python.__main__" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
         <item index="4" class="java.lang.String" itemvalue="Python.testclient (1)" />
       </list>
     </recent_temporary>
@@ -746,17 +753,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>180</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>308</line>
+          <line>296</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>292</line>
+          <line>280</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -769,6 +771,11 @@
           <line>22</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
+          <line>344</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -780,7 +787,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="162" />
+      <option name="time" value="163" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -790,8 +797,8 @@
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -847,7 +854,7 @@
         <state relative-caret-position="14807">
           <caret line="878" column="11" selection-start-line="878" selection-start-column="11" selection-end-line="878" selection-end-column="11" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
             <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
         </state>
@@ -858,7 +865,7 @@
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,8 +875,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -879,8 +886,8 @@
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -936,7 +943,7 @@
         <state relative-caret-position="14807">
           <caret line="878" column="11" selection-start-line="878" selection-start-column="11" selection-end-line="878" selection-end-column="11" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
             <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
         </state>
@@ -947,7 +954,7 @@
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,92 +964,93 @@
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <marker date="1459949197111" expanded="true" signature="294:390" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:646" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:873" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="714:851" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1030:1293" placeholder="SELECT COUNT... luse_landuse" />
-            <marker date="1459949197111" expanded="true" signature="1146:1271" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1487:1654" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="1833:1948" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2110:2394" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2242:2374" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2577:3161" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2709:3137" placeholder="SELECT paren... parentfk" />
-            <marker date="1459949197111" expanded="true" signature="2758:2900" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2907:3048" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3353:3605" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3470:3585" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3796:4071" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3796:4072" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3934:4051" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="4261:4521" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4432:4501" placeholder="SELECT attr_... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="4698:5042" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4873:5022" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5195:5634" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5370:5527" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5788:6025" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5971:6024" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6202:6501" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6385:6499" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6717:7307" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6884:7285" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="6933:7044" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7081:7196" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7509:7954" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="7675:7930" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="7724:7843" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8102:8919" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="8281:8897" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="8330:8444" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8480:8603" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8642:8778" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9115:9715" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="9283:9691" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="9332:9454" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9487:9606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9913:10418" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10081:10392" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="10656:11146" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10808:11120" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11366:11598" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11514:11578" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11797:12103" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11797:12104" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11965:12083" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="12306:12735" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="12458:12715" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="12950:12957" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="12950:13379" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="13102:13359" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="13579:14175" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="13743:14155" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="13790:13910" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="13945:14066" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14341:14943" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="14509:14923" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="14558:14678" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14715:14838" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="15114:15372" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15266:15352" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="15536:15986" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15536:15987" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15688:15966" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="16223:16658" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16390:16638" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="16439:16551" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="16831:17065" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16985:17046" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17006:17046" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17247:17868" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="17417:17846" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17466:17581" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17618:17759" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18118" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18520" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18249:18500" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="18298:18413" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:678" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1459955407276" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1459955407276" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3692:3962" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7821:8605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="7997:8604" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8046:8157" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8193:8313" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8352:8485" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8761:9329" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="8926:9328" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8975:9094" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9127:9243" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9501:9991" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="9666:9965" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10181:10657" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10330:10631" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10842:11049" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10987:11048" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="11216:11516" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11216:11517" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11381:11496" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="11716:12130" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11865:12110" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12297:12304" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="12297:12692" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="12446:12691" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12838:13406" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="12999:13405" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13046:13163" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13198:13316" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13548:14122" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="13713:14121" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13762:13879" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13916:14036" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="14269:14502" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14418:14501" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="14657:15092" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14657:15093" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14806:15072" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="15282:15711" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="15446:15691" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="15495:15604" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="15882:16088" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16033:16087" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16054:16087" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16261:16873" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16428:16851" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16477:16589" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16626:16764" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17102" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17501" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17233:17481" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="17282:17394" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +1070,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1072,8 +1080,8 @@
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -1119,7 +1127,7 @@
         <state relative-caret-position="221">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1129,92 +1137,93 @@
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <marker date="1459949197111" expanded="true" signature="294:390" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:646" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:873" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="714:851" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1030:1293" placeholder="SELECT COUNT... luse_landuse" />
-            <marker date="1459949197111" expanded="true" signature="1146:1271" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1487:1654" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="1833:1948" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2110:2394" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2242:2374" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2577:3161" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2709:3137" placeholder="SELECT paren... parentfk" />
-            <marker date="1459949197111" expanded="true" signature="2758:2900" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2907:3048" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3353:3605" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3470:3585" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3796:4071" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3796:4072" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3934:4051" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="4261:4521" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4432:4501" placeholder="SELECT attr_... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="4698:5042" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4873:5022" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5195:5634" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5370:5527" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5788:6025" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5971:6024" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6202:6501" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6385:6499" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6717:7307" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6884:7285" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="6933:7044" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7081:7196" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7509:7954" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="7675:7930" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="7724:7843" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8102:8919" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="8281:8897" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="8330:8444" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8480:8603" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8642:8778" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9115:9715" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="9283:9691" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="9332:9454" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9487:9606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9913:10418" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10081:10392" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="10656:11146" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10808:11120" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11366:11598" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11514:11578" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11797:12103" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11797:12104" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11965:12083" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="12306:12735" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="12458:12715" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="12950:12957" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="12950:13379" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="13102:13359" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="13579:14175" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="13743:14155" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="13790:13910" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="13945:14066" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14341:14943" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="14509:14923" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="14558:14678" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14715:14838" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="15114:15372" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15266:15352" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="15536:15986" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15536:15987" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15688:15966" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="16223:16658" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16390:16638" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="16439:16551" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="16831:17065" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16985:17046" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17006:17046" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17247:17868" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="17417:17846" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17466:17581" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17618:17759" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18118" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18520" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18249:18500" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="18298:18413" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:678" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1459955407276" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1459955407276" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3692:3962" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7821:8605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="7997:8604" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8046:8157" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8193:8313" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8352:8485" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8761:9329" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="8926:9328" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8975:9094" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9127:9243" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9501:9991" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="9666:9965" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10181:10657" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10330:10631" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10842:11049" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10987:11048" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="11216:11516" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11216:11517" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11381:11496" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="11716:12130" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11865:12110" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12297:12304" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="12297:12692" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="12446:12691" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12838:13406" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="12999:13405" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13046:13163" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13198:13316" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13548:14122" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="13713:14121" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13762:13879" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13916:14036" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="14269:14502" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14418:14501" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="14657:15092" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14657:15093" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14806:15072" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="15282:15711" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="15446:15691" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="15495:15604" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="15882:16088" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16033:16087" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16054:16087" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16261:16873" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16428:16851" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16477:16589" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16626:16764" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17102" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17501" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17233:17481" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="17282:17394" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
           </folding>
         </state>
       </provider>
@@ -1234,17 +1243,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1274,7 +1273,7 @@
         <state relative-caret-position="14807">
           <caret line="878" column="11" selection-start-line="878" selection-start-column="11" selection-end-line="878" selection-end-column="11" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
             <marker date="1456136209807" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
         </state>
@@ -1285,7 +1284,7 @@
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1311,7 +1310,7 @@
         <state relative-caret-position="323">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1326,101 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="50" />
-          <folding>
-            <marker date="1459949197111" expanded="true" signature="294:390" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:646" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="551:873" placeholder="SELECT COUNT... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="714:851" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1030:1293" placeholder="SELECT COUNT... luse_landuse" />
-            <marker date="1459949197111" expanded="true" signature="1146:1271" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="1487:1654" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="1833:1948" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2110:2394" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2242:2374" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2577:3161" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="2709:3137" placeholder="SELECT paren... parentfk" />
-            <marker date="1459949197111" expanded="true" signature="2758:2900" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="2907:3048" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3353:3605" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3470:3585" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="3796:4071" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3796:4072" placeholder="SELECT COUNT... wtr_watersurface" />
-            <marker date="1459949197111" expanded="true" signature="3934:4051" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="4261:4521" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4432:4501" placeholder="SELECT attr_... gen_genericcityobject" />
-            <marker date="1459949197111" expanded="true" signature="4698:5042" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="4873:5022" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5195:5634" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5370:5527" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="5788:6025" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="5971:6024" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6202:6501" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6385:6499" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="6717:7307" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="6884:7285" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="6933:7044" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7081:7196" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="7509:7954" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="7675:7930" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="7724:7843" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8102:8919" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="8281:8897" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="8330:8444" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8480:8603" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="8642:8778" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9115:9715" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="9283:9691" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="9332:9454" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9487:9606" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="9913:10418" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10081:10392" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="10656:11146" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="10808:11120" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11366:11598" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11514:11578" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="11797:12103" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11797:12104" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="11965:12083" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="12306:12735" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="12458:12715" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="12950:12957" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
-            <marker date="1459949197111" expanded="true" signature="12950:13379" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="13102:13359" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="13579:14175" placeholder="SELECT SUM(g... " />
-            <marker date="1459949197111" expanded="true" signature="13743:14155" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="13790:13910" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="13945:14066" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14341:14943" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="14509:14923" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="14558:14678" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="14715:14838" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="15114:15372" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15266:15352" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="15536:15986" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15536:15987" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="15688:15966" placeholder="SELECT attr_... veg_plantcover" />
-            <marker date="1459949197111" expanded="true" signature="16223:16658" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16390:16638" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="16439:16551" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="16831:17065" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="16985:17046" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17006:17046" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17247:17868" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="17417:17846" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="17466:17581" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="17618:17759" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18118" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18079:18520" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
-            <marker date="1459949197111" expanded="true" signature="18249:18500" placeholder="SELECT paren... *" />
-            <marker date="1459949197111" expanded="true" signature="18298:18413" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/Abstract_Module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1431,11 +1335,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="340">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="43" />
           <folding>
-            <marker date="1459949441245" expanded="true" signature="521:558" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949441245" expanded="true" signature="521:559" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="344" column="0" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+          <folding>
+            <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:678" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1459955407276" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1459955407276" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3692:3962" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7821:8605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="7997:8604" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8046:8157" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8193:8313" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8352:8485" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8761:9329" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="8926:9328" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8975:9094" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9127:9243" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9501:9991" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="9666:9965" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10181:10657" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10330:10631" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10842:11049" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10987:11048" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="11216:11516" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11216:11517" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11381:11496" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="11716:12130" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11865:12110" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12297:12304" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="12297:12692" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="12446:12691" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12838:13406" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="12999:13405" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13046:13163" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13198:13316" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13548:14122" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="13713:14121" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13762:13879" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13916:14036" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="14269:14502" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14418:14501" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="14657:15092" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14657:15093" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14806:15072" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="15282:15711" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="15446:15691" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="15495:15604" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="15882:16088" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16033:16087" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16054:16087" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16261:16873" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16428:16851" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16477:16589" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16626:16764" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17102" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17501" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17233:17481" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="17282:17394" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

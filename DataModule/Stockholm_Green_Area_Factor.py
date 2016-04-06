@@ -7,30 +7,28 @@ class Module_SGAF(Abstract_Module.AbstractModule):
 
     # todo TEST SCHEMA VALID FOR SQL INJECTION !!
     def _get_generic_count_attribute(self, filtered_class):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.gen_genericcityobject
-                    WHERE gen_class='{}';""".format(self.schemaID, filtered_class)
+        request = self.createSchemaRequest( """SELECT COUNT(attr_gml_id) FROM gen_genericcityobject
+                    WHERE gen_class='{}';""".format(filtered_class) )
         return self._pdm.getDataValue(request, int)
 
     def _get_bird_feeder_experential(self):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.gen_genericcityobject
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM gen_genericcityobject
                       WHERE gen_class='ECD_GENCO_BIRD_FEEDER' AND attr_gml_id IN (
-                        SELECT parentfk FROM {}.gen_genericcityobject_gen_intattribute
-                          WHERE attr_name='isExperiential' AND gen_value=1
-                    );""".format(self.schemaID, self.schemaID)
+                        SELECT parentfk FROM gen_genericcityobject_gen_intattribute
+                          WHERE attr_name='isExperiential' AND gen_value=1 );""")
         return self._pdm.getDataValue(request, int)
 
     def _get_impermeable_surfaces(self):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.luse_landuse
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM luse_landuse
                       WHERE attr_gml_id IN (
-                        SELECT parentfk FROM {}.luse_landuse_gen_intattribute
-                          WHERE attr_name='isPermeable' AND gen_value=0
-                    );""".format(self.schemaID, self.schemaID)
+                        SELECT parentfk FROM luse_landuse_gen_intattribute
+                          WHERE attr_name='isPermeable' AND gen_value=0);""")
         return self._pdm.getDataValue(request, int)
 
     def _get_count_tree_with_trunk_parameter(self, minDiameter, maxDiameter):
-        request = """SELECT COUNT(*) FROM {}.veg_solitaryvegetationobject
+        request = self.createSchemaRequest("""SELECT COUNT(*) FROM veg_solitaryvegetationobject
                       WHERE veg_trunkdiameter_attr_uom='#cm' AND veg_trunkdiameter >= {} AND veg_trunkdiameter <= {};
-                  """.format(self.schemaID, minDiameter, maxDiameter)
+                  """.format(minDiameter, maxDiameter) )
         return self._pdm.getDataValue(request, int)
 
     def _get_count_oaks(self):
@@ -39,258 +37,248 @@ class Module_SGAF(Abstract_Module.AbstractModule):
         return self._pdm.getDataValue(request, int)
 
     def _get_count_vegetary_attribute(self, filtered_class):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.veg_solitaryvegetationobject
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM veg_solitaryvegetationobject
                       WHERE attr_gml_id IN (
-                        SELECT parentfk FROM {}.veg_solitaryvegetationobject_gen_intattribute
+                        SELECT parentfk FROM veg_solitaryvegetationobject_gen_intattribute
                           WHERE attr_name='{}' AND gen_value=1
-                  );""".format(self.schemaID, self.schemaID, filtered_class)
+                  );""".format(filtered_class) )
         return self._pdm.getDataValue(request, int)
 
     def _get_count_fruit_blooming_attribute(self):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.veg_solitaryvegetationobject
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM veg_solitaryvegetationobject
                       WHERE attr_gml_id IN (
                         SELECT parentfk FROM (
-                          SELECT parentfk FROM {}.veg_solitaryvegetationobject_gen_intattribute
-                            WHERE attr_name='isBlooming' AND gen_value=1 UNION SELECT parentfk FROM {}.veg_solitaryvegetationobject_gen_intattribute
+                          SELECT parentfk FROM veg_solitaryvegetationobject_gen_intattribute
+                            WHERE attr_name='isBlooming' AND gen_value=1 UNION SELECT parentfk FROM veg_solitaryvegetationobject_gen_intattribute
                               WHERE attr_name='isFruit' AND gen_value=1
-                          ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) > 0
-                      );""".format(self.schemaID, self.schemaID, self.schemaID)
+                          ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) > 0);""" )
         return self._pdm.getDataValue(request, int)
 
     def _get_count_water_filtered_name(self, filtered_name):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_waterbody
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM wtr_waterbody
                       WHERE attr_gml_id IN (
-                        SELECT parentfk FROM {}.wtr_waterbody_gen_intattribute
-                          WHERE attr_name='' AND gen_value=1
-                  );""".format(self.schemaID, self.schemaID, filtered_name)
+                        SELECT parentfk FROM wtr_waterbody_gen_intattribute
+                          WHERE attr_name='{}' AND gen_value=1
+                  );""".format(filtered_name) )
         return self._pdm.getDataValue(request, int)
 
     def _get_count_filtered_fountains(self, filtered_name):
-        request = """SELECT COUNT(attr_gml_id) FROM {}.wtr_waterbody
+        request = self.createSchemaRequest("""SELECT COUNT(attr_gml_id) FROM wtr_waterbody
                       WHERE wtr_class='1230' AND attr_gml_id IN (
-                        SELECT parentfk FROM {}.wtr_waterbody_gen_intattribute
+                        SELECT parentfk FROM wtr_waterbody_gen_intattribute
                           WHERE attr_name='{}' AND gen_value=1
-                  );""".format(self.schemaID, self.schemaID, filtered_name)
+                  );""".format(filtered_name) )
         return self._pdm.getDataValue(request, int)
 
 
     def _get_generic_sum_attribute(self, filtered_class):
-        request = """SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM gen_genericcityobject_gen_doubleattribute
                     WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                      SELECT attr_gml_id FROM {}.gen_genericcityobject WHERE gen_class='{}'
-                  );""".format(self.schemaID, self.schemaID, filtered_class)
+                      SELECT attr_gml_id FROM gen_genericcityobject WHERE gen_class='{}'
+                  );""".format(filtered_class) )
         return self._pdm.getDataValue(request, float)
 
     def _get_balcony_terrace_growing(self):
-        request ="""SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM gen_genericcityobject_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM {}.gen_genericcityobject_gen_intattribute
-                          WHERE attr_name='isBalconyTerraceForGrowing' AND gen_value=1
-                  );""".format(self.schemaID, self.schemaID)
+                        SELECT parentfk FROM gen_genericcityobject_gen_intattribute
+                          WHERE attr_name='isBalconyTerraceForGrowing' AND gen_value=1);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_runoff_surfaces(self):
-        request ="""SELECT SUM(gen_value) FROM {}.gen_genericcityobject_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM gen_genericcityobject_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM {}.gen_genericcityobject_gen_intattribute
+                        SELECT parentfk FROM gen_genericcityobject_gen_intattribute
                           WHERE attr_name='isRunoffFromImpermeableToVegetated' AND gen_value=1
-                        ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
-                  );""".format(self.schemaID, self.schemaID)
+                        ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_total_land_area(self):
-        request = """SELECT SUM(gen_value) total_land_area FROM {}.luse_landuse_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) total_land_area FROM luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND  gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM {}.luse_landuse_gen_intattribute);""".format(self.schemaID, self.schemaID)
+                        SELECT parentfk FROM luse_landuse_gen_intattribute);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_total_filterd_land_area(self, filtered_name):
-        request = """SELECT SUM(gen_value) total_land_area FROM {}.luse_landuse_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) total_land_area FROM luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND  gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM {}.luse_landuse_gen_intattribute
-                        WHERE attr_name='{}' AND gen_value=1 );""".format(self.schemaID, self.schemaID, filtered_name)
+                        SELECT parentfk FROM luse_landuse_gen_intattribute
+                        WHERE attr_name='{}' AND gen_value=1 );""".format(filtered_name) )
         return self._pdm.getDataValue(request, float)
 
-    def _get_landuse_sum_doubled_filtered(self, filtered_anme_1, filtered_name_2):
-        request = """SELECT SUM(gen_value) FROM {}.luse_landuse_gen_doubleattribute
+    def _get_landuse_sum_doubled_filtered(self, filtered_name_1, filtered_name_2):
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM luse_landuse_gen_doubleattribute
                        WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.luse_landuse_gen_intattribute
+                          SELECT * FROM luse_landuse_gen_intattribute
                             WHERE attr_name='{}' AND gen_value=1 UNION
-                              SELECT * FROM {}.luse_landuse_gen_intattribute
+                              SELECT * FROM luse_landuse_gen_intattribute
                                 WHERE attr_name='{}' AND gen_value=1
                           ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
-                    );""".format(self.schemaID, self.schemaID, filtered_anme_1, self.schemaID, filtered_name_2)
+                    );""".format(filtered_name_1, filtered_name_2) )
         return self._pdm.getDataValue(request, float)
 
     def _get_concrete_slabs(self):
-        request = """SELECT SUM(gen_value) FROM {}.luse_landuse_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.luse_landuse_gen_intattribute
+                          SELECT * FROM luse_landuse_gen_intattribute
                             WHERE attr_name='isConcrete' AND gen_value=1
-                        ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
-                      );""".format(self.schemaID, self.schemaID)
+                        ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_dry_areas(self):
-        request = """SELECT SUM(gen_value) Sum_areas_dr FROM {}.luse_landuse_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) Sum_areas_dr FROM luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.luse_landuse_gen_intattribute
+                          SELECT * FROM luse_landuse_gen_intattribute
                             WHERE attr_name='isDry' AND gen_value=1 UNION
-                             SELECT * FROM {}.luse_landuse_gen_intattribute
+                             SELECT * FROM luse_landuse_gen_intattribute
                               WHERE attr_name='isWithPlants' AND gen_value=1 UNION
-                                SELECT * FROM {}.luse_landuse_gen_intattribute
+                                SELECT * FROM luse_landuse_gen_intattribute
                                   WHERE attr_name='isFilledWithRainWater' AND gen_value=1
-                          ) AS DRY_AREAS_WITH_PLANTS_FILL_WITH_RAIN_WATER GROUP BY parentfk HAVING count(parentfk) = 3
-                    );""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID)
+                          ) AS DRY_AREAS_WITH_PLANTS_FILL_WITH_RAIN_WATER GROUP BY parentfk HAVING count(parentfk) = 3);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_unsupported_ground_greenery(self):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.veg_plantcover_gen_intattribute
+                          SELECT * FROM veg_plantcover_gen_intattribute
                           WHERE attr_name='isUnsupported' AND gen_value=1 UNION
-                          SELECT * FROM {}.veg_plantcover_gen_intattribute
+                          SELECT * FROM veg_plantcover_gen_intattribute
                           WHERE attr_name='isOnGround' AND gen_value=1
-                          ) AS AN_ALIAS GROUP BY parentfk HAVING count(parentfk) = 2
-                      ); """.format(self.schemaID, self.schemaID, self.schemaID)
+                          ) AS AN_ALIAS GROUP BY parentfk HAVING count(parentfk) = 2);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_plant_bed_with_height(self, minHeight, maxHeight):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover INNER JOIN
-                        {}.veg_plantcover_gen_intattribute ON {}.veg_plantcover.attr_gml_id = {}.veg_plantcover_gen_intattribute.parentfk
+                        SELECT attr_gml_id FROM veg_plantcover INNER JOIN
+                        veg_plantcover_gen_intattribute ON veg_plantcover.attr_gml_id = veg_plantcover_gen_intattribute.parentfk
                         WHERE attr_name='isOnGround' AND gen_value=1 AND veg_averageheight > {} AND veg_averageheight < {}
-                      );""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID, minHeight, maxHeight)
+                      );""".format(minHeight, maxHeight) )
         return self._pdm.getDataValue(request, float)
 
     def _get_green_roof(self, minHeight, maxHeight):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover INNER JOIN
-                          {}.veg_plantcover_gen_intattribute ON {}.veg_plantcover.attr_gml_id ={}.veg_plantcover_gen_intattribute.parentfk
+                        SELECT attr_gml_id FROM veg_plantcover INNER JOIN
+                          veg_plantcover_gen_intattribute ON veg_plantcover.attr_gml_id = veg_plantcover_gen_intattribute.parentfk
                           WHERE attr_name='isOnRoof' AND gen_value=1 AND veg_averageheight > {} AND veg_averageheight < {}
-                      );""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID, minHeight, maxHeight)
+                      );""".format(minHeight, maxHeight) )
         return self._pdm.getDataValue(request, float)
 
+    # TRUITE
     def _get_general_bushes(self):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                     WHERE attr_name='area' AND parentfk IN (
-                      SELECT attr_gml_id FROM {}.veg_plantcover WHERE veg_class='1080'
-                  );""".format(self.schemaID, self.schemaID)
-        return 100.0 # self._pdm.getDataValue(request, float)  TRUITE \todo
+                      SELECT attr_gml_id FROM veg_plantcover WHERE veg_class='1080');""" )
+        return self._pdm.getDataValue(request, float)
 
     def _get_sum_vegetation_filtered(self, filtered_name):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM {}.veg_plantcover_gen_intattribute
+                        SELECT parentfk FROM veg_plantcover_gen_intattribute
                           WHERE attr_name='{}' AND gen_value=1
-                  );""".format(self.schemaID, self.schemaID, filtered_name)
+                  );""".format(filtered_name) )
         return self._pdm.getDataValue(request, float)
 
     def _get_sum_vegetation_join_name_filtered(self, filtered_class):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover INNER JOIN {}.veg_plantcover_gen_intattribute
-                          ON {}.veg_plantcover.attr_gml_id = {}.veg_plantcover_gen_intattribute.parentfk
+                        SELECT attr_gml_id FROM veg_plantcover INNER JOIN veg_plantcover_gen_intattribute
+                          ON veg_plantcover.attr_gml_id = veg_plantcover_gen_intattribute.parentfk
                             WHERE attr_name='{}' AND gen_value=1
-                  )""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID, filtered_class)
+                  )""".format(filtered_class) )
         return self._pdm.getDataValue(request, float)
 
     def _get_grass_ball_games(self):
-        request = """SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover INNER JOIN {}.veg_plantcover_gen_intattribute ON {}.veg_plantcover.attr_gml_id = {}.veg_plantcover_gen_intattribute.parentfk
-                         WHERE attr_name='isPlayable' AND gen_value=1 AND veg_class='1040'
-                  )""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID)
+                        SELECT attr_gml_id FROM veg_plantcover INNER JOIN veg_plantcover_gen_intattribute ON veg_plantcover.attr_gml_id = veg_plantcover_gen_intattribute.parentfk
+                         WHERE attr_name='isPlayable' AND gen_value=1 AND veg_class='1040')""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_gardening_in_yards(self):
-        request ="""SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                     WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                       SELECT parentfk FROM (
-                        SELECT * FROM {}.veg_plantcover_gen_intattribute
+                        SELECT * FROM veg_plantcover_gen_intattribute
                           WHERE attr_name='isGardening' AND gen_value=1 UNION
-                            SELECT * FROM {}.veg_plantcover_gen_intattribute
+                            SELECT * FROM veg_plantcover_gen_intattribute
                               WHERE attr_name='isInYard' AND gen_value=1
-                          ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
-                  );""".format(self.schemaID, self.schemaID, self.schemaID)
+                          ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_visible_green(self):
-        request ="""SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.veg_plantcover_gen_intattribute
+                          SELECT * FROM veg_plantcover_gen_intattribute
                             WHERE attr_name='isVisible' AND gen_value=1 UNION
-                              SELECT * FROM {}.veg_plantcover_gen_intattribute
+                              SELECT * FROM veg_plantcover_gen_intattribute
                                 WHERE attr_name='isOnRoof' AND gen_value=1
-                      ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
-                  );""".format(self.schemaID, self.schemaID, self.schemaID)
+                      ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_floral_arrangement(self):
-        request ="""SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover WHERE veg_class='ECD_VEG_FLORAL_ARRANGEMENT'
-                  );""".format(self.schemaID, self.schemaID)
+                        SELECT attr_gml_id FROM veg_plantcover WHERE veg_class='ECD_VEG_FLORAL_ARRANGEMENT');""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_sum_bushes(self, filtered_class):
-        request ="""SELECT SUM(gen_value) FROM {}.veg_plantcover_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM veg_plantcover_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT attr_gml_id FROM {}.veg_plantcover INNER JOIN {}.veg_plantcover_gen_intattribute ON
-                          {}.veg_plantcover.attr_gml_id = {}.veg_plantcover_gen_intattribute.parentfk
+                        SELECT attr_gml_id FROM veg_plantcover INNER JOIN veg_plantcover_gen_intattribute ON
+                          veg_plantcover.attr_gml_id = veg_plantcover_gen_intattribute.parentfk
                             WHERE attr_name='{}' AND gen_value=1 AND veg_class='1080'
-                  );""".format(self.schemaID, self.schemaID, self.schemaID, self.schemaID, self.schemaID, filtered_class)
+                  );""".format(filtered_class) )
         return self._pdm.getDataValue(request, float)
 
     def _get_sum_water_body_filtered(self, filtered_name):
-        request ="""SELECT SUM(gen_value) FROM {}.wtr_waterbody_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM wtr_waterbody_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.wtr_waterbody_gen_intattribute
+                          SELECT * FROM wtr_waterbody_gen_intattribute
                             WHERE attr_name='{}' AND gen_value=1
                         ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
-                  );""".format(self.schemaID, self.schemaID, filtered_name)
+                  );""".format(filtered_name) )
         return self._pdm.getDataValue(request, float)
 
     def _get_green_water_surfaces(self):
-        request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND parentfk IN (
-                        SELECT parentfk FROM {}.wtr_watersurface_gen_intattribute
-                     );""".format(self.schemaID, self.schemaID)
+                        SELECT parentfk FROM wtr_watersurface_gen_intattribute);""" )
         return self._pdm.getDataValue(request, float)
 
     def _get_biologically_accessible_water(self, filtered_name):
-        request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.wtr_watersurface_gen_intattribute
+                          SELECT * FROM wtr_watersurface_gen_intattribute
                             WHERE attr_name='{}' AND gen_value=1 UNION
-                              SELECT * FROM {}.wtr_watersurface_gen_intattribute
+                              SELECT * FROM wtr_watersurface_gen_intattribute
                                 WHERE attr_name='isBiologicallyAccessible' AND gen_value=1
                         ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 2
-                    );""".format(self.schemaID, self.schemaID, filtered_name,  self.schemaID)
+                    );""".format(filtered_name) )
         return self._pdm.getDataValue(request, float)
 
     def _get_sum_water_surfaces_filtered(self, filtered_name):
-        request ="""SELECT SUM(gen_value) FROM {}.wtr_watersurface_gen_doubleattribute
+        request = self.createSchemaRequest("""SELECT SUM(gen_value) FROM wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
-                          SELECT * FROM {}.wtr_watersurface_gen_intattribute
+                          SELECT * FROM wtr_watersurface_gen_intattribute
                             WHERE attr_name='{}' AND gen_value=1
                         ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
-                  );""".format(self.schemaID, self.schemaID, filtered_name)
+                  );""".format(filtered_name) )
         return self._pdm.getDataValue(request, float)
 
 
     def getData(self):
-        self.responseData["Total land area"] = 485801.0  # self._get_total_land_area()    TRUITE \todo put it in db !!
+        # TRUITE
+        self.responseData["Total land area"] = self._get_total_land_area()
 
         self.responseData["Unsupported ground greenery"] = self._get_unsupported_ground_greenery()
         self.responseData["Plant bed (>800 mm)"] = self._get_plant_bed_with_height(800, 100000)
