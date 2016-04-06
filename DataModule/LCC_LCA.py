@@ -21,12 +21,8 @@ class Module_LCC:
         self.responseData = {}
 
     def _getBuildingsData(self):
-        request ="""SELECT * FROM {}.bldg_building bldg
-	      JOIN {}.bldg_building_gen_intattribute bldg_int ON bldg_int.parentfk = bldg.attr_gml_id
-	      JOIN {}.bldg_building_gen_doubleattribute bldg_dble ON bldg_dble.parentfk = bldg.attr_gml_id
-	      JOIN {}.bldg_building_gen_stringattribute bldg_str ON bldg_str.parentfk = bldg.attr_gml_id
-	      """.format(self.schemaID, self.schemaID, self.schemaID, self.schemaID)
-        return self._pdm.getJsonifyValue(request)
+        request ="""SELECT attr_gml_id FROM {}.bldg_building;""".format(self.schemaID)
+        bldg_id_list =  self._pdm.get(request)
 
     def getData(self):
         self.responseData['Buildings'] = self._getBuildingsData()

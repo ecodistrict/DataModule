@@ -9,7 +9,7 @@ class TcpClient:
         self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_TLS_PORT, True, 'CSTB', 1)
         self._connection.on_disconnect = self.handle_disconnect
 
-        self._event = self._connection.subscribe('data event',
+        self._event = self._connection.subscribe('modules',
                              on_string_event=self.handle_string_event
                              #on_stream_create=self.handle_stream_create,
                              #on_stream_end=self.handle_stream_end

@@ -21,45 +21,37 @@ class PostresDataManager:
         return self.isConnected
 
     def _executeRequest(self, request):
-        ret = False
         if self.isConnected:
-            cur = self.conn.cursor()
-            try:
+            with self.conn.cursor() as cur:
                 cur.execute(request)
                 self.conn.commit()
-                ret = True
-            except:
-                ret = False
-            cur.close()
-        return ret
+                return True
+        return False
 
     def getDataValue(self, request, cast):
-        ret = 0
         if self.isConnected:
-            cur = self.conn.cursor()
-            try:
+            with self.conn.cursor() as cur:
                 cur.execute(request)
                 data = cur.fetchone()
                 if data[0] is not None:
-                    ret = cast(data[0])
-            except:
-                pass
-            cur.close()
-        return ret
+                    return cast(data[0])
+        return 0
+
+    def getDataListValues(self, request):
+        if self.isConnected:
+            with self.conn.cursor() as cur:
+                cur.execute(request)
+                return cur.fetchall()
+        return []
 
     def getJsonifyValue(self, request):
         if self.isConnected:
-            cur = self.conn.cursor()
-            try:
+            with self.conn.cursor() as cur:
                 # add JSON conversion
                 json_request = ("""SELECT array_to_json(array_agg(row_to_json(RESULT))) FROM ({}) RESULT""").format(request)
                 cur.execute(json_request)
-                data = cur.fetchone()
-            except:
-                data = {}
-                pass
-            cur.close()
-        return data
+                return cur.fetchone()
+        return {}
 
     def createSchema(self, schemaID):
         if self.checkIfSchemaExists(schemaID):
@@ -81,15 +73,10 @@ class PostresDataManager:
 
     def checkIfSchemaExists(self, schemaID):
         request = ("""SELECT schema_name FROM information_schema.schemata WHERE schema_name = '{}';""").format(schemaID);
-        ret = False
         if self.isConnected:
-            cur = self.conn.cursor()
-            try:
+            with self.conn.cursor() as cur:
                 cur.execute(request)
                 data = cur.fetchone()
                 if data[0] is not None:
-                    ret = True
-            except:
-                pass
-            cur.close()
-        return ret
+                    return True
+        return False
