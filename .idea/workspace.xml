@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/LCC_LCA.py" afterPath="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" afterPath="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
     </list>
     <ignored path="DataModule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,10 +20,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1459755914425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1456134076894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1459949565677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1460019930575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1459327188281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1459955469356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1460017704999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient__1_.coverage" NAME="testclient (1) Coverage Results" MODIFIED="1456144434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -42,24 +42,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="545">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
-                <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-                <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+                <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+                <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+                <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+                <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+                <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+                <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+                <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+                <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+            <state relative-caret-position="232">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -70,7 +76,7 @@
       <file leaf-file-name="testclient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
+            <state relative-caret-position="665">
               <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -82,16 +88,16 @@
       <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding>
                 <element signature="e#76#100#0" expanded="false" />
                 <element signature="e#133#183#0" expanded="false" />
                 <element signature="e#251#510#0" expanded="false" />
                 <element signature="e#545#568#0" expanded="false" />
-                <element signature="e#2109#2430#0" expanded="false" />
-                <marker date="1459946710536" expanded="true" signature="1490:1559" placeholder="SELECT array... missing_value" />
-                <marker date="1459946710536" expanded="true" signature="2499:2575" placeholder="SELECT schem... schemata" />
+                <element signature="e#2183#2504#0" expanded="false" />
+                <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+                <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
               </folding>
             </state>
           </provider>
@@ -100,8 +106,8 @@
       <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -122,8 +128,8 @@
       <file leaf-file-name="testLCC.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -134,8 +140,8 @@
       <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="344" column="0" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+            <state relative-caret-position="1836">
+              <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
               <folding>
                 <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
                 <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
@@ -258,11 +264,11 @@
         <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
         <option value="$PROJECT_DIR$/DataModule/__main__.py" />
         <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
-        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
         <option value="$PROJECT_DIR$/DataModule/Abstrac_Module.py" />
         <option value="$PROJECT_DIR$/DataModule/Abstract_Module.py" />
-        <option value="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
         <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
+        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
+        <option value="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
       </list>
     </option>
   </component>
@@ -302,8 +308,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -352,6 +356,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,7 +367,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.testSGAF">
+  <component name="RunManager" selected="Python.testLCC">
     <configuration default="false" name="testclient (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -669,8 +675,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testSGAF" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testLCC" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testLCC" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testSGAF" />
         <item index="2" class="java.lang.String" itemvalue="Python.__main__" />
         <item index="3" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
         <item index="4" class="java.lang.String" itemvalue="Python.testclient (1)" />
@@ -697,9 +703,9 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21268657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21481876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3045977" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3045977" sideWeight="0.5127932" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -707,13 +713,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3045977" sideWeight="0.4936034" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3045977" sideWeight="0.48720682" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3342912" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3342912" sideWeight="0.49573562" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -763,18 +769,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/DataManager.py</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/LCC_LCA.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
           <line>344</line>
           <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/LCC_LCA.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -787,18 +793,205 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="163" />
+      <option name="time" value="168" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="gml_id" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="35" />
+          <folding>
+            <element signature="e#76#100#0" expanded="false" />
+            <element signature="e#133#183#0" expanded="false" />
+            <element signature="e#251#510#0" expanded="false" />
+            <element signature="e#545#568#0" expanded="false" />
+            <element signature="e#2183#2504#0" expanded="false" />
+            <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+            <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/Abstract_Module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5678">
+          <caret line="334" column="26" selection-start-line="334" selection-start-column="8" selection-end-line="334" selection-end-column="26" />
+          <folding>
+            <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:678" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1459955407276" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1459955407276" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3692:3962" placeholder="SELECT COUNT... wtr_watersurface" />
+            <marker date="1459955407276" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1459955407276" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="7821:8605" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="7997:8604" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8046:8157" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8193:8313" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8352:8485" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="8761:9329" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="8926:9328" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="8975:9094" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9127:9243" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="9501:9991" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="9666:9965" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10181:10657" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10330:10631" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="10842:11049" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="10987:11048" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="11216:11516" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11216:11517" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11381:11496" placeholder="SELECT paren... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="11716:12130" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="11865:12110" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12297:12304" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1459955407276" expanded="true" signature="12297:12692" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="12446:12691" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="12838:13406" placeholder="SELECT SUM(g... " />
+            <marker date="1459955407276" expanded="true" signature="12999:13405" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13046:13163" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13198:13316" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13548:14122" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="13713:14121" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="13762:13879" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="13916:14036" placeholder="SELECT * FRO... veg_plantcover_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="14269:14502" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14418:14501" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="14657:15092" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14657:15093" placeholder="SELECT SUM(g... veg_plantcover_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="14806:15072" placeholder="SELECT attr_... veg_plantcover" />
+            <marker date="1459955407276" expanded="true" signature="15282:15711" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="15446:15691" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="15495:15604" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="15882:16088" placeholder="SELECT SUM(g... wtr_waterbody_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16033:16087" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16054:16087" placeholder="SELECT * FRO... wtr_waterbody_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16261:16873" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="16428:16851" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="16477:16589" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="16626:16764" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17102" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17066:17501" placeholder="SELECT SUM(g... wtr_watersurface_gen_doubleattribute" />
+            <marker date="1459955407276" expanded="true" signature="17233:17481" placeholder="SELECT paren... *" />
+            <marker date="1459955407276" expanded="true" signature="17282:17394" placeholder="SELECT * FRO... wtr_watersurface_gen_intattribute" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -832,9 +1025,9 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <element signature="e#2109#2430#0" expanded="false" />
-            <marker date="1459946710536" expanded="true" signature="1490:1559" placeholder="SELECT array... missing_value" />
-            <marker date="1459946710536" expanded="true" signature="2499:2575" placeholder="SELECT schem... schemata" />
+            <element signature="e#2183#2504#0" expanded="false" />
+            <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+            <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -864,9 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,8 +1065,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -886,8 +1082,14 @@
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -921,9 +1123,9 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <element signature="e#2109#2430#0" expanded="false" />
-            <marker date="1459946710536" expanded="true" signature="1490:1559" placeholder="SELECT array... missing_value" />
-            <marker date="1459946710536" expanded="true" signature="2499:2575" placeholder="SELECT schem... schemata" />
+            <element signature="e#2183#2504#0" expanded="false" />
+            <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+            <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -953,9 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1069,9 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,8 +1276,14 @@
         <state relative-caret-position="459">
           <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
-            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
@@ -1105,9 +1307,9 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <element signature="e#2109#2430#0" expanded="false" />
-            <marker date="1459946710536" expanded="true" signature="1490:1559" placeholder="SELECT array... missing_value" />
-            <marker date="1459946710536" expanded="true" signature="2499:2575" placeholder="SELECT schem... schemata" />
+            <element signature="e#2183#2504#0" expanded="false" />
+            <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+            <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1126,9 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,29 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,25 +1459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#251#510#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <element signature="e#2109#2430#0" expanded="false" />
-            <marker date="1459946710536" expanded="true" signature="1490:1559" placeholder="SELECT array... missing_value" />
-            <marker date="1459946710536" expanded="true" signature="2499:2575" placeholder="SELECT schem... schemata" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,19 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1333,21 +1477,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
+    <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="289">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding>
-            <marker date="1459949562934" expanded="true" signature="523:560" placeholder="SELECT attr_... bldg_building" />
-            <marker date="1459949562934" expanded="true" signature="523:561" placeholder="SELECT attr_... bldg_building" />
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#76#100#0" expanded="false" />
+            <element signature="e#133#183#0" expanded="false" />
+            <element signature="e#251#510#0" expanded="false" />
+            <element signature="e#545#568#0" expanded="false" />
+            <element signature="e#2183#2504#0" expanded="false" />
+            <marker date="1460017902896" expanded="true" signature="1564:1633" placeholder="SELECT array... missing_value" />
+            <marker date="1460017902896" expanded="true" signature="2573:2649" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="344" column="0" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
+        <state relative-caret-position="1836">
+          <caret line="108" column="57" selection-start-line="108" selection-start-column="57" selection-end-line="108" selection-end-column="57" />
           <folding>
             <marker date="1459955407276" expanded="true" signature="320:372" placeholder="SELECT COUNT... gen_genericcityobject" />
             <marker date="1459955407276" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
@@ -1440,12 +1629,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+    <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="108" column="21" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="545">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1460019925343" expanded="true" signature="552:840" placeholder="SELECT strin... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1059:1347" placeholder="SELECT doubl... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="1565:1838" placeholder="SELECT int_a... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2037:2101" placeholder="SELECT DISTI... bldg_building_gen_stringattribute" />
+            <marker date="1460019925343" expanded="true" signature="2260:2324" placeholder="SELECT DISTI... bldg_building_gen_doubleattribute" />
+            <marker date="1460019925343" expanded="true" signature="2483:2544" placeholder="SELECT DISTI... bldg_building_gen_intattribute" />
+            <marker date="1460019925343" expanded="true" signature="2697:2734" placeholder="SELECT attr_... bldg_building" />
+            <marker date="1460019925343" expanded="true" signature="2697:2735" placeholder="SELECT attr_... bldg_building" />
           </folding>
         </state>
       </provider>
