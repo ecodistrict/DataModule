@@ -3,6 +3,7 @@ import json
 import DataManager
 import Stockholm_Green_Area_Factor as SGAF
 import LCC_LCA
+import ModuleKPI
 
 class TcpClient:
     def __init__(self, localhost, dbname, user, pwd, prt):
@@ -104,7 +105,16 @@ class TcpClient:
                     returnDict["status"] = "succes"
                 else:
                     returnDict["status"] = "failed - no module found"
+            self.write_data(json.dumps(returnDict))
 
+        elif method == 'setKpiResult':
+            kpi_id = parsed_json.get('kpiId', 'null')
+            kpiValueList = parsed_json.get('kpiValueList', 'null')
+            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                          "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
+
+            aSaveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+            returnDict["status"] = aSaveModule.save(kpi_id, kpiValueList)
             self.write_data(json.dumps(returnDict))
 
         else:

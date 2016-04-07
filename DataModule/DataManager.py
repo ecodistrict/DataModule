@@ -20,13 +20,18 @@ class PostresDataManager:
     def isConnect(self):
         return self.isConnected
 
-    def _executeRequest(self, request):
+    def executeRequest(self, request):
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)
-                self.conn.commit()
                 return True
         return False
+
+    def commit_transactions(self):
+        self.conn.commit()
+
+    def rolleback_transactions(self):
+        self.conn.rollback()
 
     def getDataValue(self, request, cast):
         if self.isConnected:
@@ -58,18 +63,22 @@ class PostresDataManager:
         if self.checkIfSchemaExists(schemaID):
             return "Success : schema already created before"
         request = ("""SELECT clone_schema('public','{}', TRUE);""").format(schemaID)
-        if self._executeRequest(request):
+        if self.executeRequest(request):
+            self.commit_transactions()
             return "Success - schema created"
         else:
+            self.rolleback_transactions()
             return "Failed - can't create schema"
 
     def deleteSchema(self, schemaID):
         if self.checkIfSchemaExists(schemaID):
             return "Success - schema already deleted before"
         request = ("""SELECT drop_schemas('{}');""").format(schemaID)
-        if self._executeRequest(request):
+        if self.executeRequest(request):
+            self.commit_transactions()
             return "Success - schema deleted"
         else:
+            self.rolleback_transactions()
             return "Failed - can't delete schema"
 
     def checkIfSchemaExists(self, schemaID):
