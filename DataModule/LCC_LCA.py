@@ -1,18 +1,6 @@
 import Abstract_Module
 
-class Module_LCA(Abstract_Module.AbstractModule):
-    """
-        class for getting LCA data
-    """
-    def __init__(self, postresDataManager, schema_id):
-        self.schemaID = schema_id
-        self._pdm = postresDataManager
-        self.responseData = {}
-
-    def getData(self):
-        return self.responseData
-
-class Module_LCC(Abstract_Module.AbstractModule):
+class Module_LCC_LCA(Abstract_Module.AbstractModule):
     """
         class for getting LCC data
     """
@@ -70,5 +58,4 @@ class Module_LCC(Abstract_Module.AbstractModule):
     def getData(self):
         self.responseData['Buildings'] = self._getBuildingsData()
         print self.responseData
-
         return self.responseData
