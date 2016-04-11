@@ -19,7 +19,7 @@ def main(args=None):
     print jsoncreateCase
 
     testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    testClient.handle_string_event('data event', jsoncreateCase)
+    testClient.handle_string_event('data', jsoncreateCase)
 
 
     """
@@ -34,7 +34,7 @@ def main(args=None):
     jsoncreateVariant1 = json.dumps(createVariant1Message)
     print jsoncreateVariant1
 
-    testClient.handle_string_event('data event', jsoncreateVariant1)
+    testClient.handle_string_event('data', jsoncreateVariant1)
 
     createVariant2Message = { "method": "createVariant",
                              "type": "request",
@@ -45,7 +45,7 @@ def main(args=None):
     jsoncreateVariant2 = json.dumps(createVariant2Message)
     print jsoncreateVariant2
 
-    testClient.handle_string_event('data event', jsoncreateVariant2)
+    testClient.handle_string_event('data', jsoncreateVariant2)
 
     """
     Delete one variant
@@ -59,7 +59,7 @@ def main(args=None):
     jsondeleteVariant = json.dumps(deleteVariant1Message)
     print jsondeleteVariant
 
-    testClient.handle_string_event('data event', jsondeleteVariant)
+    testClient.handle_string_event('data', jsondeleteVariant)
 
 
     """
@@ -74,7 +74,7 @@ def main(args=None):
 
     print jsondeleteCase
 
-    testClient.handle_string_event('data event', jsondeleteCase)
+    testClient.handle_string_event('data', jsondeleteCase)
 
 
 if __name__ == "__main__":

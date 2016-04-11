@@ -19,7 +19,7 @@ def main(args=None):
     jsonGetDataLCC = json.dumps(getDataMessageLCC)
     print jsonGetDataLCC
 
-    testClient.handle_string_event('data event', jsonGetDataLCC)
+    testClient.handle_string_event('data', jsonGetDataLCC)
 
 
     getDataMessageLCA = {"method": "getData",
@@ -33,7 +33,7 @@ def main(args=None):
     jsonGetDataLCA = json.dumps(getDataMessageLCA)
     print jsonGetDataLCA
 
-    testClient.handle_string_event('data event', jsonGetDataLCA)
+    testClient.handle_string_event('data', jsonGetDataLCA)
 
 
 if __name__ == "__main__":

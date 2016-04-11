@@ -32,3 +32,15 @@ class Module_KPI(Abstract_Module.AbstractModule):
         self._pdm.commit_transactions()
         return "success - data added to the database"
 
+    def getGeoJson(self):
+        request = """SELECT row_to_json(f) As feature
+                      FROM (SELECT 'Feature' As type, ST_AsGeoJSON(bldg_lod0footprint_value) As geometry, row_to_json((SELECT l FROM (SELECT attr_gml_id AS gml_id) As l)) As properties
+                      FROM {}.bldg_building) As bldg;""".format(self.schemaID)
+
+        output = dict()
+        output['type'] = 'FeatureCollection'
+        output['features'] = self._pdm.getDataListValues(request)
+        print output
+        return output
+
+

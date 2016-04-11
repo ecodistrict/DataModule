@@ -32,7 +32,7 @@ def main(args=None):
     jsonsaveData = json.dumps(saveDataMessage)
     print jsonsaveData
 
-    testClient.handle_string_event('data event', jsonsaveData)
+    testClient.handle_string_event('data', jsonsaveData)
 
 if __name__ == "__main__":
 	main()

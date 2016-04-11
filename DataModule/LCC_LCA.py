@@ -51,7 +51,7 @@ class Module_LCC_LCA(Abstract_Module.AbstractModule):
             for attr in bldg_attr_int_list:
                 building_data[attr] = self._getBuildingIntAttribute(attr, gml_id)
 
-            building_data['id'] = gml_id
+            building_data['gml_id'] = gml_id
             building_list.append(building_data)
         return building_list
 

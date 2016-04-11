@@ -18,7 +18,7 @@ def main(args=None):
     print jsonGetData
 
     testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    testClient.handle_string_event('data event', jsonGetData)
+    testClient.handle_string_event('data', jsonGetData)
 
     # pdm = DataManager.PostresDataManager()
     # pdm.connect("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")

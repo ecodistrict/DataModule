@@ -10,7 +10,7 @@ class TcpClient:
         self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_TLS_PORT, True, 'CSTB', 1)
         self._connection.on_disconnect = self.handle_disconnect
 
-        self._event = self._connection.subscribe('modules',
+        self._event = self._connection.subscribe('data',
                              on_string_event=self.handle_string_event
                              #on_stream_create=self.handle_stream_create,
                              #on_stream_end=self.handle_stream_end
@@ -115,6 +115,15 @@ class TcpClient:
 
             aSaveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
             returnDict["status"] = aSaveModule.save(kpi_id, kpiValueList)
+            self.write_data(json.dumps(returnDict))
+
+        elif method == 'getGeoJson':
+            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                          "variantId": variant_id}
+
+            aKpiModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+            returnDict['data'] = aKpiModule.getGeoJson()
+            returnDict["status"] = 'Success - no test on results values'
             self.write_data(json.dumps(returnDict))
 
         else:
