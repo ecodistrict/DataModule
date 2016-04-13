@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/LCC_LCA.py" afterPath="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/ModuleKPI.py" afterPath="$PROJECT_DIR$/DataModule/ModuleKPI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/tcpclient.py" afterPath="$PROJECT_DIR$/DataModule/tcpclient.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" afterPath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testLCC.py" afterPath="$PROJECT_DIR$/TestModule/testLCC.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testSGAF.py" afterPath="$PROJECT_DIR$/TestModule/testSGAF.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/test_save_data.py" afterPath="$PROJECT_DIR$/TestModule/test_save_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" afterPath="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" />
     </list>
     <ignored path="DataModule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,8 +20,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1460367655556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
-    <SUITE FILE_PATH="coverage/DataModule$test_get_kpis_data.coverage" NAME="test_get_kpis_data Coverage Results" MODIFIED="1460382532681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$test_get_kpis_data.coverage" NAME="test_get_kpis_data Coverage Results" MODIFIED="1460541476543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
+    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1460541522281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testclient.coverage" NAME="testclient Coverage Results" MODIFIED="1456134076894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1460036606362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$test_save_data.coverage" NAME="test_save_data Coverage Results" MODIFIED="1460044937116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
@@ -50,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1235">
-              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+            <state relative-caret-position="205">
+              <caret line="119" column="36" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="36" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -65,8 +61,8 @@
       <file leaf-file-name="LCC_LCA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="102">
+              <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
               <folding>
                 <marker date="1460367649698" expanded="true" signature="238:526" placeholder="SELECT strin... bldg_building" />
                 <marker date="1460367649698" expanded="true" signature="745:1033" placeholder="SELECT doubl... bldg_building" />
@@ -84,16 +80,18 @@
       <file leaf-file-name="ModuleKPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/ModuleKPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            <state relative-caret-position="390">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
-                <marker date="1460383675549" expanded="true" signature="651:786" placeholder="DELETE FROM " />
-                <marker date="1460383675549" expanded="true" signature="1137:1286" placeholder="INSERT INTO kpi_results... " />
-                <marker date="1460383675549" expanded="true" signature="1731:1997" placeholder="SELECT row_t... type" />
-                <marker date="1460383675549" expanded="true" signature="1731:2001" placeholder="SELECT row_t... type" />
-                <marker date="1460383675549" expanded="true" signature="1792:1992" placeholder="SELECT 'Feat... bldg_building" />
-                <marker date="1460383675549" expanded="true" signature="1883:1932" placeholder="SELECT l FRO... attr_gml_id" />
-                <marker date="1460383675549" expanded="true" signature="1898:1926" placeholder="SELECT attr_... " />
+                <marker date="1460563446687" expanded="true" signature="655:790" placeholder="DELETE FROM " />
+                <marker date="1460563446687" expanded="true" signature="1141:1290" placeholder="INSERT INTO kpi_results... " />
+                <marker date="1460563446687" expanded="true" signature="2190:2325" placeholder="DELETE FROM " />
+                <marker date="1460563446687" expanded="true" signature="2779:2928" placeholder="INSERT INTO kpi_results... " />
+                <marker date="1460563446687" expanded="true" signature="3471:3854" placeholder="SELECT row_t... type" />
+                <marker date="1460563446687" expanded="true" signature="3499:3845" placeholder="SELECT 'Feat... type" />
+                <marker date="1460563446687" expanded="true" signature="3602:3836" placeholder="SELECT 'Feat... bldg_building" />
+                <marker date="1460563446687" expanded="true" signature="3722:3770" placeholder="SELECT l FRO... attr_gml_id" />
+                <marker date="1460563446687" expanded="true" signature="3736:3764" placeholder="SELECT attr_... " />
               </folding>
             </state>
           </provider>
@@ -102,15 +100,15 @@
       <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="141">
+              <caret line="35" column="20" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="20" />
               <folding>
                 <element signature="e#76#100#0" expanded="false" />
                 <element signature="e#133#183#0" expanded="false" />
                 <element signature="e#251#510#0" expanded="false" />
                 <element signature="e#545#568#0" expanded="false" />
-                <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-                <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+                <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+                <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
               </folding>
             </state>
           </provider>
@@ -119,8 +117,8 @@
       <file leaf-file-name="test_save_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/test_save_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="221">
+              <caret line="14" column="80" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="80" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -128,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_get_kpis_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_get_kpis_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestModule/test_get_kpis_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -143,7 +141,7 @@
       <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
+            <state relative-caret-position="917">
               <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -181,15 +179,15 @@
         <option value="$PROJECT_DIR$/DataModule/Abstract_Module.py" />
         <option value="$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py" />
         <option value="$PROJECT_DIR$/DataModule/SaveModule.py" />
-        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
         <option value="$PROJECT_DIR$/DataModule/LCC_LCA.py" />
-        <option value="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" />
         <option value="$PROJECT_DIR$/TestModule/test_save_data.py" />
         <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
         <option value="$PROJECT_DIR$/TestModule/testLCC.py" />
         <option value="$PROJECT_DIR$/TestModule/testSGAF.py" />
         <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
+        <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
         <option value="$PROJECT_DIR$/DataModule/ModuleKPI.py" />
+        <option value="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" />
       </list>
     </option>
   </component>
@@ -230,7 +228,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,6 +276,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +286,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.test_get_kpis_data">
+  <component name="RunManager" selected="Python.__main__">
     <configuration default="false" name="testSGAF" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -615,8 +613,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_get_kpis_data" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__main__" />
+        <item index="0" class="java.lang.String" itemvalue="Python.__main__" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_get_kpis_data" />
         <item index="2" class="java.lang.String" itemvalue="Python.testDataModuleAPI" />
         <item index="3" class="java.lang.String" itemvalue="Python.testLCC" />
         <item index="4" class="java.lang.String" itemvalue="Python.testSGAF" />
@@ -643,18 +641,19 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22761194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32279694" sideWeight="0.3336887" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3342912" sideWeight="0.4936034" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32279694" sideWeight="0.6663113" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32279694" sideWeight="0.6663113" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23294243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3342912" sideWeight="0.4936034" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3045977" sideWeight="0.47228146" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3045977" sideWeight="0.47228146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -712,16 +711,6 @@
           <line>344</line>
           <option name="timeStamp" value="162" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="183" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/ModuleKPI.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="185" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -733,7 +722,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="187" />
+      <option name="time" value="192" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -746,9 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,8 +799,8 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-            <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+            <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -844,9 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -992,8 +969,8 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-            <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+            <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1070,9 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1085,8 +1059,8 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-            <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+            <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1215,9 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,8 +1235,8 @@
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-            <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+            <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1387,9 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1514,9 +1482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
           <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1528,21 +1493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/testSGAF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1550,36 +1504,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/test_save_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/test_get_kpis_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/LCC_LCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+        <state relative-caret-position="102">
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
           <folding>
             <marker date="1460367649698" expanded="true" signature="238:526" placeholder="SELECT strin... bldg_building" />
             <marker date="1460367649698" expanded="true" signature="745:1033" placeholder="SELECT doubl... bldg_building" />
@@ -1593,43 +1524,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="141">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="20" />
           <folding>
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#251#510#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460042306773" expanded="true" signature="1659:1728" placeholder="SELECT array... missing_value" />
-            <marker date="1460042306773" expanded="true" signature="2828:2904" placeholder="SELECT schem... schemata" />
+            <marker date="1460540728075" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1460540728075" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/ModuleKPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        <state relative-caret-position="390">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <marker date="1460383675549" expanded="true" signature="651:786" placeholder="DELETE FROM " />
-            <marker date="1460383675549" expanded="true" signature="1137:1286" placeholder="INSERT INTO kpi_results... " />
-            <marker date="1460383675549" expanded="true" signature="1731:1997" placeholder="SELECT row_t... type" />
-            <marker date="1460383675549" expanded="true" signature="1731:2001" placeholder="SELECT row_t... type" />
-            <marker date="1460383675549" expanded="true" signature="1792:1992" placeholder="SELECT 'Feat... bldg_building" />
-            <marker date="1460383675549" expanded="true" signature="1883:1932" placeholder="SELECT l FRO... attr_gml_id" />
-            <marker date="1460383675549" expanded="true" signature="1898:1926" placeholder="SELECT attr_... " />
+            <marker date="1460563446687" expanded="true" signature="655:790" placeholder="DELETE FROM " />
+            <marker date="1460563446687" expanded="true" signature="1141:1290" placeholder="INSERT INTO kpi_results... " />
+            <marker date="1460563446687" expanded="true" signature="2190:2325" placeholder="DELETE FROM " />
+            <marker date="1460563446687" expanded="true" signature="2779:2928" placeholder="INSERT INTO kpi_results... " />
+            <marker date="1460563446687" expanded="true" signature="3471:3854" placeholder="SELECT row_t... type" />
+            <marker date="1460563446687" expanded="true" signature="3499:3845" placeholder="SELECT 'Feat... type" />
+            <marker date="1460563446687" expanded="true" signature="3602:3836" placeholder="SELECT 'Feat... bldg_building" />
+            <marker date="1460563446687" expanded="true" signature="3722:3770" placeholder="SELECT l FRO... attr_gml_id" />
+            <marker date="1460563446687" expanded="true" signature="3736:3764" placeholder="SELECT attr_... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1235">
-          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        <state relative-caret-position="205">
+          <caret line="119" column="36" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="36" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/test_save_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="80" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/test_get_kpis_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

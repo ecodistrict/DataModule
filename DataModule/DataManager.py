@@ -40,7 +40,10 @@ class PostresDataManager:
                 raw_data = cur.fetchone()
                 data = raw_data[0] if type(raw_data) is tuple else raw_data
                 if data is not None:
-                    return cast(data)
+                    if cast is not None:
+                        return cast(data)
+                    else:
+                        return data
         return 0
 
     def getDataListValues(self, request):

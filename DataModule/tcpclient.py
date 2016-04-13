@@ -113,8 +113,20 @@ class TcpClient:
             returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                           "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
-            aSaveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-            returnDict["status"] = aSaveModule.save(kpi_id, kpiValueList)
+            saveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+            returnDict["status"] = saveModule.save(kpi_id, kpiValueList)
+            self.write_data(json.dumps(returnDict))
+
+        elif method == 'getKpiResult':
+            kpi_id = parsed_json.get('kpiId', 'null')
+            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                      "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
+
+            loadModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+            returnDict["status"] = loadModule.load(kpi_id)
+            #if status (necessary?):
+            #    returnDict['data'] = loadModule.getData()
+
             self.write_data(json.dumps(returnDict))
 
         elif method == 'getGeoJson':
