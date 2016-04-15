@@ -25,7 +25,6 @@ class Module_LCC_LCA(Abstract_Module.AbstractModule):
                         """.format(attr_type, bldg_id))
         return self._pdm.getDataValue(request, int)
 
-
     def _getBuildingsData(self):
         request_str_attr = self.createSchemaRequest("""SELECT DISTINCT attr_name FROM bldg_building_gen_stringattribute;""")
         bldg_attr_string_list = [i[0] for i in self._pdm.getDataListValues(request_str_attr)]
@@ -55,7 +54,30 @@ class Module_LCC_LCA(Abstract_Module.AbstractModule):
             building_list.append(building_data)
         return building_list
 
+    def _getDistrictData(self):
+        request_double_attr = self.createSchemaRequest(
+            """SELECT DISTINCT attr_name FROM luse_landuse_gen_doubleattribute;""")
+        district_attr_double_list = [i[0] for i in self._pdm.getDataListValues(request_double_attr)]
+
+        request_int_attr = self.createSchemaRequest(
+            """SELECT DISTINCT attr_name FROM luse_landuse_gen_intattribute;""")
+        district_attr_int_list = [i[0] for i in self._pdm.getDataListValues(request_int_attr)]
+
+        district_data = {}
+        for attr in district_attr_double_list:
+            request_double = self.createSchemaRequest("""SELECT gen_value FROM luse_landuse_gen_doubleattribute
+                  WHERE attr_name='{}';""").format(attr)
+            district_data[attr] = self._pdm.getDataValue(request_double, float)
+
+        for attr in district_attr_int_list:
+            request_int = self.createSchemaRequest("""SELECT gen_value FROM luse_landuse_gen_intattribute
+                      WHERE attr_name='{}';""").format(attr)
+            district_data[attr] = self._pdm.getDataValue(request_int, int)
+
+        return district_data
+
     def getData(self):
         self.responseData['Buildings'] = self._getBuildingsData()
+        self.responseData['District'] = self._getDistrictData()
         print self.responseData
         return self.responseData

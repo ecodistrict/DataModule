@@ -12,7 +12,7 @@ def main(args=None):
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "hovsjo",
-                       "variantId": "greenfactoralt1",
+                       "variantId": "lcalccalt4b",
                        "moduleId": "SP_LCC_v1.0",
                        "calculationId" : "4"
                         }
@@ -26,7 +26,7 @@ def main(args=None):
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "hovsjo",
-                       "variantId": "greenfactoralt1",
+                       "variantId": "lcalccalt4b",
                        "moduleId": "SP_LCA_v4.0",
                        "calculationId" : "5"
                         }
