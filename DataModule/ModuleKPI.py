@@ -41,13 +41,19 @@ class Module_KPI(Abstract_Module.AbstractModule):
             print res
 
 
+    def _createGeoJsonRequest(self, table_name, table_geometry_attribute):
+        return """SET SCHEMA 'public';
+                  SELECT row_to_json(fc) FROM(SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
+                     FROM(SELECT 'Feature' As type, ST_AsGeoJSON({})::json As geometry,
+                      row_to_json((SELECT l FROM(SELECT attr_gml_id AS gml_id) As l)) As properties FROM
+                         {}.{} As lg   ) As f )  As fc;""".format(table_geometry_attribute, self.schemaID, table_name)
 
-    def getGeoJson(self):
-        request = """SELECT row_to_json(fc) FROM(SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features
-                      FROM(SELECT 'Feature' As type, ST_AsGeoJSON(bldg_lod0footprint_value)::json As geometry
-                      , row_to_json((SELECT l FROM(SELECT attr_gml_id AS gml_id) As l)) As properties FROM
-                      {}.bldg_building As lg   ) As f )  As fc;""".format(self.schemaID)
+    def getGeoJson(self, element_filter):
+        if element_filter == 'building':
+            request = self._createGeoJsonRequest("bldg_building", "bldg_lod0footprint_value")
+            return self._pdm.getDataValue(request, None)
 
-        return self._pdm.getDataValue(request, None)
+        else:
+            return ''
 
 

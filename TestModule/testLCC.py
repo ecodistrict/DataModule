@@ -28,7 +28,8 @@ def main(args=None):
                        "caseId": "hovsjo",
                        "variantId": "lcalccalt4b",
                        "moduleId": "SP_LCA_v4.0",
-                       "calculationId" : "5"
+                       "calculationId" : "5",
+                       "eventId" : "data"
                         }
     jsonGetDataLCA = json.dumps(getDataMessageLCA)
     print jsonGetDataLCA

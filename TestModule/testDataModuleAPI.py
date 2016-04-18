@@ -54,7 +54,8 @@ def main(args=None):
                              "type": "request",
                              "userId": "cstb",
                              "caseId": "stockholm",
-                             "variantId" : "renoved"
+                             "variantId" : "renoved",
+                             "eventId" : "trout"
                             }
     jsondeleteVariant = json.dumps(deleteVariant1Message)
     print jsondeleteVariant
@@ -68,7 +69,8 @@ def main(args=None):
     deleteCaseMessage = { "method": "deleteCase",
                           "type": "request",
                           "userId": "cstb",
-                          "caseId": "stockholm"
+                          "caseId": "stockholm",
+                          "eventId": "trout"
                         }
     jsondeleteCase = json.dumps(deleteCaseMessage)
 

@@ -12,7 +12,8 @@ def main(args=None):
                        "caseId": "hovsjo",
                        "variantId": "greenfactoralt2",
                        "moduleId": "Stockholm_Green_Area_Factor",
-                       "calculationId" : "3"
+                       "calculationId" : "3",
+                       "eventId" : "trout"
                         }
     jsonGetData = json.dumps(getDataMessage)
     print jsonGetData

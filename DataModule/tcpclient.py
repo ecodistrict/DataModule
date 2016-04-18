@@ -10,11 +10,11 @@ class TcpClient:
         self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_TLS_PORT, True, 'CSTB', 1)
         self._connection.on_disconnect = self.handle_disconnect
 
-        self._event = self._connection.subscribe('data',
-                             on_string_event=self.handle_string_event
-                             #on_stream_create=self.handle_stream_create,
-                             #on_stream_end=self.handle_stream_end
-                             )
+        self._data_event = self._connection.subscribe('data',
+                                                      on_string_event=self.handle_string_event
+                                                      #on_stream_create=self.handle_stream_create,
+                                                      #on_stream_end=self.handle_stream_end
+                                                      )
 
         if self._connection.connected:
             print("connected")
@@ -30,10 +30,11 @@ class TcpClient:
             print "error in Postgres connection"
 
 
-    def write_data(self, data):
+    def write_data(self, data, event_name):
         if self._connection.connected:
             print data
-            self._event.signal_string_event(data)
+            event = self._connection.publish(event_name)
+            event.signal_string_event(data)
 
     def handle_string_event(self, event_entry, command):
         parsed_json = json.loads(command)
@@ -44,7 +45,7 @@ class TcpClient:
         schema_id = case_id if variant_id =="" else case_id + "_" + variant_id
         calculation_id = parsed_json.get('calculationId', 'null')
         module_id = parsed_json.get('moduleId', 'null')
-
+        event_id = parsed_json.get('eventId', 'data')
 
         if method == 'createCase':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
@@ -52,7 +53,7 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             else:
                 returnDict["status"] = self._pdm.createSchema(case_id)
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'deleteCase':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
@@ -60,7 +61,7 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             else:
                 returnDict["status"] = self._pdm.deleteSchema(case_id)
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'createVariant':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
@@ -70,7 +71,7 @@ class TcpClient:
                 returnDict["status"] = "failed - no variant id"
             else:
                 returnDict["status"] = self._pdm.createSchema(schema_id)
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'deleteVariant':
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
@@ -80,7 +81,7 @@ class TcpClient:
                 returnDict["status"] = "failed - no variant id"
             else:
                 returnDict["status"] = self._pdm.deleteSchema(schema_id)
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'getData':
             # parse module ID
@@ -105,7 +106,7 @@ class TcpClient:
                     returnDict["status"] = "succes"
                 else:
                     returnDict["status"] = "failed - no module found"
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'setKpiResult':
             kpi_id = parsed_json.get('kpiId', 'null')
@@ -115,7 +116,7 @@ class TcpClient:
 
             saveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
             returnDict["status"] = saveModule.save(kpi_id, kpiValueList)
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'getKpiResult':
             kpi_id = parsed_json.get('kpiId', 'null')
@@ -124,19 +125,20 @@ class TcpClient:
 
             loadModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
             returnDict["status"] = loadModule.load(kpi_id)
-            #if status (necessary?):
-            #    returnDict['data'] = loadModule.getData()
-
-            self.write_data(json.dumps(returnDict))
+            self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'getGeoJson':
             returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
-                          "variantId": variant_id}
+                          "variantId": variant_id, "moduleId": module_id}
 
-            aKpiModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-            returnDict['data'] = aKpiModule.getGeoJson()
-            returnDict["status"] = 'Success - no test on results values'
-            self.write_data(json.dumps(returnDict))
+            element_filter = parsed_json.get('element_type_filter', 'null')
+            if element_filter == 'null':
+                returnDict["status"] = "failed - no elements filtered found"
+            else:
+                aKpiModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+                returnDict['data'] = aKpiModule.getGeoJson(element_filter)
+                returnDict["status"] = 'Success - no test on results values'
+            self.write_data(json.dumps(returnDict), event_id)
 
         else:
             print('## received string', event_entry.event_name, command)

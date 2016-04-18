@@ -12,6 +12,7 @@ def main(args=None):
 	                    "variantId": "greenfactoralt1",
 	                    "caseId": "hovsjo",
 	                    "userId": "cstb",
+						"eventId": "trout",
 	                    "kpiId": "change-of-primary-energy-use-per-heated-area",
 	                    "kpiValueList": [{
 		                    "type": "building",

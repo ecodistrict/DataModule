@@ -6,7 +6,8 @@ def main(args=None):
     """
     simulate get Data case
     """
-    testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    #testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    testClient = tcpclient.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
 
     """
         test get complex kpis message
@@ -18,7 +19,8 @@ def main(args=None):
 	                            "userId": "cstb",
                                 "method": "getKpiResult",
                                 "kpiId": "change-of-primary-energy-use-per-heated-area",
-                                "type": "request"
+                                "type": "request",
+                                "eventId": "trout"
                             }
 
     jsonGetComplexKpis = json.dumps(getCompexKpisMessage)
@@ -34,7 +36,9 @@ def main(args=None):
 	                            "caseId": "hovsjo",
 	                            "userId": "cstb",
                                 "method": "getGeoJson",
-                                "type": "request"
+                                "type": "request",
+                                "eventId": "trout",
+                                "element_type_filter": "building"
                             }
 
     jsonGetGeoJSONData = json.dumps(getGeoJSONDataMessage)
