@@ -62,10 +62,10 @@ class PostresDataManager:
                 return cur.fetchone()
         return {}
 
-    def createSchema(self, schemaID):
+    def createSchema(self, schemaID, from_schema_id='public'):
         if self.checkIfSchemaExists(schemaID):
             return "Success : schema already created before"
-        request = ("""SELECT clone_schema('public','{}', TRUE);""").format(schemaID)
+        request = ("""SELECT clone_schema('{}','{}', TRUE);""").format(from_schema_id, schemaID)
         if self.executeRequest(request):
             self.commit_transactions()
             return "Success - schema created"

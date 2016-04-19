@@ -70,7 +70,7 @@ class TcpClient:
             elif variant_id == 'null':
                 returnDict["status"] = "failed - no variant id"
             else:
-                returnDict["status"] = self._pdm.createSchema(schema_id)
+                returnDict["status"] = self._pdm.createSchema(schema_id, case_id)
             self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'deleteVariant':

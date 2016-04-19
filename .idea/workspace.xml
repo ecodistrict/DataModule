@@ -4,7 +4,7 @@
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" afterPath="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/tcpclient.py" afterPath="$PROJECT_DIR$/DataModule/tcpclient.py" />
     </list>
     <ignored path="DataModule.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +21,7 @@
     <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1460017704999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1460978079025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
-    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1460996093510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1461056014097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$test_save_data.coverage" NAME="test_save_data Coverage Results" MODIFIED="1460044937116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$test_get_kpis_data.coverage" NAME="test_get_kpis_data Coverage Results" MODIFIED="1460994259040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1460995667333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
@@ -44,25 +44,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imb4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17974">
-              <caret line="824" column="51" selection-start-line="824" selection-start-column="51" selection-end-line="824" selection-end-column="51" />
-              <folding>
-                <marker date="1460971082287" expanded="true" signature="47777:47960" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -73,16 +61,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testLCC.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestModule/testLCC.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="31" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -100,17 +78,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#76#100#0" expanded="false" />
                 <element signature="e#133#183#0" expanded="false" />
                 <element signature="e#545#568#0" expanded="false" />
-                <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-                <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+                <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+                <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
               </folding>
             </state>
           </provider>
@@ -119,8 +97,8 @@
       <file leaf-file-name="ModuleKPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/ModuleKPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding>
                 <element signature="e#1724#2016#0" expanded="false" />
                 <marker date="1460994242449" expanded="true" signature="655:790" placeholder="DELETE FROM " />
@@ -134,9 +112,54 @@
       <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stockholm_Green_Area_Factor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7458">
+              <caret line="339" column="0" selection-start-line="339" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
+              <folding>
+                <marker date="1460971082277" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1460971082277" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+                <marker date="1460971082277" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+                <marker date="1460971082277" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1460971082277" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1460971082277" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1460971082277" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+                <marker date="1460971082277" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+                <marker date="1460971082277" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_waterbody" />
+                <marker date="1460971082277" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_waterbody" />
+                <marker date="1460971082277" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+                <marker date="1460971082277" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+                <marker date="1460971082277" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+                <marker date="1460971082277" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+                <marker date="1460971082277" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+                <marker date="1460971082277" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,10 +222,10 @@
         <option value="$PROJECT_DIR$/TestModule/test_save_data.py" />
         <option value="$PROJECT_DIR$/TestModule/testSGAF.py" />
         <option value="$PROJECT_DIR$/TestModule/test_get_kpis_data.py" />
-        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
         <option value="$PROJECT_DIR$/DataModule/ModuleKPI.py" />
         <option value="$PROJECT_DIR$/TestModule/testDataModuleAPI.py" />
         <option value="$PROJECT_DIR$/DataModule/DataManager.py" />
+        <option value="$PROJECT_DIR$/DataModule/tcpclient.py" />
       </list>
     </option>
   </component>
@@ -214,8 +237,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
+    <option name="y" value="3" />
     <option name="width" value="1922" />
-    <option name="height" value="1092" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -242,6 +266,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,10 +300,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataModule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -639,8 +677,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1922" height="1092" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="3" width="1922" height="1089" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.240021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -648,19 +686,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321875" sideWeight="0.6663113" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40543365" sideWeight="0.47228146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.321875" sideWeight="0.6663113" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59583336" sideWeight="0.4936034" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40416667" sideWeight="0.47228146" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -698,26 +736,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>296</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>280</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py</url>
-          <line>344</line>
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/ModuleKPI.py</url>
           <line>53</line>
           <option name="timeStamp" value="213" />
@@ -728,9 +746,14 @@
           <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/DataManager.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="216" />
+          <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="220" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -743,7 +766,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="217" />
+      <option name="time" value="222" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -787,8 +810,8 @@
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -819,7 +842,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5678">
           <caret line="334" column="26" selection-start-line="334" selection-start-column="8" selection-end-line="334" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1460971082277" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1460971082277" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1460971082277" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,8 +913,8 @@
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -922,8 +980,8 @@
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -954,7 +1012,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <marker date="1460971082277" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1460971082277" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1460971082277" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -997,8 +1090,8 @@
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1022,7 +1115,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <marker date="1460971082277" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1460971082277" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1460971082277" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,15 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="31" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2772">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,35 +1228,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/ModuleKPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#1724#2016#0" expanded="false" />
-            <marker date="1460994242449" expanded="true" signature="655:790" placeholder="DELETE FROM " />
-            <marker date="1460994242449" expanded="true" signature="1141:1290" placeholder="INSERT INTO kpi_results... " />
-            <marker date="1460994242449" expanded="true" signature="1762:1889" placeholder="SELECT id, k... kpi_results" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestModule/test_get_kpis_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17974">
-          <caret line="824" column="51" selection-start-line="824" selection-start-column="51" selection-end-line="824" selection-end-column="51" />
-          <folding>
-            <marker date="1460971082287" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1152,34 +1248,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7458">
+          <caret line="339" column="0" selection-start-line="339" selection-start-column="0" selection-end-line="339" selection-end-column="0" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1460971082277" expanded="true" signature="320:413" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="586:882" placeholder="SELECT COUNT... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="746:880" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1028:1264" placeholder="SELECT COUNT... luse_landuse" />
+            <marker date="1460971082277" expanded="true" signature="1141:1263" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="1447:1611" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="1777:1892" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2079:2357" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2208:2337" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2537:3089" placeholder="SELECT COUNT... veg_solitaryvegetationobject" />
+            <marker date="1460971082277" expanded="true" signature="2666:3088" placeholder="SELECT paren... parentfk" />
+            <marker date="1460971082277" expanded="true" signature="2715:2854" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="2861:2999" placeholder="SELECT paren... veg_solitaryvegetationobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3256:3504" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3370:3484" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="3692:3961" placeholder="SELECT COUNT... wtr_waterbody" />
+            <marker date="1460971082277" expanded="true" signature="3827:3941" placeholder="SELECT paren... wtr_waterbody_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="4148:4402" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4316:4382" placeholder="SELECT attr_... gen_genericcityobject" />
+            <marker date="1460971082277" expanded="true" signature="4577:4896" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="4749:4895" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5040:5454" placeholder="SELECT SUM(g... gen_genericcityobject_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5212:5366" placeholder="SELECT paren... gen_genericcityobject_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5598:5829" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="5778:5828" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="5996:6289" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6176:6287" placeholder="SELECT paren... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6502:7083" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="6666:7061" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="6715:6823" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="6860:6972" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
+            <marker date="1460971082277" expanded="true" signature="7267:7683" placeholder="SELECT SUM(g... luse_landuse_gen_doubleattribute" />
+            <marker date="1460971082277" expanded="true" signature="7430:7682" placeholder="SELECT paren... *" />
+            <marker date="1460971082277" expanded="true" signature="7479:7595" placeholder="SELECT * FRO... luse_landuse_gen_intattribute" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+    <entry file="file://$PROJECT_DIR$/DataModule/ModuleKPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1760">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="264">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="e#1724#2016#0" expanded="false" />
+            <marker date="1460994242449" expanded="true" signature="655:790" placeholder="DELETE FROM " />
+            <marker date="1460994242449" expanded="true" signature="1141:1290" placeholder="INSERT INTO kpi_results... " />
+            <marker date="1460994242449" expanded="true" signature="1762:1889" placeholder="SELECT id, k... kpi_results" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="821" column="35" selection-start-line="821" selection-start-column="35" selection-end-line="821" selection-end-column="35" />
+          <folding>
+            <marker date="1460971082287" expanded="true" signature="47777:47960" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="310">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#76#100#0" expanded="false" />
             <element signature="e#133#183#0" expanded="false" />
             <element signature="e#545#568#0" expanded="false" />
-            <marker date="1460995663491" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1460995663491" expanded="true" signature="2935:3011" placeholder="SELECT schem... schemata" />
+            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
