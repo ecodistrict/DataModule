@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627192cd-92b1-4803-9c27-848a942250c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/DataManager.py" afterPath="$PROJECT_DIR$/DataModule/DataManager.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModule/tcpclient.py" afterPath="$PROJECT_DIR$/DataModule/tcpclient.py" />
     </list>
@@ -21,7 +20,7 @@
     <SUITE FILE_PATH="coverage/DataModule$testDB.coverage" NAME="testDB Coverage Results" MODIFIED="1453393847436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$testSGAF.coverage" NAME="testSGAF Coverage Results" MODIFIED="1460017704999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testLCC.coverage" NAME="testLCC Coverage Results" MODIFIED="1460978079025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
-    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1461056014097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
+    <SUITE FILE_PATH="coverage/DataModule$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1461059177073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataModule" />
     <SUITE FILE_PATH="coverage/DataModule$test_save_data.coverage" NAME="test_save_data Coverage Results" MODIFIED="1460044937116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$test_get_kpis_data.coverage" NAME="test_get_kpis_data Coverage Results" MODIFIED="1460994259040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
     <SUITE FILE_PATH="coverage/DataModule$testDataModuleAPI.coverage" NAME="testDataModuleAPI Coverage Results" MODIFIED="1460995667333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TestModule" />
@@ -47,8 +46,8 @@
       <file leaf-file-name="tcpclient.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -81,14 +80,12 @@
       <file leaf-file-name="DataManager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="448">
+              <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
               <folding>
-                <element signature="e#76#100#0" expanded="false" />
-                <element signature="e#133#183#0" expanded="false" />
-                <element signature="e#545#568#0" expanded="false" />
-                <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-                <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+                <element signature="e#2742#3173#0" expanded="false" />
+                <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+                <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
               </folding>
             </state>
           </provider>
@@ -112,8 +109,8 @@
       <file leaf-file-name="testDataModuleAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -747,13 +744,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
-          <line>111</line>
+          <line>130</line>
           <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/DataModule/tcpclient.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="220" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -766,7 +758,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="222" />
+      <option name="time" value="223" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -807,11 +799,9 @@
         <state relative-caret-position="561">
           <caret line="43" column="35" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="35" />
           <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+            <element signature="e#2742#3173#0" expanded="false" />
+            <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -910,11 +900,9 @@
         <state relative-caret-position="850">
           <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+            <element signature="e#2742#3173#0" expanded="false" />
+            <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -977,11 +965,9 @@
         <state relative-caret-position="850">
           <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+            <element signature="e#2742#3173#0" expanded="false" />
+            <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1087,11 +1073,9 @@
         <state relative-caret-position="850">
           <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+            <element signature="e#2742#3173#0" expanded="false" />
+            <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
@@ -1248,14 +1232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/Stockholm_Green_Area_Factor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7458">
@@ -1312,10 +1288,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestModule/testDataModuleAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/imb4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="821" column="35" selection-start-line="821" selection-start-column="35" selection-end-line="821" selection-end-column="35" />
+        <state relative-caret-position="399">
+          <caret line="824" column="44" selection-start-line="824" selection-start-column="44" selection-end-line="824" selection-end-column="44" />
           <folding>
             <marker date="1460971082287" expanded="true" signature="47777:47960" placeholder="..." />
           </folding>
@@ -1324,22 +1308,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/DataManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="448">
+          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
           <folding>
-            <element signature="e#76#100#0" expanded="false" />
-            <element signature="e#133#183#0" expanded="false" />
-            <element signature="e#545#568#0" expanded="false" />
-            <marker date="1461055977484" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
-            <marker date="1461055977484" expanded="true" signature="2972:3048" placeholder="SELECT schem... schemata" />
+            <element signature="e#2742#3173#0" expanded="false" />
+            <marker date="1461059236276" expanded="true" signature="1766:1835" placeholder="SELECT array... missing_value" />
+            <marker date="1461059236276" expanded="true" signature="2756:2832" placeholder="SELECT schem... schemata" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataModule/tcpclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

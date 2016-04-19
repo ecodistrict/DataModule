@@ -51,7 +51,11 @@ class TcpClient:
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
             if case_id == 'null':
                 returnDict["status"] = "failed - no case id"
+            elif self._pdm.checkIfSchemaExists(case_id):
+                returnDict["status"] = "Success - schema already created before"
             else:
+                returnDict["status"] = "In progress - creating schema"
+                self.write_data(json.dumps(returnDict), event_id)
                 returnDict["status"] = self._pdm.createSchema(case_id)
             self.write_data(json.dumps(returnDict), event_id)
 
@@ -59,7 +63,11 @@ class TcpClient:
             returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
             if case_id != 'null':
                 returnDict["status"] = "failed - no case id"
+            elif self.checkIfSchemaExists(case_id):
+                returnDict["status"] = "Success - schema already deleted before"
             else:
+                returnDict["status"] = "In progress - deleting cascading schemas"
+                self.write_data(json.dumps(returnDict), event_id)
                 returnDict["status"] = self._pdm.deleteSchema(case_id)
             self.write_data(json.dumps(returnDict), event_id)
 
@@ -69,7 +77,13 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 returnDict["status"] = "failed - no variant id"
+            elif not self.checkIfSchemaExists(case_id):
+                returnDict["status"] = "failed - case schema doesn't exist"
+            elif self.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "Success - schema already created before"
             else:
+                returnDict["status"] = "In progress - creating schema"
+                self.write_data(json.dumps(returnDict), event_id)
                 returnDict["status"] = self._pdm.createSchema(schema_id, case_id)
             self.write_data(json.dumps(returnDict), event_id)
 
@@ -79,9 +93,14 @@ class TcpClient:
                 returnDict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 returnDict["status"] = "failed - no variant id"
+            elif self.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "Success - schema already deleted before"
             else:
+                returnDict["status"] = "In progress - deleting schema"
+                self.write_data(json.dumps(returnDict), event_id)
                 returnDict["status"] = self._pdm.deleteSchema(schema_id)
             self.write_data(json.dumps(returnDict), event_id)
+
 
         elif method == 'getData':
             # parse module ID

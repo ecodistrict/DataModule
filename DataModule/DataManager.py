@@ -63,8 +63,6 @@ class PostresDataManager:
         return {}
 
     def createSchema(self, schemaID, from_schema_id='public'):
-        if self.checkIfSchemaExists(schemaID):
-            return "Success : schema already created before"
         request = ("""SELECT clone_schema('{}','{}', TRUE);""").format(from_schema_id, schemaID)
         if self.executeRequest(request):
             self.commit_transactions()
@@ -74,8 +72,6 @@ class PostresDataManager:
             return "Failed - can't create schema"
 
     def deleteSchema(self, schemaID):
-        if self.checkIfSchemaExists(schemaID):
-            return "Success - schema already deleted before"
         request = ("""SELECT drop_schemas('{}');""").format(schemaID)
         if self.executeRequest(request):
             self.commit_transactions()
