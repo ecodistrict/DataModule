@@ -3,6 +3,7 @@ import json
 import DataManager
 import Stockholm_Green_Area_Factor as SGAF
 import LCC_LCA
+import Mobility_Module
 import ModuleKPI
 
 class TcpClient:
@@ -38,7 +39,7 @@ class TcpClient:
 
     def handle_string_event(self, event_entry, command):
         parsed_json = json.loads(command)
-        type_msg = parsed_json('type', 'null')
+        type_msg = parsed_json.get('type', 'null')
         if type_msg in ('response', 'null'):
             return
 
@@ -128,6 +129,10 @@ class TcpClient:
                 elif module_id == 'SP_LCA_v4.0' or module_id == 'SP_LCC_v1.0':
                     aModule_LCC_LCAA = LCC_LCA.Module_LCC_LCA(self._pdm, schema_id)
                     returnDict["data"] = aModule_LCC_LCAA.getData()
+                    returnDict["status"] = "succes"
+                elif module_id == 'MobilityModule':
+                    aModule_Mobility = Mobility_Module.Module_Mobility(self._pdm, schema_id)
+                    returnDict["data"] = aModule_Mobility.getData()
                     returnDict["status"] = "succes"
                 else:
                     returnDict["status"] = "failed - no module found"
