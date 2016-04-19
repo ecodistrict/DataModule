@@ -22,7 +22,7 @@ class TcpClient:
         else:
             print("not connected")
 
-        self._pdm = DataManager.PostresDataManager()
+        self._pdm = DataManager.PostgresDataManager()
         # testing connection
         self._pdm.connect(localhost, dbname, user, pwd, prt)
         if self._pdm.isConnected:

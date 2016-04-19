@@ -1,8 +1,9 @@
 import psycopg2
 
 
-class PostresDataManager:
+class PostgresDataManager:
     def __init__(self):
+        self.conn = None
         self.isConnected = False
 
     def __del__(self):
@@ -12,10 +13,10 @@ class PostresDataManager:
     def connect(self, host, dbname, user, password,port):
         self.isConnected = False
         try:
-             self.conn = psycopg2.connect(dbname=dbname, user=user, host=host, password=password, port=port)
-             self.isConnected = True
+            self.conn = psycopg2.connect(dbname=dbname, user=user, host=host, password=password, port=port)
+            self.isConnected = True
         except:
-             print "I am unable to connect to the database"
+            print "I am unable to connect to the database"
 
     def isConnect(self):
         return self.isConnected

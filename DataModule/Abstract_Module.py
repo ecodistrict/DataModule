@@ -1,7 +1,7 @@
 class AbstractModule:
-    def __init__(self, postresDataManager, schema_id):
+    def __init__(self, postgresDataManager, schema_id):
         self.schemaID = schema_id
-        self._pdm = postresDataManager
+        self._pdm = postgresDataManager
         self.responseData = {}
 
     def createSchemaRequest(self, request):

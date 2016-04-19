@@ -1,5 +1,7 @@
-import sys, getopt
+import sys
+import getopt
 import tcpclient
+
 
 def main(argv=None):
     """The main routine."""
@@ -8,7 +10,7 @@ def main(argv=None):
         argv = sys.argv[1:]
 
     host = '10.9.10.183'
-    dbname = 'Hovsjo_test'
+    db_name = 'Hovsjo_test'
     user = 'tournaire'
     password = 'olivier'
     port = '5432'
@@ -21,7 +23,7 @@ def main(argv=None):
         if opt in ('-h', '--host'):
             host = arg
         elif opt in ('-d', '--dbname'):
-            dbname = arg
+            db_name = arg
         elif opt in ('-u', '--user'):
             user = arg
         elif opt in ('-P', '--password'):
@@ -31,9 +33,9 @@ def main(argv=None):
 
     print("Starting dataModule.")
 
-    #testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    #testClient = tcpclient.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
-    testClient = tcpclient.TcpClient(host, dbname, user, password, port)
+    # testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    # testClient = tcpclient.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
+    test_client = tcpclient.TcpClient(host, db_name, user, password, port)
     raw_input('dataModule is running; press return to quit.')
 
 if __name__ == "__main__":
