@@ -30,7 +30,6 @@ class TcpClient:
         else:
             print "error in Postgres connection"
 
-
     def write_data(self, data, event_name):
         if self._connection.connected:
             print data
@@ -108,7 +107,6 @@ class TcpClient:
                 returnDict["status"] = self._pdm.deleteSchema(schema_id)
             self.write_data(json.dumps(returnDict), event_id)
 
-
         elif method == 'getData':
             # parse module ID
             returnDict = {"method": method, "type": "response", "userId" : user_id,
@@ -121,6 +119,8 @@ class TcpClient:
                 returnDict["status"] = "failed - no variant id"
             elif module_id == 'null':
                 returnDict["status"] = "failed - no module id"
+            elif not self._pdm.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "failed - no schema found for case and variant id"
             else:
                 if module_id == 'Stockholm_Green_Area_Factor':
                     aModule_SGAF = SGAF.Module_SGAF(self._pdm, schema_id)
@@ -144,8 +144,13 @@ class TcpClient:
             returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                           "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
-            saveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-            returnDict["status"] = saveModule.save(kpi_id, kpiValueList)
+            if kpi_id is 'null':
+                returnDict["status"] = "failed - no kpiId found in request"
+            elif not self._pdm.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "failed - no schema found for case and variant id"
+            else:
+                saveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+                returnDict["status"] = saveModule.save(kpi_id, kpiValueList)
             self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'getKpiResult':
@@ -153,8 +158,13 @@ class TcpClient:
             returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                       "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
-            loadModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-            returnDict["status"] = loadModule.load(kpi_id)
+            if kpi_id is 'null':
+                returnDict["status"] = "failed - no kpiId found in request"
+            elif not self._pdm.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "failed - no schema found for case and variant id"
+            else:
+                loadModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
+                returnDict["status"] = loadModule.load(kpi_id)
             self.write_data(json.dumps(returnDict), event_id)
 
         elif method == 'getGeoJson':
@@ -164,6 +174,8 @@ class TcpClient:
             element_filter = parsed_json.get('element_type_filter', 'null')
             if element_filter == 'null':
                 returnDict["status"] = "failed - no elements filtered found"
+            elif not self._pdm.checkIfSchemaExists(schema_id):
+                returnDict["status"] = "failed - no schema found for case and variant id"
             else:
                 aKpiModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
                 returnDict['data'] = aKpiModule.getGeoJson(element_filter)
