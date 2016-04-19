@@ -89,7 +89,8 @@ class PostresDataManager:
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)
-                data = cur.fetchone()
-                if data[0] is not None:
+                raw_data = cur.fetchone()
+                data = raw_data[0] if type(raw_data) is tuple else raw_data
+                if data is not None:
                     return True
         return False
