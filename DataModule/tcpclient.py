@@ -38,6 +38,10 @@ class TcpClient:
 
     def handle_string_event(self, event_entry, command):
         parsed_json = json.loads(command)
+        type_msg = parsed_json('type', 'null')
+        if type_msg in ('response', 'null'):
+            return
+
         method = parsed_json.get('method', 'null')
         case_id = parsed_json.get('caseId', 'null')
         user_id = parsed_json.get('userId', 'null')
