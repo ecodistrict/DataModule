@@ -127,7 +127,7 @@ class TcpClient:
             else:
                 if module_id == 'Stockholm_Green_Area_Factor':
                     amodule_sgaf = SGAF.ModuleSGAF(self._pdm, schema_id)
-                    return_dict["data"] = a_module_sgaf.getData()
+                    return_dict["data"] = amodule_sgaf.getData()
                     return_dict["status"] = "success"
                 elif module_id == 'SP_LCA_v4.0' or module_id == 'SP_LCC_v1.0':
                     amodule_lcc_lca = LCC_LCA.ModuleLCCLCA(self._pdm, schema_id)

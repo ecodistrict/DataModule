@@ -31,6 +31,7 @@ def main(args=None):
         test get geoJSON response message
     """
     get_geojson_data_message = {
+                                "moduleId": "dashboard",
                                 "variantId": "lcalccalt4b",
                                 "caseId": "hovsjo",
                                 "userId": "cstb",
