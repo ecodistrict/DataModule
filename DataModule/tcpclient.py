@@ -5,6 +5,7 @@ import Stockholm_Green_Area_Factor as SGAF
 import LCC_LCA
 import Mobility_Module
 import ModuleKPI
+import logging
 
 
 class TcpClient:
@@ -204,6 +205,7 @@ class TcpClient:
             self.write_data(json.dumps(return_dict), event_id)
 
         else:
+            logging.warning('## received string event_name: {} command: {}'.format(event_entry.event_name, command))
             print('## received string', event_entry.event_name, command)
 
     # def handle_stream_create(self, event_entry, stream_name):
@@ -219,4 +221,5 @@ class TcpClient:
     #         print('## received stream end', event_entry.event_name, stream_name, cancel)
 
     def handle_disconnect(self):
+        logging.info('disconnect')
         print('disconnected..')

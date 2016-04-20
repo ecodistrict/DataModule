@@ -1,5 +1,6 @@
 import psycopg2
 import sys
+import logging
 
 
 class PostgresDataManager:
@@ -11,15 +12,17 @@ class PostgresDataManager:
         if self.isConnected:
             self.conn.close()
 
-    def connect(self, host, db_name, user, password,port):
+    def connect(self, host, db_name, user, password, port):
         self.isConnected = False
         try:
             self.conn = psycopg2.connect(dbname=db_name, user=user, host=host, password=password, port=port)
             self.isConnected = True
+            logging.info("database is connected")
         except psycopg2.Error as e:
             print "I am unable to connect to the database"
             print e.pgerror
             print e.diag.message_detail
+            logging.error("Unable to connect {} {}".format(e.pgerror, e.diag.message_detail))
             sys.exit(1)
 
     def is_connected(self):
