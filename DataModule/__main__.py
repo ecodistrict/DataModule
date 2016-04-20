@@ -20,8 +20,10 @@ def main(argv=None):
     try:
         opts, args = getopt.getopt(argv, "h:d:u:P:p", ["host=", "dbname=", "user=", "password", "port="])
     except getopt.GetoptError:
-        print 'DataModule.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
-        logging.warning('DataModule.py -h <host> -d <database name> -u <user> -P <password> -p <port>')
+        print '__main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
+        logging.warning('run __main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>')
+        logging.warning('or __main__.py --host <host> --dbname <database name> --user <user> --password <password> --port <port>')
+        logging.waring('currents args are: {}'.format(args))
         sys.exit(2)
     for opt, arg in opts:
         if opt in ('-h', '--host'):
