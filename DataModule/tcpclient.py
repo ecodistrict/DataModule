@@ -48,10 +48,9 @@ class TcpClient:
         user_id = parsed_json.get('userId', 'null')
         variant_id = parsed_json.get('variantId', None)
 
-        if case_id is not 'null':
-            prefix = 'trout_'
-            case_id = prefix + case_id
-        schema_id = case_id if variant_id is None else case_id + "_" + variant_id
+        prefix = 'trout_'
+        base_schema_id = case_id if variant_id is None else case_id + "_" + variant_id
+        schema_id = prefix + base_schema_id
         calculation_id = parsed_json.get('calculationId', 'null')
         module_id = parsed_json.get('moduleId', 'null')
         event_id = parsed_json.get('eventId', 'data')
