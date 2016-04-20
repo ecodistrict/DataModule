@@ -276,8 +276,7 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
                   );""".format(filtered_name))
         return self._pdm.get_data_value(request, float)
 
-
-    def getData(self):
+    def get_data(self):
         # TRUITE
         self.responseData["Total land area"] = self._get_total_land_area()
 

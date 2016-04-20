@@ -9,7 +9,7 @@ def main(args=None):
 
     test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
     get_data_message = {
-                        "method": "get_data",
+                        "method": "getData",
                         "type": "request",
                         "userId": "cstb",
                         "caseId": "hovsjo",

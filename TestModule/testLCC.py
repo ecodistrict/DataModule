@@ -29,7 +29,7 @@ def main(args=None):
     simulate get Data LCA case
     """
     get_data_message_lca = {
-                            "method": "get_data",
+                            "method": "getData",
                             "type": "request",
                             "userId": "cstb",
                             "caseId": "hovsjo",

@@ -10,13 +10,13 @@ def main(args=None):
     test_client = tcp_client.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
 
     get_data_message_mobility = {
-                                "method": "get_data",
+                                "method": "getData",
                                 "type": "request",
                                 "userId": "cstb",
                                 "caseId": "hovsjo",
                                 "variantId": "mobilityalt1",
                                 "moduleId": "MobilityModule",
-                                "calculationId" : "xx_mobility_xx",
+                                "calculationId": "xx_mobility_xx",
                                 'eventId': "trout"
                                 }
     json_get_data_mobility = json.dumps(get_data_message_mobility)

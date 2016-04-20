@@ -110,7 +110,7 @@ class TcpClient:
                 return_dict["status"] = self._pdm.delete_schema(schema_id)
             self.write_data(json.dumps(return_dict), event_id)
 
-        elif method == 'get_data':
+        elif method == 'getData':
             # parse module ID
             return_dict = {"method": method, "type": "response", "userId": user_id,
                            "caseId": case_id, "variantId": variant_id,
@@ -127,7 +127,7 @@ class TcpClient:
             else:
                 if module_id == 'Stockholm_Green_Area_Factor':
                     amodule_sgaf = SGAF.ModuleSGAF(self._pdm, schema_id)
-                    return_dict["data"] = amodule_sgaf.getData()
+                    return_dict["data"] = amodule_sgaf.get_data()
                     return_dict["status"] = "success"
                 elif module_id == 'SP_LCA_v4.0' or module_id == 'SP_LCC_v1.0':
                     amodule_lcc_lca = LCC_LCA.ModuleLCCLCA(self._pdm, schema_id)
@@ -182,7 +182,7 @@ class TcpClient:
                 return_dict["status"] = load_module.load(kpi_id)
             self.write_data(json.dumps(return_dict), event_id)
 
-        elif method == 'get_geojson':
+        elif method == 'getGeojson':
             return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                            "variantId": variant_id, "moduleId": module_id}
 
