@@ -52,6 +52,7 @@ class TcpClient:
         prefix = 'trout_'
         base_schema_id = case_id if variant_id is None else case_id + "_" + variant_id
         schema_id = prefix + base_schema_id
+        db_case_id = prefix + case_id
         calculation_id = parsed_json.get('calculationId', 'null')
         module_id = parsed_json.get('moduleId', 'null')
         event_id = parsed_json.get('eventId', 'data')
@@ -60,24 +61,28 @@ class TcpClient:
             return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id}
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
-            elif self._pdm.check_if_schema_exists(case_id):
+            if variant_id is not 'null':
+                return_dict["status"] = "failed - not supposed to have a variant id"
+            elif self._pdm.check_if_schema_exists(db_case_id):
                 return_dict["status"] = "Success - schema already created before"
             else:
                 return_dict["status"] = "In progress - creating schema"
                 self.write_data(json.dumps(return_dict), event_id)
-                return_dict["status"] = self._pdm.create_schema(case_id)
+                return_dict["status"] = self._pdm.create_schema(db_case_id)
             self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'deleteCase':
             return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id}
             if case_id != 'null':
                 return_dict["status"] = "failed - no case id"
-            elif self._pdm.check_if_schema_exists(case_id):
+            if variant_id is not 'null':
+                return_dict["status"] = "failed - not supposed to have a variant id"
+            elif self._pdm.check_if_schema_exists(db_case_id):
                 return_dict["status"] = "Success - schema already deleted before"
             else:
                 return_dict["status"] = "In progress - deleting cascading schemas"
                 self.write_data(json.dumps(return_dict), event_id)
-                return_dict["status"] = self._pdm.delete_schema(case_id)
+                return_dict["status"] = self._pdm.delete_schema(db_case_id)
             self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'createVariant':
