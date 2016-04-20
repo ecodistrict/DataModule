@@ -19,11 +19,11 @@ def main(argv=None):
     port = '5432'
     try:
         opts, args = getopt.getopt(argv, "h:d:u:P:p", ["host=", "dbname=", "user=", "password", "port="])
+        logging.info("currents args are: {}".format(argv))
     except getopt.GetoptError:
         print '__main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
         logging.warning('run __main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>')
         logging.warning('or __main__.py --host <host> --dbname <database name> --user <user> --password <password> --port <port>')
-        logging.warning('currents args are: {}'.format(args))
         sys.exit(2)
     for opt, arg in opts:
         if opt in ('-h', '--host'):
