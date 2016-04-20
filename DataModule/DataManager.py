@@ -23,6 +23,7 @@ class PostgresDataManager:
             print e.pgerror
             print e.diag.message_detail
             logging.error("Unable to connect {} {}".format(e.pgerror, e.diag.message_detail))
+            logging.error("Unable to connect db {}, user {}, host {}, port {}".format(db_name, user, host, port))
             sys.exit(1)
 
     def is_connected(self):
