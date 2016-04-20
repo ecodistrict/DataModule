@@ -77,7 +77,7 @@ class TcpClient:
                 return_dict["status"] = "failed - no case id"
             if variant_id is not 'null':
                 return_dict["status"] = "failed - not supposed to have a variant id"
-            elif self._pdm.check_if_schema_exists(db_case_id):
+            elif not self._pdm.check_if_schema_exists(db_case_id):
                 return_dict["status"] = "Success - schema already deleted before"
             else:
                 return_dict["status"] = "In progress - deleting cascading schemas"
@@ -109,7 +109,7 @@ class TcpClient:
                 return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 return_dict["status"] = "failed - no variant id"
-            elif self._pdm.check_if_schema_exists(schema_id):
+            elif not self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "Success - schema already deleted before"
             else:
                 return_dict["status"] = "In progress - deleting schema"
