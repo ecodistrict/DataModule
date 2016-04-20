@@ -15,7 +15,7 @@ def main(argv=None):
     password = 'olivier'
     port = '5432'
     try:
-        logging.info("currents args are: {}".format(argv))
+        logging.info("currents args are: {}".format(sys.argv[1:]))
         opts, args = getopt.getopt(sys.argv[1:], "h:d:u:P:p:", ["host=", "dbname=", "user=", "password", "port="])
     except getopt.GetoptError:
         print '__main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
