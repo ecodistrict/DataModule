@@ -94,7 +94,7 @@ class TcpClient:
                 return_dict["status"] = "failed - no variant id"
             elif self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "Success - schema already created before"
-            elif not self._pdm.check_if_schema_exists(base_schema_id):
+            elif not self._pdm.check_if_schema_exists(db_case_id):
                 return_dict["status"] = "failed - case schema doesn't exist"
             else:
                 return_dict["status"] = "In progress - creating schema"
