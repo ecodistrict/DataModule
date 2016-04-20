@@ -9,14 +9,17 @@ def main(argv=None):
 
     logging.basicConfig(filename='dataModule.log', level=logging.DEBUG)
 
+    if argv is None:
+        argv = sys.argv[1:]
+
     host = '10.9.10.183'
     db_name = 'Hovsjo_test'
     user = 'tournaire'
     password = 'olivier'
     port = '5432'
     try:
-        opts, args = getopt.getopt(argv[1:], "h:d:u:P:p", ["host=", "dbname=", "user=", "password", "port="])
         logging.info("currents args are: {}".format(argv))
+        opts, args = getopt.getopt(argv[1:], "h:d:u:P:p", ["host=", "dbname=", "user=", "password", "port="])
     except getopt.GetoptError:
         print '__main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
         logging.warning('run __main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>')
