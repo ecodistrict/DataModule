@@ -94,16 +94,17 @@ class TcpClient:
                 return_dict["status"] = "failed - no variant id"
             elif self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "Success - schema already created before"
-            elif not self._pdm.check_if_schema_exists(case_id):
+            elif not self._pdm.check_if_schema_exists(base_schema_id):
                 return_dict["status"] = "failed - case schema doesn't exist"
             else:
                 return_dict["status"] = "In progress - creating schema"
                 self.write_data(json.dumps(return_dict), event_id)
-                return_dict["status"] = self._pdm.create_schema(schema_id, case_id)
+                return_dict["status"] = self._pdm.create_schema(schema_id, db_case_id)
             self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'deleteVariant':
-            return_dict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id,
+                           "caseId": case_id, "variantId": variant_id}
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
