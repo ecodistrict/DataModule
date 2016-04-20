@@ -47,7 +47,7 @@ class TcpClient:
         method = parsed_json.get('method', 'null')
         case_id = parsed_json.get('caseId', 'null')
         user_id = parsed_json.get('userId', 'null')
-        variant_id = parsed_json.get('variantId', None)
+        variant_id = parsed_json.get('variantId', 'null')
 
         prefix = 'trout_'
         base_schema_id = case_id if variant_id is None else case_id + "_" + variant_id
