@@ -86,10 +86,10 @@ class TcpClient:
                 return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
                 return_dict["status"] = "failed - no variant id"
-            elif not self._pdm.check_if_schema_exists(case_id):
-                return_dict["status"] = "failed - case schema doesn't exist"
             elif self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "Success - schema already created before"
+            elif not self._pdm.check_if_schema_exists(case_id):
+                return_dict["status"] = "failed - case schema doesn't exist"
             else:
                 return_dict["status"] = "In progress - creating schema"
                 self.write_data(json.dumps(return_dict), event_id)
@@ -147,6 +147,12 @@ class TcpClient:
             return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                            "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
+            if case_id == 'null':
+                return_dict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                return_dict["status"] = "failed - no variant id"
+            elif module_id == 'null':
+                return_dict["status"] = "failed - no module id"
             if kpi_id is 'null':
                 return_dict["status"] = "failed - no kpiId found in request"
             elif not self._pdm.check_if_schema_exists(schema_id):
@@ -161,12 +167,18 @@ class TcpClient:
             return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
                            "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
-            if kpi_id is 'null':
+            if case_id == 'null':
+                return_dict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                return_dict["status"] = "failed - no variant id"
+            elif module_id == 'null':
+                return_dict["status"] = "failed - no module id"
+            elif kpi_id is 'null':
                 return_dict["status"] = "failed - no kpiId found in request"
             elif not self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "failed - no schema found for case and variant id"
             else:
-                load_module = ModuleKPI.Module_KPI(self._pdm, schema_id)
+                load_module = ModuleKPI.ModuleKPI(self._pdm, schema_id)
                 return_dict["status"] = load_module.load(kpi_id)
             self.write_data(json.dumps(return_dict), event_id)
 
@@ -175,7 +187,13 @@ class TcpClient:
                            "variantId": variant_id, "moduleId": module_id}
 
             element_filter = parsed_json.get('element_type_filter', 'null')
-            if element_filter == 'null':
+            if case_id == 'null':
+                return_dict["status"] = "failed - no case id"
+            elif variant_id == 'null':
+                return_dict["status"] = "failed - no variant id"
+            elif module_id == 'null':
+                return_dict["status"] = "failed - no module id"
+            elif element_filter == 'null':
                 return_dict["status"] = "failed - no elements filtered found"
             elif not self._pdm.check_if_schema_exists(schema_id):
                 return_dict["status"] = "failed - no schema found for case and variant id"
