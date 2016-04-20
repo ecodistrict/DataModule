@@ -8,7 +8,7 @@ def main(args=None):
     """
     testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
 
-    getDataMessageLCC = {"method": "getData",
+    getDataMessageLCC = {"method": "get_data",
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "hovsjo",
@@ -22,7 +22,7 @@ def main(args=None):
     testClient.handle_string_event('data', jsonGetDataLCC)
 
 
-    getDataMessageLCA = {"method": "getData",
+    getDataMessageLCA = {"method": "get_data",
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "hovsjo",

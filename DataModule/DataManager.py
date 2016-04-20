@@ -1,4 +1,5 @@
 import psycopg2
+import sys
 
 
 class PostgresDataManager:
@@ -10,18 +11,21 @@ class PostgresDataManager:
         if self.isConnected:
             self.conn.close()
 
-    def connect(self, host, dbname, user, password,port):
+    def connect(self, host, db_name, user, password,port):
         self.isConnected = False
         try:
-            self.conn = psycopg2.connect(dbname=dbname, user=user, host=host, password=password, port=port)
+            self.conn = psycopg2.connect(dbname=db_name, user=user, host=host, password=password, port=port)
             self.isConnected = True
-        except:
+        except psycopg2.Error as e:
             print "I am unable to connect to the database"
+            print e.pgerror
+            print e.diag.message_detail
+            sys.exit(1)
 
-    def isConnect(self):
+    def is_connected(self):
         return self.isConnected
 
-    def executeRequest(self, request):
+    def execute_request(self, request):
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)
@@ -31,10 +35,10 @@ class PostgresDataManager:
     def commit_transactions(self):
         self.conn.commit()
 
-    def rolleback_transactions(self):
+    def rollback_transactions(self):
         self.conn.rollback()
 
-    def getDataValue(self, request, cast):
+    def get_data_value(self, request, cast):
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)
@@ -47,42 +51,33 @@ class PostgresDataManager:
                         return data
         return 0
 
-    def getDataListValues(self, request):
+    def get_data_list_values(self, request):
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)
                 return cur.fetchall()
         return []
 
-    def getJsonifyValue(self, request):
-        if self.isConnected:
-            with self.conn.cursor() as cur:
-                # add JSON conversion
-                json_request = ("""SELECT array_to_json(array_agg(row_to_json(RESULT))) FROM ({}) RESULT""").format(request)
-                cur.execute(json_request)
-                return cur.fetchone()
-        return {}
-
-    def createSchema(self, schemaID, from_schema_id='public'):
-        request = ("""SELECT clone_schema('{}','{}', TRUE);""").format(from_schema_id, schemaID)
-        if self.executeRequest(request):
+    def create_schema(self, schema_id, from_schema_id='public'):
+        request = """SELECT clone_schema('{}','{}', TRUE);""".format(from_schema_id, schema_id)
+        if self.execute_request(request):
             self.commit_transactions()
             return "Success - schema created"
         else:
-            self.rolleback_transactions()
+            self.rollback_transactions()
             return "Failed - can't create schema"
 
-    def deleteSchema(self, schemaID):
-        request = ("""SELECT drop_schemas('{}');""").format(schemaID)
-        if self.executeRequest(request):
+    def delete_schema(self, schema_id):
+        request = """SELECT drop_schemas('{}');""".format(schema_id)
+        if self.execute_request(request):
             self.commit_transactions()
             return "Success - schema deleted"
         else:
-            self.rolleback_transactions()
+            self.rollback_transactions()
             return "Failed - can't delete schema"
 
-    def checkIfSchemaExists(self, schemaID):
-        request = ("""SELECT schema_name FROM information_schema.schemata WHERE schema_name = '{}';""").format(schemaID);
+    def check_if_schema_exists(self, schema_id):
+        request = """SELECT schema_name FROM information_schema.schemata WHERE schema_name = '{}';""".format(schema_id);
         if self.isConnected:
             with self.conn.cursor() as cur:
                 cur.execute(request)

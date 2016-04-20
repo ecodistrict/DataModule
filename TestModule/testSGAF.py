@@ -6,7 +6,7 @@ def main(args=None):
     """
     simulate get Data case
     """
-    getDataMessage = { "method": "getData",
+    getDataMessage = { "method": "get_data",
                        "type": "request",
                        "userId": "cstb",
                        "caseId": "hovsjo",
@@ -23,9 +23,9 @@ def main(args=None):
 
     # pdm = DataManager.PostresDataManager()
     # pdm.connect("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    # pdm.createSchema('truite_test')
+    # pdm.create_schema('truite_test')
     # sgafTest = SGAF.Module_SGAF(pdm, "truite", "test")
-    # sgafTest.getData()
+    # sgafTest.get_data()
 
     print 'done'
 

@@ -35,7 +35,7 @@ def main(args=None):
 	                            "variantId": "lcalccalt4b",
 	                            "caseId": "hovsjo",
 	                            "userId": "cstb",
-                                "method": "getGeoJson",
+                                "method": "get_geojson",
                                 "type": "request",
                                 "eventId": "trout",
                                 "element_type_filter": "building"

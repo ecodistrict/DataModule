@@ -6,15 +6,16 @@ import LCC_LCA
 import Mobility_Module
 import ModuleKPI
 
+
 class TcpClient:
-    def __init__(self, localhost, dbname, user, pwd, prt):
+    def __init__(self, localhost, db_name, user, pwd, prt):
         self._connection = imb4.TConnection(imb4.DEFAULT_REMOTE_HOST, imb4.DEFAULT_REMOTE_TLS_PORT, True, 'CSTB', 1)
         self._connection.on_disconnect = self.handle_disconnect
 
         self._data_event = self._connection.subscribe('data',
                                                       on_string_event=self.handle_string_event
-                                                      #on_stream_create=self.handle_stream_create,
-                                                      #on_stream_end=self.handle_stream_end
+                                                      # on_stream_create=self.handle_stream_create,
+                                                      # on_stream_end=self.handle_stream_end
                                                       )
 
         if self._connection.connected:
@@ -24,7 +25,7 @@ class TcpClient:
 
         self._pdm = DataManager.PostgresDataManager()
         # testing connection
-        self._pdm.connect(localhost, dbname, user, pwd, prt)
+        self._pdm.connect(localhost, db_name, user, pwd, prt)
         if self._pdm.isConnected:
             print "Postgres is connected"
         else:
@@ -56,133 +57,134 @@ class TcpClient:
         event_id = parsed_json.get('eventId', 'data')
 
         if method == 'createCase':
-            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id}
             if case_id == 'null':
-                returnDict["status"] = "failed - no case id"
-            elif self._pdm.checkIfSchemaExists(case_id):
-                returnDict["status"] = "Success - schema already created before"
+                return_dict["status"] = "failed - no case id"
+            elif self._pdm.check_if_schema_exists(case_id):
+                return_dict["status"] = "Success - schema already created before"
             else:
-                returnDict["status"] = "In progress - creating schema"
-                self.write_data(json.dumps(returnDict), event_id)
-                returnDict["status"] = self._pdm.createSchema(case_id)
-            self.write_data(json.dumps(returnDict), event_id)
+                return_dict["status"] = "In progress - creating schema"
+                self.write_data(json.dumps(return_dict), event_id)
+                return_dict["status"] = self._pdm.create_schema(case_id)
+            self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'deleteCase':
-            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id}
             if case_id != 'null':
-                returnDict["status"] = "failed - no case id"
-            elif self.checkIfSchemaExists(case_id):
-                returnDict["status"] = "Success - schema already deleted before"
+                return_dict["status"] = "failed - no case id"
+            elif self._pdm.check_if_schema_exists(case_id):
+                return_dict["status"] = "Success - schema already deleted before"
             else:
-                returnDict["status"] = "In progress - deleting cascading schemas"
-                self.write_data(json.dumps(returnDict), event_id)
-                returnDict["status"] = self._pdm.deleteSchema(case_id)
-            self.write_data(json.dumps(returnDict), event_id)
+                return_dict["status"] = "In progress - deleting cascading schemas"
+                self.write_data(json.dumps(return_dict), event_id)
+                return_dict["status"] = self._pdm.delete_schema(case_id)
+            self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'createVariant':
-            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id,
+                           "caseId": case_id, "variantId": variant_id}
             if case_id == 'null':
-                returnDict["status"] = "failed - no case id"
+                return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
-                returnDict["status"] = "failed - no variant id"
-            elif not self.checkIfSchemaExists(case_id):
-                returnDict["status"] = "failed - case schema doesn't exist"
-            elif self.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "Success - schema already created before"
+                return_dict["status"] = "failed - no variant id"
+            elif not self._pdm.check_if_schema_exists(case_id):
+                return_dict["status"] = "failed - case schema doesn't exist"
+            elif self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "Success - schema already created before"
             else:
-                returnDict["status"] = "In progress - creating schema"
-                self.write_data(json.dumps(returnDict), event_id)
-                returnDict["status"] = self._pdm.createSchema(schema_id, case_id)
-            self.write_data(json.dumps(returnDict), event_id)
+                return_dict["status"] = "In progress - creating schema"
+                self.write_data(json.dumps(return_dict), event_id)
+                return_dict["status"] = self._pdm.create_schema(schema_id, case_id)
+            self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'deleteVariant':
-            returnDict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
+            return_dict = {"method" : method, "type" : "response", "userId" : user_id, "caseId" : case_id, "variantId" : variant_id}
             if case_id == 'null':
-                returnDict["status"] = "failed - no case id"
+                return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
-                returnDict["status"] = "failed - no variant id"
-            elif self.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "Success - schema already deleted before"
+                return_dict["status"] = "failed - no variant id"
+            elif self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "Success - schema already deleted before"
             else:
-                returnDict["status"] = "In progress - deleting schema"
-                self.write_data(json.dumps(returnDict), event_id)
-                returnDict["status"] = self._pdm.deleteSchema(schema_id)
-            self.write_data(json.dumps(returnDict), event_id)
+                return_dict["status"] = "In progress - deleting schema"
+                self.write_data(json.dumps(return_dict), event_id)
+                return_dict["status"] = self._pdm.delete_schema(schema_id)
+            self.write_data(json.dumps(return_dict), event_id)
 
-        elif method == 'getData':
+        elif method == 'get_data':
             # parse module ID
-            returnDict = {"method": method, "type": "response", "userId" : user_id,
-                          "caseId": case_id, "variantId" : variant_id,
-                          "calculationId" : calculation_id, "moduleId": module_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id,
+                           "caseId": case_id, "variantId": variant_id,
+                           "calculationId": calculation_id, "moduleId": module_id}
 
             if case_id == 'null':
-                returnDict["status"] = "failed - no case id"
+                return_dict["status"] = "failed - no case id"
             elif variant_id == 'null':
-                returnDict["status"] = "failed - no variant id"
+                return_dict["status"] = "failed - no variant id"
             elif module_id == 'null':
-                returnDict["status"] = "failed - no module id"
-            elif not self._pdm.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "failed - no schema found for case and variant id"
+                return_dict["status"] = "failed - no module id"
+            elif not self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "failed - no schema found for case and variant id"
             else:
                 if module_id == 'Stockholm_Green_Area_Factor':
-                    aModule_SGAF = SGAF.Module_SGAF(self._pdm, schema_id)
-                    returnDict["data"] = aModule_SGAF.getData()
-                    returnDict["status"] = "succes"
+                    amodule_sgaf = SGAF.ModuleSGAF(self._pdm, schema_id)
+                    return_dict["data"] = a_module_sgaf.getData()
+                    return_dict["status"] = "success"
                 elif module_id == 'SP_LCA_v4.0' or module_id == 'SP_LCC_v1.0':
-                    aModule_LCC_LCAA = LCC_LCA.Module_LCC_LCA(self._pdm, schema_id)
-                    returnDict["data"] = aModule_LCC_LCAA.getData()
-                    returnDict["status"] = "succes"
+                    amodule_lcc_lca = LCC_LCA.ModuleLCCLCA(self._pdm, schema_id)
+                    return_dict["data"] = amodule_lcc_lca.get_data()
+                    return_dict["status"] = "success"
                 elif module_id == 'MobilityModule':
-                    aModule_Mobility = Mobility_Module.Module_Mobility(self._pdm, schema_id)
-                    returnDict["data"] = aModule_Mobility.getData()
-                    returnDict["status"] = "succes"
+                    amodule_mobility = Mobility_Module.ModuleMobility(self._pdm, schema_id)
+                    return_dict["data"] = amodule_mobility.get_data()
+                    return_dict["status"] = "success"
                 else:
-                    returnDict["status"] = "failed - no module found"
-            self.write_data(json.dumps(returnDict), event_id)
+                    return_dict["status"] = "failed - no module found"
+            self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'setKpiResult':
             kpi_id = parsed_json.get('kpiId', 'null')
-            kpiValueList = parsed_json.get('kpiValueList', 'null')
-            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
-                          "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
+            kpi_value_list = parsed_json.get('kpiValueList', 'null')
+            return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                           "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
             if kpi_id is 'null':
-                returnDict["status"] = "failed - no kpiId found in request"
-            elif not self._pdm.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "failed - no schema found for case and variant id"
+                return_dict["status"] = "failed - no kpiId found in request"
+            elif not self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "failed - no schema found for case and variant id"
             else:
-                saveModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-                returnDict["status"] = saveModule.save(kpi_id, kpiValueList)
-            self.write_data(json.dumps(returnDict), event_id)
+                save_module = ModuleKPI.ModuleKPI(self._pdm, schema_id)
+                return_dict["status"] = save_module.save(kpi_id, kpi_value_list)
+            self.write_data(json.dumps(return_dict), event_id)
 
         elif method == 'getKpiResult':
             kpi_id = parsed_json.get('kpiId', 'null')
-            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
-                      "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
+            return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                           "variantId": variant_id, "moduleId": module_id, "kpiId": kpi_id}
 
             if kpi_id is 'null':
-                returnDict["status"] = "failed - no kpiId found in request"
-            elif not self._pdm.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "failed - no schema found for case and variant id"
+                return_dict["status"] = "failed - no kpiId found in request"
+            elif not self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "failed - no schema found for case and variant id"
             else:
-                loadModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-                returnDict["status"] = loadModule.load(kpi_id)
-            self.write_data(json.dumps(returnDict), event_id)
+                load_module = ModuleKPI.Module_KPI(self._pdm, schema_id)
+                return_dict["status"] = load_module.load(kpi_id)
+            self.write_data(json.dumps(return_dict), event_id)
 
-        elif method == 'getGeoJson':
-            returnDict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
-                          "variantId": variant_id, "moduleId": module_id}
+        elif method == 'get_geojson':
+            return_dict = {"method": method, "type": "response", "userId": user_id, "caseId": case_id,
+                           "variantId": variant_id, "moduleId": module_id}
 
             element_filter = parsed_json.get('element_type_filter', 'null')
             if element_filter == 'null':
-                returnDict["status"] = "failed - no elements filtered found"
-            elif not self._pdm.checkIfSchemaExists(schema_id):
-                returnDict["status"] = "failed - no schema found for case and variant id"
+                return_dict["status"] = "failed - no elements filtered found"
+            elif not self._pdm.check_if_schema_exists(schema_id):
+                return_dict["status"] = "failed - no schema found for case and variant id"
             else:
-                aKpiModule = ModuleKPI.Module_KPI(self._pdm, schema_id)
-                returnDict['data'] = aKpiModule.getGeoJson(element_filter)
-                returnDict["status"] = 'Success - no test on results values'
-            self.write_data(json.dumps(returnDict), event_id)
+                amodule_kpi = ModuleKPI.ModuleKPI(self._pdm, schema_id)
+                return_dict['data'] = amodule_kpi.get_geojson(element_filter)
+                return_dict["status"] = 'Success - no test on results values'
+            self.write_data(json.dumps(return_dict), event_id)
 
         else:
             print('## received string', event_entry.event_name, command)
@@ -199,5 +201,5 @@ class TcpClient:
     #     else:
     #         print('## received stream end', event_entry.event_name, stream_name, cancel)
 
-    def handle_disconnect(_):
-        print('disconnected..')
+    # def handle_disconnect(self):
+    #    print('disconnected..')

@@ -4,6 +4,6 @@ class AbstractModule:
         self._pdm = postgresDataManager
         self.responseData = {}
 
-    def createSchemaRequest(self, request):
+    def create_schema_request(self, request):
         return """  SET SCHEMA '{}';
                     {}""".format(self.schemaID, request)
