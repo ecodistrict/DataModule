@@ -23,7 +23,7 @@ def main(argv=None):
         print '__main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>'
         logging.warning('run __main__.py -h <host> -d <database name> -u <user> -P <password> -p <port>')
         logging.warning('or __main__.py --host <host> --dbname <database name> --user <user> --password <password> --port <port>')
-        logging.waring('currents args are: {}'.format(args))
+        logging.warning('currents args are: {}'.format(args))
         sys.exit(2)
     for opt, arg in opts:
         if opt in ('-h', '--host'):
