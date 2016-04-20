@@ -201,5 +201,5 @@ class TcpClient:
     #     else:
     #         print('## received stream end', event_entry.event_name, stream_name, cancel)
 
-    # def handle_disconnect(self):
-    #    print('disconnected..')
+    def handle_disconnect(self):
+        print('disconnected..')

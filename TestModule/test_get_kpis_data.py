@@ -1,4 +1,4 @@
-import DataModule.tcpclient as tcpclient
+import DataModule.tcpclient as tcp_client
 import json
 
 
@@ -6,45 +6,43 @@ def main(args=None):
     """
     simulate get Data case
     """
-    #testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    testClient = tcpclient.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
+    #test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    test_client = tcp_client.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
 
     """
         test get complex kpis message
     """
-    getCompexKpisMessage =  {
+    get_complex_kpi_message = {
                                 "moduleId": "dashboard",
-	                            "variantId": "greenfactoralt1",
-	                            "caseId": "hovsjo",
-	                            "userId": "cstb",
+                                "variantId": "greenfactoralt1",
+                                "caseId": "hovsjo",
+                                "userId": "cstb",
                                 "method": "getKpiResult",
                                 "kpiId": "change-of-primary-energy-use-per-heated-area",
                                 "type": "request",
                                 "eventId": "trout"
-                            }
+                              }
 
-    jsonGetComplexKpis = json.dumps(getCompexKpisMessage)
-    print jsonGetComplexKpis
-    testClient.handle_string_event('data', jsonGetComplexKpis)
-
+    json_get_complex_kpi = json.dumps(get_complex_kpi_message)
+    print json_get_complex_kpi
+    test_client.handle_string_event('data', json_get_complex_kpi)
 
     """
         test get geoJSON response message
     """
-    getGeoJSONDataMessage = {
-	                            "variantId": "lcalccalt4b",
-	                            "caseId": "hovsjo",
-	                            "userId": "cstb",
+    get_geojson_data_message = {
+                                "variantId": "lcalccalt4b",
+                                "caseId": "hovsjo",
+                                "userId": "cstb",
                                 "method": "get_geojson",
                                 "type": "request",
                                 "eventId": "trout",
                                 "element_type_filter": "building"
-                            }
+                               }
 
-    jsonGetGeoJSONData = json.dumps(getGeoJSONDataMessage)
-    print jsonGetGeoJSONData
-
-    testClient.handle_string_event('data', jsonGetGeoJSONData)
+    json_get_geojson_data = json.dumps(get_geojson_data_message)
+    print json_get_geojson_data
+    test_client.handle_string_event('data', json_get_geojson_data)
 
 if __name__ == "__main__":
-	main()
+    main()

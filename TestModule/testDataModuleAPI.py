@@ -1,6 +1,5 @@
-import DataModule.tcpclient as tcpclient
+import DataModule.tcpclient as tcp_client
 import json
-
 
 
 def main(args=None):
@@ -10,76 +9,74 @@ def main(args=None):
     """
     Create case
     """
-    createCaseMessage = { "method": "createCase",
-                          "type": "request",
-                          "userId": "cstb",
-                          "caseId": "stockholm"
-                        }
-    jsoncreateCase = json.dumps(createCaseMessage)
+    create_case_message = {
+                            "method": "createCase",
+                            "type": "request",
+                            "userId": "cstb",
+                            "caseId": "stockholm"
+                          }
+    jsoncreateCase = json.dumps(create_case_message)
     print jsoncreateCase
 
-    #testClient = tcpclient.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    testClient = tcpclient.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
-
-    testClient.handle_string_event('data', jsoncreateCase)
-
+    # test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    test_client = tcp_client.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
+    test_client.handle_string_event('data', jsoncreateCase)
 
     """
     Create 2 Variants
     """
-    createVariant1Message = { "method": "createVariant",
-                             "type": "request",
-                             "userId": "cstb",
-                             "caseId": "stockholm",
-                             "variantId" : "asis"
-                            }
-    jsoncreateVariant1 = json.dumps(createVariant1Message)
-    print jsoncreateVariant1
+    create_variant1_message = {
+                                "method": "createVariant",
+                                "type": "request",
+                                "userId": "cstb",
+                                "caseId": "stockholm",
+                                "variantId": "asis",
+                                "eventId": "trout"
+                              }
+    json_create_variant1 = json.dumps(create_variant1_message)
+    print json_create_variant1
+    test_client.handle_string_event('data', json_create_variant1)
 
-    testClient.handle_string_event('data', jsoncreateVariant1)
-
-    createVariant2Message = { "method": "createVariant",
-                             "type": "request",
-                             "userId": "cstb",
-                             "caseId": "stockholm",
-                             "variantId" : "renoved"
-                            }
-    jsoncreateVariant2 = json.dumps(createVariant2Message)
-    print jsoncreateVariant2
-
-    testClient.handle_string_event('data', jsoncreateVariant2)
+    create_variant2_message = {
+                                "method": "createVariant",
+                                "type": "request",
+                                "userId": "cstb",
+                                "caseId": "stockholm",
+                                "variantId": "renoved",
+                                "eventId": "trout"
+                              }
+    json_create_variant2 = json.dumps(create_variant2_message)
+    print json_create_variant2
+    test_client.handle_string_event('data', json_create_variant2)
 
     """
     Delete one variant
     """
-    deleteVariant1Message = { "method": "deleteVariant",
-                             "type": "request",
-                             "userId": "cstb",
-                             "caseId": "stockholm",
-                             "variantId" : "renoved",
-                             "eventId" : "trout"
-                            }
-    jsondeleteVariant = json.dumps(deleteVariant1Message)
-    print jsondeleteVariant
-
-    testClient.handle_string_event('data', jsondeleteVariant)
-
+    delete_variant1_message = {
+                                "method": "deleteVariant",
+                                "type": "request",
+                                "userId": "cstb",
+                                "caseId": "stockholm",
+                                "variantId": "renoved",
+                                "eventId": "trout"
+                              }
+    json_delete_variant = json.dumps(delete_variant1_message)
+    print json_delete_variant
+    test_client.handle_string_event('data', json_delete_variant)
 
     """
     Delete case and last associated variant
     """
-    deleteCaseMessage = { "method": "deleteCase",
-                          "type": "request",
-                          "userId": "cstb",
-                          "caseId": "stockholm",
-                          "eventId": "trout"
-                        }
-    jsondeleteCase = json.dumps(deleteCaseMessage)
-
-    print jsondeleteCase
-
-    testClient.handle_string_event('data', jsondeleteCase)
-
+    delete_case_message = {
+                            "method": "deleteCase",
+                            "type": "request",
+                            "userId": "cstb",
+                            "caseId": "stockholm",
+                            "eventId": "trout"
+                          }
+    json_delete_case = json.dumps(delete_case_message)
+    print json_delete_case
+    test_client.handle_string_event('data', json_delete_case)
 
 if __name__ == "__main__":
     main()
