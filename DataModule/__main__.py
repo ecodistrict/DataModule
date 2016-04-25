@@ -10,7 +10,7 @@ def main(argv=None):
     logging.basicConfig(filename='dataModule.log', level=logging.DEBUG)
 
     host = '10.9.10.183'
-    db_name = 'Hovsjo_test'
+    db_name = 'Warsaw'
     user = 'tournaire'
     password = 'olivier'
     port = '5432'

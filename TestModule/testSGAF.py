@@ -7,13 +7,13 @@ def main(args=None):
     simulate get Data case
     """
 
-    test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    test_client = tcp_client.TcpClient("10.9.10.183", "Warsaw", "tournaire", "olivier", "5432")
     get_data_message = {
                         "method": "getData",
                         "type": "request",
                         "userId": "cstb",
-                        "caseId": "hovsjo",
-                        "variantId": "greenfactoralt2",
+                        "caseId": "green_factor",
+                        "variantId": "asis",
                         "moduleId": "Stockholm_Green_Area_Factor",
                         "calculationId": "3",
                         "eventId": "trout"

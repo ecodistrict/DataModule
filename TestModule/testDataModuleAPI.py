@@ -18,8 +18,8 @@ def main(args=None):
     jsoncreateCase = json.dumps(create_case_message)
     print jsoncreateCase
 
-    # test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
-    test_client = tcp_client.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
+    test_client = tcp_client.TcpClient("10.9.10.183", "Warsaw", "tournaire", "olivier", "5432")
+    # test_client = tcp_client.TcpClient("localhost", "ecodistrict", "postgres", "FF511Aeris", "5432")
     test_client.handle_string_event('data', jsoncreateCase)
 
     """

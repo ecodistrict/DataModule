@@ -6,7 +6,7 @@ def main(args=None):
     """
     simulate get Data case
     """
-    test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    test_client = tcp_client.TcpClient("10.9.10.183", "Warsaw", "tournaire", "olivier", "5432")
 
     save_data_message = {
         "moduleId": "SP_LCA_v4.0",

@@ -97,7 +97,7 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
     def _get_total_land_area(self):
         request = self.create_schema_request("""SELECT SUM(gen_value) total_land_area FROM luse_landuse_gen_doubleattribute
                       WHERE attr_name='area' AND  gen_value>0 AND parentfk IN (
-                        SELECT parentfk FROM luse_landuse_gen_intattribute);""")
+                        SELECT parentfk FROM luse_landuse_gen_intattribute WHERE attr_name='isCaseStudyDistrict');""")
         return self._pdm.get_data_value(request, float)
 
     def _get_total_filterd_land_area(self, filtered_name):
@@ -266,14 +266,14 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
                     );""".format(filtered_name))
         return self._pdm.get_data_value(request, float)
 
-    def _get_sum_water_surfaces_filtered(self, filtered_name):
+    def _get_sum_water_surfaces_filtered(self, filtered_name, gen_value):
         request = self.create_schema_request("""SELECT SUM(gen_value) FROM wtr_watersurface_gen_doubleattribute
                       WHERE attr_name='area' AND gen_value>0 AND parentfk IN (
                         SELECT parentfk FROM (
                           SELECT * FROM wtr_watersurface_gen_intattribute
-                            WHERE attr_name='{}' AND gen_value=1
+                            WHERE attr_name='{}' AND gen_value={}
                         ) AS INTERMEDIATE GROUP BY parentfk HAVING count(parentfk) = 1
-                  );""".format(filtered_name))
+                  );""".format(filtered_name, gen_value))
         return self._pdm.get_data_value(request, float)
 
     def get_data(self):
@@ -322,11 +322,11 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
         self.responseData['Shade from leaf cover'] = self._get_sum_vegetation_join_name_filtered('isShadeFromLeaf')
         self.responseData['Evening out of temp'] = self._get_sum_vegetation_filtered('isEveningOutOfTemp')
 
-        self.responseData['Water surface permanent'] = self._get_sum_water_surfaces_filtered('isPermanent')
+        self.responseData['Water surface permanent'] = self._get_sum_water_surfaces_filtered('isPermanent', 1)
         self.responseData['Open hard surfaces that allow water to get through'] = self._get_landuse_sum_doubled_filtered('isPermeable', 'isOpenHard')
         self.responseData['Gravel and sand'] = self._get_landuse_sum_doubled_filtered('isGravel', 'isSand')
         self.responseData['Concrete slabs with joints'] = self._get_concrete_slabs()
-        self.responseData['Impermeable surfaces'] = self._get_impermeable_surfaces()
+        self.responseData['Impermeable surfaces'] = self._get_sum_water_surfaces_filtered('isPermeable', 0)
 
         self.responseData['Biologically accessible permanent water'] = self._get_biologically_accessible_water('isPermanent')
         self.responseData['Dry areas with plants that temporarily fill with rain water'] = self._get_dry_areas()

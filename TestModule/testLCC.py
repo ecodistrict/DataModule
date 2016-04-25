@@ -9,7 +9,7 @@ def main(args=None):
     """
     simulate get Data LCC case
     """
-    test_client = tcp_client.TcpClient("10.9.10.183", "Hovsjo_test", "tournaire", "olivier", "5432")
+    test_client = tcp_client.TcpClient("10.9.10.183", "Warsaw", "tournaire", "olivier", "5432")
 
     get_data_message_lcc = {
                             "method": "get_data",
