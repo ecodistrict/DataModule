@@ -13,8 +13,7 @@ def main(args=None):
                                 "method": "getData",
                                 "type": "request",
                                 "userId": "cstb",
-                                "caseId": "hovsjo",
-                                "variantId": "mobilityalt1",
+                                "caseId": "warsaw_mobility",
                                 "moduleId": "MobilityModule",
                                 "calculationId": "xx_mobility_xx",
                                 'eventId': "trout"
