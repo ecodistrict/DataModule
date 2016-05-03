@@ -50,7 +50,7 @@ class TcpClient:
         variant_id = parsed_json.get('variantId', 'null')
 
         prefix = 'trout_'
-        base_schema_id = case_id if variant_id is None else case_id + "_" + variant_id
+        base_schema_id = case_id if variant_id is 'null' or variant_id is None else case_id + "_" + variant_id
         schema_id = prefix + base_schema_id
         db_case_id = prefix + case_id
         calculation_id = parsed_json.get('calculationId', 'null')
@@ -125,8 +125,6 @@ class TcpClient:
 
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
-            elif variant_id == 'null':
-                return_dict["status"] = "failed - no variant id"
             elif module_id == 'null':
                 return_dict["status"] = "failed - no module id"
             elif not self._pdm.check_if_schema_exists(schema_id):
@@ -156,8 +154,6 @@ class TcpClient:
 
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
-            elif variant_id == 'null':
-                return_dict["status"] = "failed - no variant id"
             elif module_id == 'null':
                 return_dict["status"] = "failed - no module id"
             if kpi_id is 'null':
@@ -176,8 +172,6 @@ class TcpClient:
 
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
-            elif variant_id == 'null':
-                return_dict["status"] = "failed - no variant id"
             elif module_id == 'null':
                 return_dict["status"] = "failed - no module id"
             elif kpi_id is 'null':
@@ -196,8 +190,6 @@ class TcpClient:
             element_filter = parsed_json.get('element_type_filter', 'null')
             if case_id == 'null':
                 return_dict["status"] = "failed - no case id"
-            elif variant_id == 'null':
-                return_dict["status"] = "failed - no variant id"
             elif module_id == 'null':
                 return_dict["status"] = "failed - no module id"
             elif element_filter == 'null':
