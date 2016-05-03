@@ -289,8 +289,8 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
         self.responseData["Greenery on walls"] = self._get_sum_vegetation_filtered('isOnWall')
         self.responseData["Balcony boxes"] = self._get_generic_sum_attribute('ECD_GENCO_BALCONY_BOX')
 
-        self.responseData['Diversity in the field layer'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_FIELD_LAYER')   # TRUITE \todo
-        self.responseData['Natural species selection'] = self._get_generic_sum_attribute('ECD_GENCO_NATURAL_SPECIES_SELECTION')  # TRUITE \todo
+        self.responseData['Diversity in the field layer'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_FIELD_LAYER')
+        self.responseData['Natural species selection'] = self._get_generic_sum_attribute('ECD_GENCO_NATURAL_SPECIES_SELECTION')
         self.responseData['Diversity on thin sedum roofs'] = self._get_generic_sum_attribute('ECD_GENCO_DIVERSITY_THIN_SEDUM_ROOF')
         self.responseData['Integrated balcony boxes with climbing plants'] = self._get_generic_sum_attribute('ECD_GENCO_INTEGRATED_BALCONY_BOX_CLIMBING')
         self.responseData['Butterfly restaurants'] = self._get_generic_count_attribute('ECD_GENCO_BUTTERFLY_RESTAURANT')
@@ -334,7 +334,7 @@ class ModuleSGAF(Abstract_Module.AbstractModule):
         self.responseData['Delay of rainwater in underground percolation systems'] = self._get_sum_water_body_filtered('isRainwaterDelayedInPercolationsystems')
         self.responseData['Runoff from impermeable surfaces to surfaces with plants'] = self._get_balcony_terrace_growing()
 
-        self.responseData['Water surfaces'] = self._get_green_water_surfaces()
+        self.responseData['Water surfaces'] = self._get_sum_water_surfaces_filtered('isWaterSurface', 1)
         self.responseData['Biologically accessible water'] = self._get_biologically_accessible_water('isPermanent')  #should be is experimental TRUITE \todo
         self.responseData['Fountains circulations systems'] = self._get_count_filtered_fountains('isCirculationSystem')
 
