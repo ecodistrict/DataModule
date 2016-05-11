@@ -32,8 +32,8 @@ def main(args=None):
     """
     get_geojson_data_message = {
                                 "moduleId": "dashboard",
-                                "variantId": "lcalccalt4b",
-                                "caseId": "hovsjo",
+                                "variantId": "test",
+                                "caseId": "test",
                                 "userId": "cstb",
                                 "method": "getGeojson",
                                 "type": "request",
