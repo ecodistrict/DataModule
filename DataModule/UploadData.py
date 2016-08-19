@@ -3,6 +3,7 @@ import os
 
 import Abstract_Module
 import DataModule.DataManager as DataManager
+import CsvLoader
 
 
 class UploadModule(Abstract_Module.AbstractModule):
@@ -13,7 +14,7 @@ class UploadModule(Abstract_Module.AbstractModule):
         Abstract_Module.AbstractModule.__init__(self, pdm, "")
         self.status = ""
         self.valid_srs_list = ['urn:ogc:def:crs:OGC:1.3:CRS84']
-        self.valid_gml_type = {'BUILDINGS':'Ecodistrict_building', }
+        self.valid_gml_type = {'BUILDINGS':'building', }
         self.gml_table = ''
         self._json_dict = {}
         self.insert_request = ""
@@ -29,9 +30,9 @@ class UploadModule(Abstract_Module.AbstractModule):
         return self.status
 
     def _check_case_variant(self):
-        case_id = self._json_dict.get('caseId', 'null')
+        case_id = self._json_dict.get('caseId', '')
         variant_id = self._json_dict.get('variantId', 'null')
-        base_schema_id = case_id if variant_id is 'null' or variant_id is None else case_id + "_" + variant_id
+        base_schema_id = case_id if variant_id is '' or variant_id is None or variant_id is 'null' else case_id + "_" + variant_id
         self.schemaID = self.prefix + base_schema_id
         if not self._pdm.check_if_schema_exists(self.schemaID):
             self.status += "Failed - schema for case and variant doesn't exist"
@@ -39,16 +40,18 @@ class UploadModule(Abstract_Module.AbstractModule):
         return True
 
     def _load_json_data(self, fileURL):
-        with open(fileURL, "r") as file_data:
-            file_name, file_extension = os.path.splitext(fileURL)
-            if file_extension.upper() == ".JSON":
+        file_name, file_extension = os.path.splitext(fileURL)
+        if file_extension.upper() == ".JSON":
+            with open(fileURL, "r") as file_data:
                 self._json_dict = json.load(file_data)
+        elif file_extension.upper() == ".CSV":
+             self._json_dict = CsvLoader.loadAsJson(fileURL)
 
     def print_json(self):
         print self._json_dict
 
     def _create_feature_if_necessary(self, feature_id):
-        req = self.create_schema_request("""INSERT INTO {} (fid) VALUES ('{}'); """.format(self.gml_table, feature_id))
+        req = self.create_schema_request("""INSERT INTO {} (object_id) VALUES ('{}'); """.format(self.gml_table, feature_id))
         self._pdm.execute_request(req)
         self._pdm.commit_transactions()
 
@@ -62,14 +65,16 @@ class UploadModule(Abstract_Module.AbstractModule):
         req = "UPDATE {} SET ".format(self.gml_table)
         firstPass = True
         for property_key, property_value in properties.iteritems():
-            if property_key != 'FID':
+            # todo check conversion properly
+            if property_key != 'FID' and property_value is not '':
                 if not firstPass:
                     req += ", "
                 else:
                     firstPass = False
-                req += "{}='{}'".format(property_key, property_value)
 
-        req += " WHERE FID='{}';".format(gml_id)
+                req += "{}='{}'".format(property_key, property_value.replace(',','.'))
+
+        req += " WHERE object_ID='{}';".format(gml_id)
         embedded_req = self.create_schema_request(req)
 
         if not self._pdm.execute_request(embedded_req):
@@ -108,12 +113,12 @@ class UploadModule(Abstract_Module.AbstractModule):
         for feature in features_list:
             properties = feature.get('properties', None)
             if properties is None:
-                self.status += "Failed - At least one feature has no properties (at least FID is mandatory)"
+                self.status += "Failed - At least one feature has no properties (at least object_id is mandatory)"
                 return False
 
-            feature_id = properties.get('FID', None)
+            feature_id = properties.get('object_ID', None)
             if not feature_id:
-                self.status = "Failed - no FID"
+                self.status = "Failed - no object_ID"
                 return False
 
             if not self._create_insert_feature_request(properties, feature_id):
@@ -133,7 +138,7 @@ class UploadModule(Abstract_Module.AbstractModule):
         return True
 
     def _update_feature_geometry(self, geometry, feature_id):
-        based_req = """UPDATE {}.{} SET lod0footprint=( ST_AsText(ST_GeomFromGeoJSON('{}') ) ) WHERE FID='{}';"""\
+        based_req = """UPDATE {}.{} SET lod0footprint=( ST_AsText(ST_GeomFromGeoJSON('{}') ) ) WHERE object_ID='{}';"""\
             .format(self.schemaID, self.gml_table, geometry, feature_id)
 
         geom_req = """ SET SCHEMA 'public';  {}""".format(based_req)
