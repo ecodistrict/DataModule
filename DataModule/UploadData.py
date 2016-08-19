@@ -2,26 +2,41 @@ import json
 import os
 
 import Abstract_Module
+import DataModule.DataManager as DataManager
 
 
-class UploadFromGeoJSON(Abstract_Module.AbstractModule):
+class UploadModule(Abstract_Module.AbstractModule):
     def __init__(self):
+        self.prefix = 'trout_'
+        pdm = DataManager.PostgresDataManager()
+        pdm.connect("vps17642.public.cloudvps.com", "Warsaw", "postgres", "x0mxaJc69J9KAlFNsaDt", "5443")
+        Abstract_Module.AbstractModule.__init__(self, pdm, "")
         self.status = ""
         self.valid_srs_list = ['urn:ogc:def:crs:OGC:1.3:CRS84']
-        self.valid_gml_type = {'BUILDINGS':'bldg_building', }
+        self.valid_gml_type = {'BUILDINGS':'Ecodistrict_building', }
         self.gml_table = ''
         self._json_dict = {}
         self.insert_request = ""
 
     def upload_data(self, filename):
         self._load_json_data(filename)
-
         if not self._json_dict:
             self.status += "Can't convert data into right json format"
         else:
-            self._parse_properties()
+            if self._check_case_variant():
+                self._parse_features()
 
         return self.status
+
+    def _check_case_variant(self):
+        case_id = self._json_dict.get('caseId', 'null')
+        variant_id = self._json_dict.get('variantId', 'null')
+        base_schema_id = case_id if variant_id is 'null' or variant_id is None else case_id + "_" + variant_id
+        self.schemaID = self.prefix + base_schema_id
+        if not self._pdm.check_if_schema_exists(self.schemaID):
+            self.status += "Failed - schema for case and variant doesn't exist"
+            return False
+        return True
 
     def _load_json_data(self, fileURL):
         with open(fileURL, "r") as file_data:
@@ -32,54 +47,35 @@ class UploadFromGeoJSON(Abstract_Module.AbstractModule):
     def print_json(self):
         print self._json_dict
 
-    def _create_insert_feature_request(self, properties):
-        print properties
-
-        feature_id = properties.get('FID_1', None)
-        if not feature_id:
-            self.status = "Failed - no FID_1"
-            return False
-
-        if not self._execute_delete_request(feature_id, 'gen_intattribute'):
-            return False
-        if not self._execute_delete_request(feature_id, 'gen_doubleattribute'):
-            return False
-        if not self._execute_delete_request(feature_id, 'gen_stringattribute'):
-            return False
-
-        for property_key, property_value in properties.iteritems():
-            if property_value.isdigit():
-                if not self._execute_insert_request(feature_id, property_key, property_value, 'gen_intattribute'):
-                    return False
-            elif property_value.isdecimal():
-                if not self._execute_insert_request(feature_id, property_key, property_value, 'gen_doubleattribute'):
-                    return False
-            else:
-                if not self._execute_insert_request(feature_id, property_key, property_value, 'gen_stringattribute'):
-                    return False
-
+    def _create_feature_if_necessary(self, feature_id):
+        req = self.create_schema_request("""INSERT INTO {} (fid) VALUES ('{}'); """.format(self.gml_table, feature_id))
+        self._pdm.execute_request(req)
         self._pdm.commit_transactions()
 
-    def _execute_delete_requests(self, gml_id, extension):
-        delete_request = self.create_schema_request("""DELETE FROM {}_{} WHERE parentfk='{}'; """
-                                                    .format(self.gml_table, extension, gml_id,))
-
-        if self._pdm.execute_request(delete_request) == 'False':
-            print "delete attribute failure : {}".format(delete_request)
-            self._pdm.rollback_transactions()
-            self.status = "Failed - Can't delete previous data"
+    def _create_insert_feature_request(self, properties, feature_id):
+        self._create_feature_if_necessary(feature_id)
+        if not self._update_feature(feature_id, properties):
             return False
         return True
 
-    def _execute_insert_request(self, gml_id, key, value, extension):
-        insert_request = self.create_schema_request("""INSERT INTO {}_{} (parentfk, num, attr_name, gen_value) VALUES ('{}','0','{}','{}'); """
-            .format(self.gml_table, extension, gml_id, key, value)
+    def _update_feature(self, gml_id, properties):
+        req = "UPDATE {} SET ".format(self.gml_table)
+        firstPass = True
+        for property_key, property_value in properties.iteritems():
+            if property_key != 'FID':
+                if not firstPass:
+                    req += ", "
+                else:
+                    firstPass = False
+                req += "{}='{}'".format(property_key, property_value)
 
-        if self._pdm.execute_request(insert_request) == 'False':
-            print "insert attribute failure : {}".format(insert_request)
-            self._pdm.rollback_transactions()
-            self.status = "Failed - Can't delete insert results"
+        req += " WHERE FID='{}';".format(gml_id)
+        embedded_req = self.create_schema_request(req)
+
+        if not self._pdm.execute_request(embedded_req):
+            self.status = "Failed - can't update element"
             return False
+
         return True
 
     def _check_srs(self):
@@ -92,7 +88,7 @@ class UploadFromGeoJSON(Abstract_Module.AbstractModule):
 #             return True
 
     """ Parse properties and convert it as an insert request"""
-    def _parse_properties(self):
+    def _parse_features(self):
         ftype = self._json_dict.get('type', None)
         if ftype != 'FeatureCollection':
             self.status = "Failed - not feature collection in geoJSON"
@@ -112,10 +108,38 @@ class UploadFromGeoJSON(Abstract_Module.AbstractModule):
         for feature in features_list:
             properties = feature.get('properties', None)
             if properties is None:
-                self.status += "Failed - At least one feature has no properties"
+                self.status += "Failed - At least one feature has no properties (at least FID is mandatory)"
                 return False
 
-            self._create_insert_feature_request(properties)
+            feature_id = properties.get('FID', None)
+            if not feature_id:
+                self.status = "Failed - no FID"
+                return False
+
+            if not self._create_insert_feature_request(properties, feature_id):
+                self.status = "Failed - can't update feature"
+                self._pdm.rollback_transactions()
+                return False
+
+            geometry = feature.get('geometry', None)
+            if geometry is not None:
+                if not self._update_feature_geometry( json.dumps(geometry), feature_id):
+                    self.status = "Failed - can't upload geometry"
+                    self._pdm.rollback_transactions()
+                    return False
+
+            self._pdm.commit_transactions()
+
         return True
 
+    def _update_feature_geometry(self, geometry, feature_id):
+        based_req = """UPDATE {}.{} SET lod0footprint=( ST_AsText(ST_GeomFromGeoJSON('{}') ) ) WHERE FID='{}';"""\
+            .format(self.schemaID, self.gml_table, geometry, feature_id)
 
+        geom_req = """ SET SCHEMA 'public';  {}""".format(based_req)
+
+        if not self._pdm.execute_request(geom_req):
+            self.status = "Failed - can't update geometry element"
+            return False
+
+        return True

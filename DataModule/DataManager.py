@@ -32,9 +32,11 @@ class PostgresDataManager:
     def execute_request(self, request):
         if self.isConnected:
             with self.conn.cursor() as cur:
-                cur.execute(request)
-                return True
-        return False
+                try:
+                    cur.execute(request)
+                except:
+                    return False
+        return True
 
     def commit_transactions(self):
         self.conn.commit()

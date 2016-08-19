@@ -3,12 +3,11 @@ from Tkinter import Tk
 from tkFileDialog import askopenfilename
 
 def main(args=None):
-    uploader = UploadData.UploadFromGeoJSON()
+    uploader = UploadData.UploadModule()
 
     Tk().withdraw()
     filename = askopenfilename()
 
-    uploader.schemaID = 'trout_test_temp'
     uploader.upload_data(filename)
 
 
