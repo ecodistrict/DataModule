@@ -10,18 +10,6 @@ class UploadScript:
         logging.basicConfig(filename='UploadModule.log', level=logging.DEBUG)
         logging.FileHandler('UploadModule.log', mode='w')
 
-        host = '10.9.10.183'
-        db_name = 'Warsaw'
-        user = 'tournaire'
-        password = 'olivier'
-        port = '5432'
-
-        #host = 'vps17642.public.cloudvps.com'
-        #db_name = 'Warsaw'
-        #user = 'postgres'
-        #password = 'x0mxaJc69J9KAlFNsaDt'
-        #port = '5443'
-
         try:
             logging.info("currents args are: {}".format(sys.argv[1:]))
             opts, args = getopt.getopt(sys.argv[1:], "h:d:u:P:p:f:", ["host=", "dbname=", "user=", "password", "port=", "filename="])

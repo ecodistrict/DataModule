@@ -11,15 +11,6 @@ def main(argv=None):
     logging.basicConfig(filename='DownloadModule.log', level=logging.DEBUG)
     logging.FileHandler('DownloadModule.log', mode='w')
 
-    host = '10.9.10.183'
-    db_name = 'Warsaw'
-    user = 'tournaire'
-    password = 'olivier'
-    port = '5432'
-
-    dirname = '.'
-    case_id = '57b428a6cef25a0a0d6681ac'
-    variant_id = ''
 
     try:
         logging.info("currents args are: {}".format(sys.argv[1:]))

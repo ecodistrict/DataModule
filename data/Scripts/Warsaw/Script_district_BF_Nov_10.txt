@@ -1,4 +1,4 @@
-CREATE TABLE trout_56cd5745317e88872c28ec12.district
+CREATE TABLE public.district
 (
 district_id	Text NOT NULL,
 MaxCostShare	double precision,
@@ -195,5 +195,5 @@ GloabalRatioENR	double precision,
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE trout_56cd5745317e88872c28ec12.district
+ALTER TABLE public.district
   OWNER TO postgres;

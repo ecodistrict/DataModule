@@ -1,6 +1,4 @@
-
-
-CREATE TABLE trout_56cd5745317e88872c28ec12.building
+CREATE TABLE public.building
 (
 building_id	text NOT NULL,
 Address	text,
@@ -193,6 +191,6 @@ LcaElectricityProduction	double precision,
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE trout_56cd5745317e88872c28ec12.building
+ALTER TABLE public.building
   OWNER TO postgres;
 
