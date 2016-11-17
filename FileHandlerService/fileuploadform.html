@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Upload Form</title>
+</head>
+<body>
+<p><h1>Select & Upload</h1></p>
+<form enctype="multipart/form-data" action="/" method="post">
+File: <input type="file" name="filearg" /> <input type="submit" value="Upload" />
+<br />
+<br />
+<br />
+Status:
+<br />
+<textarea rows="4" cols="50" name="outstatus">
+    {{ statusText }}
+</textarea>
+</form>
+</body>

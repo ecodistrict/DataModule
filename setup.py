@@ -1,11 +1,11 @@
 from setuptools import setup
 
-setup(name='DataModule',
+setup(name='UploadModule',
       version='0.1.0',
-      packages=['DataModule'],
+      packages=['UploadModule'],
       entry_points={
           'console_scripts': [
-              'DataModule = DataModule.__main__:main'
+              'UploadModule = FileHandlerService.UploadForm.__main__:main'
           ]
       },
       )
