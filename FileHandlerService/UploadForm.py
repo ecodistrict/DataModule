@@ -24,7 +24,7 @@ class Upload(tornado.web.RequestHandler):
 
     def post(self):
         fileinfo = self.request.files['filearg'][0]
-        print "file name is", fileinfo['filename']
+        print ("file name is", fileinfo['filename'])
 
         fname = fileinfo['filename']
         extn = os.path.splitext(fname)[1]
@@ -51,7 +51,7 @@ define("port", default=8888, help="run on the given port", type=int)
 def main():
     mydatabase = dict()
     application = tornado.web.Application([
-        (r"/", Upload, dict(database=mydatabase)),
+        (r"/upload", Upload, dict(database=mydatabase)),
     ], debug=False)
     http_server = tornado.httpserver.HTTPServer(application)
     http_server.listen(options.port)

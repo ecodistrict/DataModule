@@ -7,6 +7,11 @@ import logging
 
 class UploadScript:
     def __init__(self, file, extension, case_id, variant_id):
+        print("UploadScript")
+        print("   extension: %s" % extension)
+        print("   case_id: %s" % case_id)
+        print("   variant_id: %s" % variant_id)
+        
         logging.basicConfig(filename='UploadModule.log', level=logging.DEBUG)
         logging.FileHandler('UploadModule.log', mode='w')
 
@@ -34,7 +39,9 @@ class UploadScript:
         logging.info("Starting UploadModule.")
 
         uploader = UploadData.UploadModule(host, db_name, user, password, port, case_id, variant_id)
+        print("created UploadModule")
         self._status = uploader.upload_data(file, extension)
+        print("after uploader.upload_data")
         logging.info('finished')
 
     def getStatus(self):

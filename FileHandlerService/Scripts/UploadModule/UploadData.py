@@ -97,7 +97,7 @@ class UploadModule(am.AbstractModule):
 
         self._gml_table = self._valid_gml_type.get(gml_type.upper(), None)
         if not self._gml_table:
-            self._status = "Failed - gml type is not a valid one"
+            self._status = "Failed - gml type %s is not a valid one" % gml_type
             return False
 
         features_list = self._json_dict.get('features', [])
@@ -120,7 +120,7 @@ class UploadModule(am.AbstractModule):
 
             geometry = feature.get('geometry', None)
             if geometry is not None:
-                if not self._update_feature_geometry( json.dumps(geometry), feature_id, key_id):
+                if not self._update_feature_geometry(geometry, feature_id, key_id):
                     self._status = "Failed - can't upload geometry"
                     self._pdm.rollback_transactions()
                     return False
@@ -131,7 +131,7 @@ class UploadModule(am.AbstractModule):
         return True
 
     def _update_feature_geometry(self, geometry, feature_id, key_id):
-        based_req = """UPDATE {}.{} SET lod0footprint=( ST_AsText(ST_GeomFromGeoJSON('{}') ) ) WHERE {}='{}';"""\
+        based_req = """UPDATE {}.{} SET lod0footprint=ST_GeomFromGeoJSON('{}') WHERE {}='{}';"""\
             .format(self._schemaID, self._gml_table, geometry, key_id, feature_id)
 
         geom_req = """ SET SCHEMA 'public';  {}""".format(based_req)
